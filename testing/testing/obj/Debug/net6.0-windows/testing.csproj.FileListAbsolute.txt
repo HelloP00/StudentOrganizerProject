@@ -1,0 +1,17 @@
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\bin\Debug\net6.0-windows\testing.exe
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\bin\Debug\net6.0-windows\testing.deps.json
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\bin\Debug\net6.0-windows\testing.runtimeconfig.json
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\bin\Debug\net6.0-windows\testing.dll
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\bin\Debug\net6.0-windows\testing.pdb
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.csproj.AssemblyReference.cache
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.Form1.resources
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.csproj.GenerateResource.cache
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.AssemblyInfoInputs.cache
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.AssemblyInfo.cs
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.csproj.CoreCompileInputs.cache
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.dll
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\refint\testing.dll
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.pdb
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\testing.genruntimeconfig.cache
+C:\Users\d\Documents\VisualStudioProjects\testing\testing\obj\Debug\net6.0-windows\ref\testing.dll
