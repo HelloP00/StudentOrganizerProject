@@ -7,6 +7,7 @@ namespace testing
         private Button taskHold;
         private Color colourHold = Color.Red;
         private CheckBox tempColourCheckBox;
+        private int startingDay, daysInMonth, dayCount;
         public Form1()
         {
             InitializeComponent();
@@ -14,6 +15,16 @@ namespace testing
             button2.Click += button2_Click;
             button3.Click += button3_Click;
             button4.Click += button4_Click;
+
+            //Adds years to ComboBox and selects current year
+            for (int i = 1990; i <= 3000; i++)
+            {
+                toolStripComboBoxYear.Items.Add(i.ToString());
+            }
+            toolStripComboBoxYear.SelectedItem = (DateTime.Now.Year.ToString());
+            toolStripComboBoxMonth.SelectedIndex = (DateTime.Now.Month) - 1;
+
+            calendarChange(DateTime.Now.Year, DateTime.Now.Month);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -236,6 +247,78 @@ namespace testing
         {
             Console.WriteLine("Exit button was clicked");
             this.Close();
+        }
+
+        private void calendarChange(int year, int month)
+        {
+            if (year >= 1990 && year <= 3000 && month >= 1 && month <= 12)
+            {
+                startingDay = (int)new DateTime(year, month, 1).DayOfWeek;
+                daysInMonth = DateTime.DaysInMonth(year, month);
+            }
+            else
+            {
+                MessageBox.Show("Could not retrive month/year");
+                startingDay = 2;
+                daysInMonth = 2;
+            }
+
+            dayCount = 1;
+
+            foreach (Panel panels in this.flowLayoutPanelCalendar.Controls.OfType<Panel>())
+            {
+                if (startingDay == 0)
+                {
+                    if (dayCount <= daysInMonth)
+                    {
+                        panels.BackColor = Color.LightBlue;
+
+                        //There is only one in each, so maybe change this
+                        foreach (Label label in panels.Controls.OfType<Label>())
+                        {
+                            label.Text = "" + dayCount;
+                        }
+                        dayCount++;
+                    }
+                    else
+                    {
+                        panels.BackColor = Color.White;
+                        foreach (Label label in panels.Controls.OfType<Label>())
+                        {
+                            label.Text = "";
+                        }
+                    }
+                }
+                else
+                {
+                    panels.BackColor = Color.White;
+                    foreach (Label label in panels.Controls.OfType<Label>())
+                    {
+                        label.Text = "";
+                    }
+                    //Also make it unable to be pressed
+                    //Could make it include the last months dates but I think it'd be kinda confusing to code
+                    startingDay--;
+                }
+            }
+        }
+        private void month_year_Changed(object sender, EventArgs e)
+        {
+            //Checks whether input is from user
+            if (((ToolStripComboBox)sender).Focused)
+            {
+                int year, month;
+                bool okay = Int32.TryParse(toolStripComboBoxYear.Text, out year);
+                month = toolStripComboBoxMonth.SelectedIndex + 1;
+                if (okay)
+                {
+                    calendarChange(year, month);
+                }
+                else
+                {
+                    MessageBox.Show("Error Occured - not able to parse year");
+                }
+            }
         }
     }
 }
