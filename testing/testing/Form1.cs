@@ -3,11 +3,20 @@ namespace testing
     public partial class Form1 : Form
     {
         private int maxTitleLength = 25;
-        private string titleHold = "error";
+        private string titleHold = "error with titleHold";
+        private string textHold = "error with textHold";
+        private int currentYear = DateTime.Now.Year;
+        private int currentMonth = DateTime.Now.Month;
+        private int yearHold = 2000;
+        private int monthHold = 1;
+        private int dayHold = 1;
+        private object taskSender;
+        private string timeHold1 = "error with timeHold1";
+        private string timeHold2 = "error with timeHold2";
         private Button taskHold;
-        private Color colourHold = Color.Red;
+        private Color colourHold = Color.Orange;
         private CheckBox tempColourCheckBox;
-        private int startingDay, daysInMonth, dayCount;
+        private int startingDay, startingDayCountdown, daysInMonth, dayCount;
         public Form1()
         {
             InitializeComponent();
@@ -61,7 +70,7 @@ namespace testing
         {
             //Sets temp button so that the program knows which task is being viewed (this system may be changed)
             //It probably won't always be "taskButton"
-            taskHold = taskButton;
+            //taskHold = taskButton;
 
             //Clickable task which reveals task editing panel and hides task panel
             popupTaskPanel.Visible = false;
@@ -109,29 +118,59 @@ namespace testing
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            editTaskPanel.Visible = false;
+            if (editTaskTitleLabel.Text != "")
+            {
+                editTaskPanel.Visible = false;
 
-            //Temporary until database
-            popupTaskTitleLabel.Text = editTaskTitleLabel.Text;
-            taskButton.Text = editTaskTitleLabel.Text;
+                //Temporary until database
+                //popupTaskTitleLabel.Text = editTaskTitleLabel.Text;
+                //taskButton.Text = editTaskTitleLabel.Text;
 
-            //Temporary until database
-            popupTaskDateLabel.Text = editTaskDatePicker.Text;
-            popupTaskTimeLabel.Text = editTaskTimePicker.Text;
+                //Temporary until database
+                //popupTaskDateLabel.Text = editTaskDatePicker.Text;
+                //popupTaskTimeLabel.Text = editTaskTimePicker.Text;
 
-            popupTaskNoteTextBox.Text = editTaskNoteTextbox.Text;
+                //popupTaskNoteTextBox.Text = editTaskNoteTextbox.Text;
 
-            //Save changes to data base (Colour, Date, Time, Title etc) here
+                //Save changes to data base (Colour, Date, Time, Title etc) here
 
-            //Color may need to be a string - check if database takes colors
+                //Color may need to be a string - check if database takes colors
 
-            //To be used specifically when taking colours from the database and applying them to tasks (buttons) in the calendar
-            //eg: under the column "colour", in the row "English Essay", the string reads orange- this data is then taken and input here along with a button,
-            //this is repeated to create a calendar
-            taskHold.BackColor = colourHold;
+                //To be used specifically when taking colours from the database and applying them to tasks (buttons) in the calendar
+                //eg: under the column "colour", in the row "English Essay", the string reads orange- this data is then taken and input here along with a button,
+                //this is repeated to create a calendar
+                //taskHold.BackColor = colourHold;
 
-            //Temporary until database
-            changePopupTaskTheme(colourHold);
+                //Temporary until database
+                //changePopupTaskTheme(colourHold);
+
+                yearHold = editTaskDatePicker.Value.Year;
+                monthHold = editTaskDatePicker.Value.Month;
+                dayHold = editTaskDatePicker.Value.Day;
+                timeHold1 = editTaskTimePicker1.Value.ToString();
+                timeHold2 = editTaskTimePicker2.Value.ToString();
+                textHold = editTaskNoteTextbox.Text;
+                titleHold = editTaskTitleLabel.Text;
+
+                //Check if year == current year & month == current month
+                //If true then use a addtask function
+                if (taskSender == toolStripButtonNewTask)
+                {
+                    addTask(yearHold, monthHold, dayHold, timeHold1, timeHold2, colourHold);
+                    taskSender = saveButton;
+                }
+                taskHold.Text = titleHold;
+
+                foreach (Panel panel in flowLayoutPanelCalendar.Controls.OfType<Panel>())
+                {
+                    panel.Enabled = true;
+                }
+                toolStripButtonNewTask.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Must have a title.");
+            }
         }
 
         private void editTaskTitleTextBox_TextChanged(object sender, EventArgs e)
@@ -248,18 +287,23 @@ namespace testing
             Console.WriteLine("Exit button was clicked");
             this.Close();
         }
-
+        private void toolStripButtonNewTask_Click(object sender, EventArgs e)
+        {
+            editTaskPanel.Visible = true;
+            taskSender = toolStripButtonNewTask;
+        }
         private void calendarChange(int year, int month)
         {
             if (year >= 1990 && year <= 3000 && month >= 1 && month <= 12)
             {
                 startingDay = (int)new DateTime(year, month, 1).DayOfWeek;
+                startingDayCountdown = startingDay;
                 daysInMonth = DateTime.DaysInMonth(year, month);
             }
             else
             {
                 MessageBox.Show("Could not retrive month/year");
-                startingDay = 2;
+                startingDayCountdown = 2;
                 daysInMonth = 2;
             }
 
@@ -267,7 +311,7 @@ namespace testing
 
             foreach (Panel panels in this.flowLayoutPanelCalendar.Controls.OfType<Panel>())
             {
-                if (startingDay == 0)
+                if (startingDayCountdown == 0)
                 {
                     if (dayCount <= daysInMonth)
                     {
@@ -298,8 +342,28 @@ namespace testing
                     }
                     //Also make it unable to be pressed
                     //Could make it include the last months dates but I think it'd be kinda confusing to code
-                    startingDay--;
+                    startingDayCountdown--;
                 }
+            }
+            foreach (Panel panels in this.flowLayoutPanelCalendar.Controls.OfType<Panel>())
+            {
+                foreach (Button button in panels.Controls.OfType<Button>())
+                {
+                    panels.Controls.Remove(button);
+                }
+            }
+            currentYear = year;
+            currentMonth = month;
+        }
+        private void editTaskPanel_VisibleChanged(object sender, EventArgs e)
+        {
+            if (editTaskPanel.Visible)
+            {
+                foreach (Panel panel in flowLayoutPanelCalendar.Controls.OfType<Panel>())
+                {
+                    panel.Enabled = false;
+                }
+                toolStripButtonNewTask.Enabled = false;
             }
         }
         private void month_year_Changed(object sender, EventArgs e)
@@ -319,6 +383,38 @@ namespace testing
                     MessageBox.Show("Error Occured - not able to parse year");
                 }
             }
+        }
+
+        private void addTask(int year, int month, int day, string time1, string time2, Color color)
+        {
+            int temp = day + startingDay;
+            //MessageBox.Show("startingDay" + startingDay + "day:" + day + "temp:" + temp);
+            string panelNameChange = "panelCalendarDay" + (temp);
+            Point point = new Point(10, 33);
+            Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point);
+            taskHold = button;
+            this.flowLayoutPanelCalendar.Controls[panelNameChange].Controls.Add(button);
+        }
+        private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color color, Size size, Point point)
+        {
+            Button button = new Button();
+            button.BackColor = color;
+            //Instead of worring about size too much, use margins - top,left,right
+            //button.Size = new System.Drawing.Size((size.Width - 2), (size.Height - 10));
+            button.Size = new System.Drawing.Size(70, 20);
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 0;
+            button.Location = point;
+            button.TextAlign = ContentAlignment.TopLeft;
+            button.Font = new Font(button1.Font, FontStyle.Bold);
+            button.ForeColor = Color.White;
+            button.Click += new System.EventHandler(task_Click);
+            return button;
+        }
+        private void task_Click(object sender, EventArgs e)
+        {
+            taskHold = (Button)sender;
+            editTaskPanel.Visible = true;
         }
     }
 }
