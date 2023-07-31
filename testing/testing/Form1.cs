@@ -390,18 +390,19 @@ namespace testing
             int temp = day + startingDay;
             //MessageBox.Show("startingDay" + startingDay + "day:" + day + "temp:" + temp);
             string panelNameChange = "panelCalendarDay" + (temp);
-            Point point = new Point(10, 33);
+            Point point = new Point(10, 10);
             Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point);
             taskHold = button;
             this.flowLayoutPanelCalendar.Controls[panelNameChange].Controls.Add(button);
         }
         private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color color, Size size, Point point)
         {
+            MessageBox.Show("buttonAdding");
             Button button = new Button();
             button.BackColor = color;
             //Instead of worring about size too much, use margins - top,left,right
             //button.Size = new System.Drawing.Size((size.Width - 2), (size.Height - 10));
-            button.Size = new System.Drawing.Size(70, 20);
+            button.Size = new System.Drawing.Size(20, 10);
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.Location = point;
@@ -415,6 +416,64 @@ namespace testing
         {
             taskHold = (Button)sender;
             editTaskPanel.Visible = true;
+        }
+
+        //make timetable textboxes editable
+        private void buttonEditTimetable_Click(object sender, EventArgs e)
+        {
+            TextBox[] textBoxes = new TextBox[]
+            {
+                textBoxTTMnP1Sub, textBoxTTMnP2Sub, textBoxTTMnP3Sub, textBoxTTMnP4Sub, textBoxTTMnP5Sub, textBoxTTMnP6Sub,
+                textBoxTTTuP1Sub, textBoxTTTuP2Sub, textBoxTTTuP3Sub, textBoxTTTuP4Sub, textBoxTTTuP5Sub, textBoxTTTuP6Sub,
+                textBoxTTWedP1Sub, textBoxTTWedP2Sub, textBoxTTWedP3Sub, textBoxTTWedP4Sub, textBoxTTWedP5Sub, textBoxTTWedP6Sub,
+                textBoxTTThuP1Sub, textBoxTTThuP2Sub, textBoxTTThuP3Sub, textBoxTTThuP4Sub, textBoxTTThuP5Sub, textBoxTTThuP6Sub,
+                textBoxTTFriP1Sub, textBoxTTFriP2Sub, textBoxTTFriP3Sub, textBoxTTFriP4Sub, textBoxTTFriP5Sub, textBoxTTFriP6Sub
+            };
+
+            foreach (TextBox textBox in textBoxes)
+            {
+                textBox.ReadOnly = false;
+            }
+
+            buttonTimetableClear.Visible = true;
+            buttonTimetableEditDone.Visible = true;
+        }
+
+        private void buttonTimetableClear_Click(object sender, EventArgs e)
+        {
+            TextBox[] textBoxes = new TextBox[]
+            {
+                textBoxTTMnP1Sub, textBoxTTMnP2Sub, textBoxTTMnP3Sub, textBoxTTMnP4Sub, textBoxTTMnP5Sub, textBoxTTMnP6Sub,
+                textBoxTTTuP1Sub, textBoxTTTuP2Sub, textBoxTTTuP3Sub, textBoxTTTuP4Sub, textBoxTTTuP5Sub, textBoxTTTuP6Sub,
+                textBoxTTWedP1Sub, textBoxTTWedP2Sub, textBoxTTWedP3Sub, textBoxTTWedP4Sub, textBoxTTWedP5Sub, textBoxTTWedP6Sub,
+                textBoxTTThuP1Sub, textBoxTTThuP2Sub, textBoxTTThuP3Sub, textBoxTTThuP4Sub, textBoxTTThuP5Sub, textBoxTTThuP6Sub,
+                textBoxTTFriP1Sub, textBoxTTFriP2Sub, textBoxTTFriP3Sub, textBoxTTFriP4Sub, textBoxTTFriP5Sub, textBoxTTFriP6Sub
+            };
+
+            foreach (TextBox textBox in textBoxes)
+            {
+                textBox.Clear();
+            }
+        }
+
+        private void buttonTimetableEditDone_Click(object sender, EventArgs e)
+        {
+            TextBox[] textBoxes = new TextBox[]
+            {
+                textBoxTTMnP1Sub, textBoxTTMnP2Sub, textBoxTTMnP3Sub, textBoxTTMnP4Sub, textBoxTTMnP5Sub, textBoxTTMnP6Sub,
+                textBoxTTTuP1Sub, textBoxTTTuP2Sub, textBoxTTTuP3Sub, textBoxTTTuP4Sub, textBoxTTTuP5Sub, textBoxTTTuP6Sub,
+                textBoxTTWedP1Sub, textBoxTTWedP2Sub, textBoxTTWedP3Sub, textBoxTTWedP4Sub, textBoxTTWedP5Sub, textBoxTTWedP6Sub,
+                textBoxTTThuP1Sub, textBoxTTThuP2Sub, textBoxTTThuP3Sub, textBoxTTThuP4Sub, textBoxTTThuP5Sub, textBoxTTThuP6Sub,
+                textBoxTTFriP1Sub, textBoxTTFriP2Sub, textBoxTTFriP3Sub, textBoxTTFriP4Sub, textBoxTTFriP5Sub, textBoxTTFriP6Sub
+            };
+
+            foreach (TextBox textBox in textBoxes)
+            {
+                textBox.ReadOnly = true;
+            }
+
+            buttonTimetableClear.Visible = false;
+            buttonTimetableEditDone.Visible = false;
         }
     }
 }

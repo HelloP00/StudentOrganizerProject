@@ -29,2651 +29,2698 @@ namespace testing
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.editTaskPanel = new System.Windows.Forms.Panel();
-            this.editTaskTime2Label = new System.Windows.Forms.Label();
-            this.editTaskTime1Label = new System.Windows.Forms.Label();
-            this.editTaskTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.colourOrangeCheckBox = new System.Windows.Forms.CheckBox();
-            this.colourGreenCheckBox = new System.Windows.Forms.CheckBox();
-            this.deleteButton = new System.Windows.Forms.Button();
-            this.colourBlueCheckBox = new System.Windows.Forms.CheckBox();
-            this.saveButton = new System.Windows.Forms.Button();
-            this.colourPurpleCheckBox = new System.Windows.Forms.CheckBox();
-            this.editTaskNoteTextbox = new System.Windows.Forms.RichTextBox();
-            this.editTaskTitleLabel = new System.Windows.Forms.Label();
-            this.editTaskDatePicker = new System.Windows.Forms.DateTimePicker();
-            this.editTaskTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.editTaskTitleTextBox = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.buttonTimetableClear = new System.Windows.Forms.Button();
-            this.buttonTimetableEditDone = new System.Windows.Forms.Button();
-            this.buttonEditTimetable = new System.Windows.Forms.Button();
-            this.tableLayoutPanelTimetable = new System.Windows.Forms.TableLayoutPanel();
-            this.textBoxTTTuP6Sub = new System.Windows.Forms.TextBox();
-            this.labelPeriod1 = new System.Windows.Forms.Label();
-            this.labelPeriod2 = new System.Windows.Forms.Label();
-            this.labelPeriod3 = new System.Windows.Forms.Label();
-            this.labelPeriod4 = new System.Windows.Forms.Label();
-            this.labelPeriod5 = new System.Windows.Forms.Label();
-            this.labelPeriod6 = new System.Windows.Forms.Label();
-            this.labelRecessTime = new System.Windows.Forms.Label();
-            this.labelLunchTime = new System.Windows.Forms.Label();
-            this.labelTTMonday = new System.Windows.Forms.Label();
-            this.labelTTTuesday = new System.Windows.Forms.Label();
-            this.labelTTWednesday = new System.Windows.Forms.Label();
-            this.labelTTThursday = new System.Windows.Forms.Label();
-            this.labelTTFriday = new System.Windows.Forms.Label();
-            this.textBoxTTMnP1Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTMnP2Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTMnP3Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTMnP4Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTMnP5Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTMnP6Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTTuP1Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTWedP1Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTThuP1Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTFriP1Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTTuP2Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTWedP2Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTThuP2Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTFriP2Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTTuP3Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTWedP3Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTThuP3Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTFriP3Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTTuP4Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTWedP4Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTThuP4Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTFriP4Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTTuP5Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTWedP5Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTThuP5Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTFriP5Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTFriP6Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTThuP6Sub = new System.Windows.Forms.TextBox();
-            this.textBoxTTWedP6Sub = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanelCalendar = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelCalendarDay1 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay1 = new System.Windows.Forms.Label();
-            this.panelCalendarDay2 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay2 = new System.Windows.Forms.Label();
-            this.panelCalendarDay3 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay3 = new System.Windows.Forms.Label();
-            this.panelCalendarDay4 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay4 = new System.Windows.Forms.Label();
-            this.panelCalendarDay5 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay5 = new System.Windows.Forms.Label();
-            this.panelCalendarDay6 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay6 = new System.Windows.Forms.Label();
-            this.panelCalendarDay7 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay7 = new System.Windows.Forms.Label();
-            this.panelCalendarDay8 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay8 = new System.Windows.Forms.Label();
-            this.panelCalendarDay9 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay9 = new System.Windows.Forms.Label();
-            this.panelCalendarDay10 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay10 = new System.Windows.Forms.Label();
-            this.panelCalendarDay11 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay11 = new System.Windows.Forms.Label();
-            this.panelCalendarDay12 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay12 = new System.Windows.Forms.Label();
-            this.panelCalendarDay13 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay13 = new System.Windows.Forms.Label();
-            this.panelCalendarDay14 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay14 = new System.Windows.Forms.Label();
-            this.panelCalendarDay15 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay15 = new System.Windows.Forms.Label();
-            this.panelCalendarDay16 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay16 = new System.Windows.Forms.Label();
-            this.panelCalendarDay17 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay17 = new System.Windows.Forms.Label();
-            this.panelCalendarDay18 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay18 = new System.Windows.Forms.Label();
-            this.panelCalendarDay19 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay19 = new System.Windows.Forms.Label();
-            this.panelCalendarDay20 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay20 = new System.Windows.Forms.Label();
-            this.panelCalendarDay21 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay21 = new System.Windows.Forms.Label();
-            this.panelCalendarDay22 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay22 = new System.Windows.Forms.Label();
-            this.panelCalendarDay23 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay23 = new System.Windows.Forms.Label();
-            this.panelCalendarDay24 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay24 = new System.Windows.Forms.Label();
-            this.panelCalendarDay25 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay25 = new System.Windows.Forms.Label();
-            this.panelCalendarDay26 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay26 = new System.Windows.Forms.Label();
-            this.panelCalendarDay27 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay27 = new System.Windows.Forms.Label();
-            this.panelCalendarDay28 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay28 = new System.Windows.Forms.Label();
-            this.panelCalendarDay29 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay29 = new System.Windows.Forms.Label();
-            this.panelCalendarDay30 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay30 = new System.Windows.Forms.Label();
-            this.panelCalendarDay31 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay31 = new System.Windows.Forms.Label();
-            this.panelCalendarDay32 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay32 = new System.Windows.Forms.Label();
-            this.panelCalendarDay33 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay33 = new System.Windows.Forms.Label();
-            this.panelCalendarDay34 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay34 = new System.Windows.Forms.Label();
-            this.panelCalendarDay35 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay35 = new System.Windows.Forms.Label();
-            this.panelCalendarDay36 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay36 = new System.Windows.Forms.Label();
-            this.panelCalendarDay37 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay37 = new System.Windows.Forms.Label();
-            this.panelCalendarDay38 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay38 = new System.Windows.Forms.Label();
-            this.panelCalendarDay39 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay39 = new System.Windows.Forms.Label();
-            this.panelCalendarDay40 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay40 = new System.Windows.Forms.Label();
-            this.panelCalendarDay41 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay41 = new System.Windows.Forms.Label();
-            this.panelCalendarDay42 = new System.Windows.Forms.Panel();
-            this.labelCalendarDay42 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.labelDaySaturday = new System.Windows.Forms.Label();
-            this.labelDayFriday = new System.Windows.Forms.Label();
-            this.labelDayThursday = new System.Windows.Forms.Label();
-            this.labelDayTuesday = new System.Windows.Forms.Label();
-            this.labelDayMonday = new System.Windows.Forms.Label();
-            this.labelDayWednesday = new System.Windows.Forms.Label();
-            this.labelDaySunday = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonLeft = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabelYear = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripComboBoxYear = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripLabelMonth = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripComboBoxMonth = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripButtonNewTask = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButtonRight = new System.Windows.Forms.ToolStripButton();
-            this.taskButton = new System.Windows.Forms.Button();
-            this.popupTaskPanel = new System.Windows.Forms.Panel();
-            this.popupTaskNoteTextBox = new System.Windows.Forms.RichTextBox();
-            this.popupTaskTimeLabel = new System.Windows.Forms.Label();
-            this.popupTaskDateLabel = new System.Windows.Forms.Label();
-            this.popupTaskTitleLabel = new System.Windows.Forms.Label();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.loginPanel = new System.Windows.Forms.Panel();
-            this.loginButton = new System.Windows.Forms.Button();
-            this.exitButton = new System.Windows.Forms.Button();
-            this.headerLabel = new System.Windows.Forms.Label();
-            this.nameTextLabel = new System.Windows.Forms.Label();
-            this.nameInput = new System.Windows.Forms.TextBox();
-            this.passwordInput = new System.Windows.Forms.TextBox();
-            this.passwordTextLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
-            this.editTaskPanel.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tableLayoutPanelTimetable.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.flowLayoutPanelCalendar.SuspendLayout();
-            this.panelCalendarDay1.SuspendLayout();
-            this.panelCalendarDay2.SuspendLayout();
-            this.panelCalendarDay3.SuspendLayout();
-            this.panelCalendarDay4.SuspendLayout();
-            this.panelCalendarDay5.SuspendLayout();
-            this.panelCalendarDay6.SuspendLayout();
-            this.panelCalendarDay7.SuspendLayout();
-            this.panelCalendarDay8.SuspendLayout();
-            this.panelCalendarDay9.SuspendLayout();
-            this.panelCalendarDay10.SuspendLayout();
-            this.panelCalendarDay11.SuspendLayout();
-            this.panelCalendarDay12.SuspendLayout();
-            this.panelCalendarDay13.SuspendLayout();
-            this.panelCalendarDay14.SuspendLayout();
-            this.panelCalendarDay15.SuspendLayout();
-            this.panelCalendarDay16.SuspendLayout();
-            this.panelCalendarDay17.SuspendLayout();
-            this.panelCalendarDay18.SuspendLayout();
-            this.panelCalendarDay19.SuspendLayout();
-            this.panelCalendarDay20.SuspendLayout();
-            this.panelCalendarDay21.SuspendLayout();
-            this.panelCalendarDay22.SuspendLayout();
-            this.panelCalendarDay23.SuspendLayout();
-            this.panelCalendarDay24.SuspendLayout();
-            this.panelCalendarDay25.SuspendLayout();
-            this.panelCalendarDay26.SuspendLayout();
-            this.panelCalendarDay27.SuspendLayout();
-            this.panelCalendarDay28.SuspendLayout();
-            this.panelCalendarDay29.SuspendLayout();
-            this.panelCalendarDay30.SuspendLayout();
-            this.panelCalendarDay31.SuspendLayout();
-            this.panelCalendarDay32.SuspendLayout();
-            this.panelCalendarDay33.SuspendLayout();
-            this.panelCalendarDay34.SuspendLayout();
-            this.panelCalendarDay35.SuspendLayout();
-            this.panelCalendarDay36.SuspendLayout();
-            this.panelCalendarDay37.SuspendLayout();
-            this.panelCalendarDay38.SuspendLayout();
-            this.panelCalendarDay39.SuspendLayout();
-            this.panelCalendarDay40.SuspendLayout();
-            this.panelCalendarDay41.SuspendLayout();
-            this.panelCalendarDay42.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.toolStrip1.SuspendLayout();
-            this.popupTaskPanel.SuspendLayout();
-            this.loginPanel.SuspendLayout();
-            this.SuspendLayout();
+            splitContainer1 = new SplitContainer();
+            editTaskPanel = new Panel();
+            editTaskTime2Label = new Label();
+            editTaskTime1Label = new Label();
+            editTaskTimePicker2 = new DateTimePicker();
+            colourOrangeCheckBox = new CheckBox();
+            colourGreenCheckBox = new CheckBox();
+            deleteButton = new Button();
+            colourBlueCheckBox = new CheckBox();
+            saveButton = new Button();
+            colourPurpleCheckBox = new CheckBox();
+            editTaskNoteTextbox = new RichTextBox();
+            editTaskTitleLabel = new Label();
+            editTaskDatePicker = new DateTimePicker();
+            editTaskTimePicker1 = new DateTimePicker();
+            editTaskTitleTextBox = new TextBox();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            groupBox1 = new GroupBox();
+            textBox3 = new TextBox();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            tabControl1 = new TabControl();
+            tabPage1 = new TabPage();
+            groupBox3 = new GroupBox();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            label5 = new Label();
+            label4 = new Label();
+            groupBox2 = new GroupBox();
+            checkedListBox1 = new CheckedListBox();
+            tabPage2 = new TabPage();
+            buttonTimetableClear = new Button();
+            buttonTimetableEditDone = new Button();
+            buttonEditTimetable = new Button();
+            tableLayoutPanelTimetable = new TableLayoutPanel();
+            textBoxTTTuP6Sub = new TextBox();
+            labelPeriod1 = new Label();
+            labelPeriod2 = new Label();
+            labelPeriod3 = new Label();
+            labelPeriod4 = new Label();
+            labelPeriod5 = new Label();
+            labelPeriod6 = new Label();
+            labelRecessTime = new Label();
+            labelLunchTime = new Label();
+            labelTTMonday = new Label();
+            labelTTTuesday = new Label();
+            labelTTWednesday = new Label();
+            labelTTThursday = new Label();
+            labelTTFriday = new Label();
+            textBoxTTMnP1Sub = new TextBox();
+            textBoxTTMnP2Sub = new TextBox();
+            textBoxTTMnP3Sub = new TextBox();
+            textBoxTTMnP4Sub = new TextBox();
+            textBoxTTMnP5Sub = new TextBox();
+            textBoxTTMnP6Sub = new TextBox();
+            textBoxTTTuP1Sub = new TextBox();
+            textBoxTTWedP1Sub = new TextBox();
+            textBoxTTThuP1Sub = new TextBox();
+            textBoxTTFriP1Sub = new TextBox();
+            textBoxTTTuP2Sub = new TextBox();
+            textBoxTTWedP2Sub = new TextBox();
+            textBoxTTThuP2Sub = new TextBox();
+            textBoxTTFriP2Sub = new TextBox();
+            textBoxTTTuP3Sub = new TextBox();
+            textBoxTTWedP3Sub = new TextBox();
+            textBoxTTThuP3Sub = new TextBox();
+            textBoxTTFriP3Sub = new TextBox();
+            textBoxTTTuP4Sub = new TextBox();
+            textBoxTTWedP4Sub = new TextBox();
+            textBoxTTThuP4Sub = new TextBox();
+            textBoxTTFriP4Sub = new TextBox();
+            textBoxTTTuP5Sub = new TextBox();
+            textBoxTTWedP5Sub = new TextBox();
+            textBoxTTThuP5Sub = new TextBox();
+            textBoxTTFriP5Sub = new TextBox();
+            textBoxTTFriP6Sub = new TextBox();
+            textBoxTTThuP6Sub = new TextBox();
+            textBoxTTWedP6Sub = new TextBox();
+            label6 = new Label();
+            tabPage4 = new TabPage();
+            tabPage3 = new TabPage();
+            flowLayoutPanelCalendar = new FlowLayoutPanel();
+            panelCalendarDay1 = new Panel();
+            labelCalendarDay1 = new Label();
+            panelCalendarDay2 = new Panel();
+            labelCalendarDay2 = new Label();
+            panelCalendarDay3 = new Panel();
+            labelCalendarDay3 = new Label();
+            panelCalendarDay4 = new Panel();
+            labelCalendarDay4 = new Label();
+            panelCalendarDay5 = new Panel();
+            labelCalendarDay5 = new Label();
+            panelCalendarDay6 = new Panel();
+            labelCalendarDay6 = new Label();
+            panelCalendarDay7 = new Panel();
+            labelCalendarDay7 = new Label();
+            panelCalendarDay8 = new Panel();
+            labelCalendarDay8 = new Label();
+            panelCalendarDay9 = new Panel();
+            labelCalendarDay9 = new Label();
+            panelCalendarDay10 = new Panel();
+            labelCalendarDay10 = new Label();
+            panelCalendarDay11 = new Panel();
+            labelCalendarDay11 = new Label();
+            panelCalendarDay12 = new Panel();
+            labelCalendarDay12 = new Label();
+            panelCalendarDay13 = new Panel();
+            labelCalendarDay13 = new Label();
+            panelCalendarDay14 = new Panel();
+            labelCalendarDay14 = new Label();
+            panelCalendarDay15 = new Panel();
+            labelCalendarDay15 = new Label();
+            panelCalendarDay16 = new Panel();
+            labelCalendarDay16 = new Label();
+            panelCalendarDay17 = new Panel();
+            labelCalendarDay17 = new Label();
+            panelCalendarDay18 = new Panel();
+            labelCalendarDay18 = new Label();
+            panelCalendarDay19 = new Panel();
+            labelCalendarDay19 = new Label();
+            panelCalendarDay20 = new Panel();
+            labelCalendarDay20 = new Label();
+            panelCalendarDay21 = new Panel();
+            labelCalendarDay21 = new Label();
+            panelCalendarDay22 = new Panel();
+            labelCalendarDay22 = new Label();
+            panelCalendarDay23 = new Panel();
+            labelCalendarDay23 = new Label();
+            panelCalendarDay24 = new Panel();
+            labelCalendarDay24 = new Label();
+            panelCalendarDay25 = new Panel();
+            labelCalendarDay25 = new Label();
+            panelCalendarDay26 = new Panel();
+            labelCalendarDay26 = new Label();
+            panelCalendarDay27 = new Panel();
+            labelCalendarDay27 = new Label();
+            panelCalendarDay28 = new Panel();
+            labelCalendarDay28 = new Label();
+            panelCalendarDay29 = new Panel();
+            labelCalendarDay29 = new Label();
+            panelCalendarDay30 = new Panel();
+            labelCalendarDay30 = new Label();
+            panelCalendarDay31 = new Panel();
+            labelCalendarDay31 = new Label();
+            panelCalendarDay32 = new Panel();
+            labelCalendarDay32 = new Label();
+            panelCalendarDay33 = new Panel();
+            labelCalendarDay33 = new Label();
+            panelCalendarDay34 = new Panel();
+            labelCalendarDay34 = new Label();
+            panelCalendarDay35 = new Panel();
+            labelCalendarDay35 = new Label();
+            panelCalendarDay36 = new Panel();
+            labelCalendarDay36 = new Label();
+            panelCalendarDay37 = new Panel();
+            labelCalendarDay37 = new Label();
+            panelCalendarDay38 = new Panel();
+            labelCalendarDay38 = new Label();
+            panelCalendarDay39 = new Panel();
+            labelCalendarDay39 = new Label();
+            panelCalendarDay40 = new Panel();
+            labelCalendarDay40 = new Label();
+            panelCalendarDay41 = new Panel();
+            labelCalendarDay41 = new Label();
+            panelCalendarDay42 = new Panel();
+            labelCalendarDay42 = new Label();
+            panel1 = new Panel();
+            labelDaySaturday = new Label();
+            labelDayFriday = new Label();
+            labelDayThursday = new Label();
+            labelDayTuesday = new Label();
+            labelDayMonday = new Label();
+            labelDayWednesday = new Label();
+            labelDaySunday = new Label();
+            toolStrip1 = new ToolStrip();
+            toolStripButtonLeft = new ToolStripButton();
+            toolStripLabelYear = new ToolStripLabel();
+            toolStripComboBoxYear = new ToolStripComboBox();
+            toolStripLabelMonth = new ToolStripLabel();
+            toolStripComboBoxMonth = new ToolStripComboBox();
+            toolStripButtonNewTask = new ToolStripButton();
+            toolStripButtonRight = new ToolStripButton();
+            taskButton = new Button();
+            popupTaskPanel = new Panel();
+            popupTaskNoteTextBox = new RichTextBox();
+            popupTaskTimeLabel = new Label();
+            popupTaskDateLabel = new Label();
+            popupTaskTitleLabel = new Label();
+            tableLayoutPanel2 = new TableLayoutPanel();
+            loginPanel = new Panel();
+            loginButton = new Button();
+            exitButton = new Button();
+            headerLabel = new Label();
+            nameTextLabel = new Label();
+            nameInput = new TextBox();
+            passwordInput = new TextBox();
+            passwordTextLabel = new Label();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            editTaskPanel.SuspendLayout();
+            groupBox1.SuspendLayout();
+            tabControl1.SuspendLayout();
+            tabPage1.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox2.SuspendLayout();
+            tabPage2.SuspendLayout();
+            tableLayoutPanelTimetable.SuspendLayout();
+            tabPage3.SuspendLayout();
+            flowLayoutPanelCalendar.SuspendLayout();
+            panelCalendarDay1.SuspendLayout();
+            panelCalendarDay2.SuspendLayout();
+            panelCalendarDay3.SuspendLayout();
+            panelCalendarDay4.SuspendLayout();
+            panelCalendarDay5.SuspendLayout();
+            panelCalendarDay6.SuspendLayout();
+            panelCalendarDay7.SuspendLayout();
+            panelCalendarDay8.SuspendLayout();
+            panelCalendarDay9.SuspendLayout();
+            panelCalendarDay10.SuspendLayout();
+            panelCalendarDay11.SuspendLayout();
+            panelCalendarDay12.SuspendLayout();
+            panelCalendarDay13.SuspendLayout();
+            panelCalendarDay14.SuspendLayout();
+            panelCalendarDay15.SuspendLayout();
+            panelCalendarDay16.SuspendLayout();
+            panelCalendarDay17.SuspendLayout();
+            panelCalendarDay18.SuspendLayout();
+            panelCalendarDay19.SuspendLayout();
+            panelCalendarDay20.SuspendLayout();
+            panelCalendarDay21.SuspendLayout();
+            panelCalendarDay22.SuspendLayout();
+            panelCalendarDay23.SuspendLayout();
+            panelCalendarDay24.SuspendLayout();
+            panelCalendarDay25.SuspendLayout();
+            panelCalendarDay26.SuspendLayout();
+            panelCalendarDay27.SuspendLayout();
+            panelCalendarDay28.SuspendLayout();
+            panelCalendarDay29.SuspendLayout();
+            panelCalendarDay30.SuspendLayout();
+            panelCalendarDay31.SuspendLayout();
+            panelCalendarDay32.SuspendLayout();
+            panelCalendarDay33.SuspendLayout();
+            panelCalendarDay34.SuspendLayout();
+            panelCalendarDay35.SuspendLayout();
+            panelCalendarDay36.SuspendLayout();
+            panelCalendarDay37.SuspendLayout();
+            panelCalendarDay38.SuspendLayout();
+            panelCalendarDay39.SuspendLayout();
+            panelCalendarDay40.SuspendLayout();
+            panelCalendarDay41.SuspendLayout();
+            panelCalendarDay42.SuspendLayout();
+            panel1.SuspendLayout();
+            toolStrip1.SuspendLayout();
+            popupTaskPanel.SuspendLayout();
+            loginPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1);
-            this.splitContainer1.Name = "splitContainer1";
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Margin = new Padding(2, 3, 2, 3);
+            splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.editTaskPanel);
-            this.splitContainer1.Panel1.Controls.Add(this.button4);
-            this.splitContainer1.Panel1.Controls.Add(this.button3);
-            this.splitContainer1.Panel1.Controls.Add(this.button2);
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
-            this.splitContainer1.Panel1.Controls.Add(this.groupBox1);
+            splitContainer1.Panel1.Controls.Add(editTaskPanel);
+            splitContainer1.Panel1.Controls.Add(button4);
+            splitContainer1.Panel1.Controls.Add(button3);
+            splitContainer1.Panel1.Controls.Add(button2);
+            splitContainer1.Panel1.Controls.Add(button1);
+            splitContainer1.Panel1.Controls.Add(groupBox1);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(1196, 902);
-            this.splitContainer1.SplitterDistance = 266;
-            this.splitContainer1.SplitterWidth = 16;
-            this.splitContainer1.TabIndex = 0;
+            splitContainer1.Panel2.Controls.Add(tabControl1);
+            splitContainer1.Size = new Size(2905, 2108);
+            splitContainer1.SplitterDistance = 646;
+            splitContainer1.SplitterWidth = 39;
+            splitContainer1.TabIndex = 0;
             // 
             // editTaskPanel
             // 
-            this.editTaskPanel.BackColor = System.Drawing.Color.Bisque;
-            this.editTaskPanel.Controls.Add(this.editTaskTime2Label);
-            this.editTaskPanel.Controls.Add(this.editTaskTime1Label);
-            this.editTaskPanel.Controls.Add(this.editTaskTimePicker2);
-            this.editTaskPanel.Controls.Add(this.colourOrangeCheckBox);
-            this.editTaskPanel.Controls.Add(this.colourGreenCheckBox);
-            this.editTaskPanel.Controls.Add(this.deleteButton);
-            this.editTaskPanel.Controls.Add(this.colourBlueCheckBox);
-            this.editTaskPanel.Controls.Add(this.saveButton);
-            this.editTaskPanel.Controls.Add(this.colourPurpleCheckBox);
-            this.editTaskPanel.Controls.Add(this.editTaskNoteTextbox);
-            this.editTaskPanel.Controls.Add(this.editTaskTitleLabel);
-            this.editTaskPanel.Controls.Add(this.editTaskDatePicker);
-            this.editTaskPanel.Controls.Add(this.editTaskTimePicker1);
-            this.editTaskPanel.Controls.Add(this.editTaskTitleTextBox);
-            this.editTaskPanel.Location = new System.Drawing.Point(14, 522);
-            this.editTaskPanel.Name = "editTaskPanel";
-            this.editTaskPanel.Size = new System.Drawing.Size(229, 354);
-            this.editTaskPanel.TabIndex = 1;
-            this.editTaskPanel.Visible = false;
-            this.editTaskPanel.VisibleChanged += new System.EventHandler(this.editTaskPanel_VisibleChanged);
+            editTaskPanel.BackColor = Color.Bisque;
+            editTaskPanel.Controls.Add(editTaskTime2Label);
+            editTaskPanel.Controls.Add(editTaskTime1Label);
+            editTaskPanel.Controls.Add(editTaskTimePicker2);
+            editTaskPanel.Controls.Add(colourOrangeCheckBox);
+            editTaskPanel.Controls.Add(colourGreenCheckBox);
+            editTaskPanel.Controls.Add(deleteButton);
+            editTaskPanel.Controls.Add(colourBlueCheckBox);
+            editTaskPanel.Controls.Add(saveButton);
+            editTaskPanel.Controls.Add(colourPurpleCheckBox);
+            editTaskPanel.Controls.Add(editTaskNoteTextbox);
+            editTaskPanel.Controls.Add(editTaskTitleLabel);
+            editTaskPanel.Controls.Add(editTaskDatePicker);
+            editTaskPanel.Controls.Add(editTaskTimePicker1);
+            editTaskPanel.Controls.Add(editTaskTitleTextBox);
+            editTaskPanel.Location = new Point(34, 1371);
+            editTaskPanel.Margin = new Padding(7, 8, 7, 8);
+            editTaskPanel.Name = "editTaskPanel";
+            editTaskPanel.Size = new Size(556, 694);
+            editTaskPanel.TabIndex = 1;
+            editTaskPanel.Visible = false;
+            editTaskPanel.VisibleChanged += editTaskPanel_VisibleChanged;
             // 
             // editTaskTime2Label
             // 
-            this.editTaskTime2Label.Location = new System.Drawing.Point(23, 145);
-            this.editTaskTime2Label.Name = "editTaskTime2Label";
-            this.editTaskTime2Label.Size = new System.Drawing.Size(42, 23);
-            this.editTaskTime2Label.TabIndex = 0;
-            this.editTaskTime2Label.Text = "End:";
-            this.editTaskTime2Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            editTaskTime2Label.Location = new Point(39, 338);
+            editTaskTime2Label.Margin = new Padding(7, 0, 7, 0);
+            editTaskTime2Label.Name = "editTaskTime2Label";
+            editTaskTime2Label.Size = new Size(102, 63);
+            editTaskTime2Label.TabIndex = 0;
+            editTaskTime2Label.Text = "End:";
+            editTaskTime2Label.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // editTaskTime1Label
             // 
-            this.editTaskTime1Label.Location = new System.Drawing.Point(21, 111);
-            this.editTaskTime1Label.Name = "editTaskTime1Label";
-            this.editTaskTime1Label.Size = new System.Drawing.Size(44, 23);
-            this.editTaskTime1Label.TabIndex = 1;
-            this.editTaskTime1Label.Text = "Start:";
-            this.editTaskTime1Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            editTaskTime1Label.Location = new Point(34, 269);
+            editTaskTime1Label.Margin = new Padding(7, 0, 7, 0);
+            editTaskTime1Label.Name = "editTaskTime1Label";
+            editTaskTime1Label.Size = new Size(107, 63);
+            editTaskTime1Label.TabIndex = 1;
+            editTaskTime1Label.Text = "Start:";
+            editTaskTime1Label.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // editTaskTimePicker2
             // 
-            this.editTaskTimePicker2.CustomFormat = "HH:MM tt";
-            this.editTaskTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.editTaskTimePicker2.Location = new System.Drawing.Point(65, 145);
-            this.editTaskTimePicker2.MaxDate = new System.DateTime(3000, 1, 1, 0, 0, 0, 0);
-            this.editTaskTimePicker2.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
-            this.editTaskTimePicker2.Name = "editTaskTimePicker2";
-            this.editTaskTimePicker2.ShowUpDown = true;
-            this.editTaskTimePicker2.Size = new System.Drawing.Size(81, 23);
-            this.editTaskTimePicker2.TabIndex = 2;
+            editTaskTimePicker2.CustomFormat = "HH:MM tt";
+            editTaskTimePicker2.Format = DateTimePickerFormat.Custom;
+            editTaskTimePicker2.Location = new Point(141, 338);
+            editTaskTimePicker2.Margin = new Padding(7, 8, 7, 8);
+            editTaskTimePicker2.MaxDate = new DateTime(3000, 1, 1, 0, 0, 0, 0);
+            editTaskTimePicker2.MinDate = new DateTime(1990, 1, 1, 0, 0, 0, 0);
+            editTaskTimePicker2.Name = "editTaskTimePicker2";
+            editTaskTimePicker2.ShowUpDown = true;
+            editTaskTimePicker2.Size = new Size(191, 47);
+            editTaskTimePicker2.TabIndex = 2;
             // 
             // colourOrangeCheckBox
             // 
-            this.colourOrangeCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.colourOrangeCheckBox.BackColor = System.Drawing.Color.Orange;
-            this.colourOrangeCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.colourOrangeCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.colourOrangeCheckBox.Checked = true;
-            this.colourOrangeCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.colourOrangeCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.colourOrangeCheckBox.FlatAppearance.BorderSize = 2;
-            this.colourOrangeCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.DarkOrange;
-            this.colourOrangeCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colourOrangeCheckBox.Location = new System.Drawing.Point(23, 176);
-            this.colourOrangeCheckBox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.colourOrangeCheckBox.Name = "colourOrangeCheckBox";
-            this.colourOrangeCheckBox.Size = new System.Drawing.Size(15, 15);
-            this.colourOrangeCheckBox.TabIndex = 6;
-            this.colourOrangeCheckBox.UseVisualStyleBackColor = false;
+            colourOrangeCheckBox.Appearance = Appearance.Button;
+            colourOrangeCheckBox.BackColor = Color.Orange;
+            colourOrangeCheckBox.BackgroundImageLayout = ImageLayout.None;
+            colourOrangeCheckBox.CheckAlign = ContentAlignment.MiddleCenter;
+            colourOrangeCheckBox.Checked = true;
+            colourOrangeCheckBox.CheckState = CheckState.Checked;
+            colourOrangeCheckBox.FlatAppearance.BorderColor = Color.White;
+            colourOrangeCheckBox.FlatAppearance.BorderSize = 2;
+            colourOrangeCheckBox.FlatAppearance.CheckedBackColor = Color.DarkOrange;
+            colourOrangeCheckBox.FlatStyle = FlatStyle.Flat;
+            colourOrangeCheckBox.Location = new Point(60, 401);
+            colourOrangeCheckBox.Margin = new Padding(17, 22, 17, 22);
+            colourOrangeCheckBox.Name = "colourOrangeCheckBox";
+            colourOrangeCheckBox.Size = new Size(36, 41);
+            colourOrangeCheckBox.TabIndex = 6;
+            colourOrangeCheckBox.UseVisualStyleBackColor = false;
+            colourOrangeCheckBox.CheckedChanged += colourCheckBox_CheckedChanged;
             // 
             // colourGreenCheckBox
             // 
-            this.colourGreenCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.colourGreenCheckBox.BackColor = System.Drawing.Color.Green;
-            this.colourGreenCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.colourGreenCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.colourGreenCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.colourGreenCheckBox.FlatAppearance.BorderSize = 0;
-            this.colourGreenCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.Green;
-            this.colourGreenCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colourGreenCheckBox.Location = new System.Drawing.Point(54, 176);
-            this.colourGreenCheckBox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.colourGreenCheckBox.Name = "colourGreenCheckBox";
-            this.colourGreenCheckBox.Size = new System.Drawing.Size(15, 15);
-            this.colourGreenCheckBox.TabIndex = 5;
-            this.colourGreenCheckBox.UseVisualStyleBackColor = false;
+            colourGreenCheckBox.Appearance = Appearance.Button;
+            colourGreenCheckBox.BackColor = Color.Green;
+            colourGreenCheckBox.BackgroundImageLayout = ImageLayout.None;
+            colourGreenCheckBox.CheckAlign = ContentAlignment.MiddleCenter;
+            colourGreenCheckBox.FlatAppearance.BorderColor = Color.White;
+            colourGreenCheckBox.FlatAppearance.BorderSize = 0;
+            colourGreenCheckBox.FlatAppearance.CheckedBackColor = Color.Green;
+            colourGreenCheckBox.FlatStyle = FlatStyle.Flat;
+            colourGreenCheckBox.Location = new Point(135, 401);
+            colourGreenCheckBox.Margin = new Padding(17, 22, 17, 22);
+            colourGreenCheckBox.Name = "colourGreenCheckBox";
+            colourGreenCheckBox.Size = new Size(36, 41);
+            colourGreenCheckBox.TabIndex = 5;
+            colourGreenCheckBox.UseVisualStyleBackColor = false;
+            colourGreenCheckBox.CheckedChanged += colourCheckBox_CheckedChanged;
             // 
             // deleteButton
             // 
-            this.deleteButton.BackColor = System.Drawing.Color.Orange;
-            this.deleteButton.FlatAppearance.BorderSize = 0;
-            this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(21, 300);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(66, 31);
-            this.deleteButton.TabIndex = 11;
-            this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = false;
+            deleteButton.BackColor = Color.Orange;
+            deleteButton.FlatAppearance.BorderSize = 0;
+            deleteButton.FlatStyle = FlatStyle.Flat;
+            deleteButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            deleteButton.ForeColor = Color.White;
+            deleteButton.Location = new Point(51, 580);
+            deleteButton.Margin = new Padding(17, 22, 17, 22);
+            deleteButton.Name = "deleteButton";
+            deleteButton.Size = new Size(160, 85);
+            deleteButton.TabIndex = 11;
+            deleteButton.Text = "Delete";
+            deleteButton.UseVisualStyleBackColor = false;
             // 
             // colourBlueCheckBox
             // 
-            this.colourBlueCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.colourBlueCheckBox.BackColor = System.Drawing.Color.Blue;
-            this.colourBlueCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.colourBlueCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.colourBlueCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.colourBlueCheckBox.FlatAppearance.BorderSize = 0;
-            this.colourBlueCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.Blue;
-            this.colourBlueCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colourBlueCheckBox.Location = new System.Drawing.Point(87, 176);
-            this.colourBlueCheckBox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.colourBlueCheckBox.Name = "colourBlueCheckBox";
-            this.colourBlueCheckBox.Size = new System.Drawing.Size(15, 15);
-            this.colourBlueCheckBox.TabIndex = 7;
-            this.colourBlueCheckBox.UseVisualStyleBackColor = false;
+            colourBlueCheckBox.Appearance = Appearance.Button;
+            colourBlueCheckBox.BackColor = Color.Blue;
+            colourBlueCheckBox.BackgroundImageLayout = ImageLayout.None;
+            colourBlueCheckBox.CheckAlign = ContentAlignment.MiddleCenter;
+            colourBlueCheckBox.FlatAppearance.BorderColor = Color.White;
+            colourBlueCheckBox.FlatAppearance.BorderSize = 0;
+            colourBlueCheckBox.FlatAppearance.CheckedBackColor = Color.Blue;
+            colourBlueCheckBox.FlatStyle = FlatStyle.Flat;
+            colourBlueCheckBox.Location = new Point(215, 401);
+            colourBlueCheckBox.Margin = new Padding(17, 22, 17, 22);
+            colourBlueCheckBox.Name = "colourBlueCheckBox";
+            colourBlueCheckBox.Size = new Size(36, 41);
+            colourBlueCheckBox.TabIndex = 7;
+            colourBlueCheckBox.UseVisualStyleBackColor = false;
+            colourBlueCheckBox.CheckedChanged += colourCheckBox_CheckedChanged;
             // 
             // saveButton
             // 
-            this.saveButton.BackColor = System.Drawing.Color.Orange;
-            this.saveButton.FlatAppearance.BorderSize = 0;
-            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(137, 300);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(66, 31);
-            this.saveButton.TabIndex = 10;
-            this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = false;
-            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            saveButton.BackColor = Color.Orange;
+            saveButton.FlatAppearance.BorderSize = 0;
+            saveButton.FlatStyle = FlatStyle.Flat;
+            saveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            saveButton.ForeColor = Color.White;
+            saveButton.Location = new Point(333, 580);
+            saveButton.Margin = new Padding(17, 22, 17, 22);
+            saveButton.Name = "saveButton";
+            saveButton.Size = new Size(160, 85);
+            saveButton.TabIndex = 10;
+            saveButton.Text = "Save";
+            saveButton.UseVisualStyleBackColor = false;
+            saveButton.Click += saveButton_Click;
             // 
             // colourPurpleCheckBox
             // 
-            this.colourPurpleCheckBox.Appearance = System.Windows.Forms.Appearance.Button;
-            this.colourPurpleCheckBox.BackColor = System.Drawing.Color.Purple;
-            this.colourPurpleCheckBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.colourPurpleCheckBox.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.colourPurpleCheckBox.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.colourPurpleCheckBox.FlatAppearance.BorderSize = 0;
-            this.colourPurpleCheckBox.FlatAppearance.CheckedBackColor = System.Drawing.Color.Purple;
-            this.colourPurpleCheckBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.colourPurpleCheckBox.Location = new System.Drawing.Point(116, 176);
-            this.colourPurpleCheckBox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.colourPurpleCheckBox.Name = "colourPurpleCheckBox";
-            this.colourPurpleCheckBox.Size = new System.Drawing.Size(15, 15);
-            this.colourPurpleCheckBox.TabIndex = 8;
-            this.colourPurpleCheckBox.UseVisualStyleBackColor = false;
+            colourPurpleCheckBox.Appearance = Appearance.Button;
+            colourPurpleCheckBox.BackColor = Color.Purple;
+            colourPurpleCheckBox.BackgroundImageLayout = ImageLayout.None;
+            colourPurpleCheckBox.CheckAlign = ContentAlignment.MiddleCenter;
+            colourPurpleCheckBox.FlatAppearance.BorderColor = Color.White;
+            colourPurpleCheckBox.FlatAppearance.BorderSize = 0;
+            colourPurpleCheckBox.FlatAppearance.CheckedBackColor = Color.Purple;
+            colourPurpleCheckBox.FlatStyle = FlatStyle.Flat;
+            colourPurpleCheckBox.Location = new Point(286, 401);
+            colourPurpleCheckBox.Margin = new Padding(17, 22, 17, 22);
+            colourPurpleCheckBox.Name = "colourPurpleCheckBox";
+            colourPurpleCheckBox.Size = new Size(36, 41);
+            colourPurpleCheckBox.TabIndex = 8;
+            colourPurpleCheckBox.UseVisualStyleBackColor = false;
             // 
             // editTaskNoteTextbox
             // 
-            this.editTaskNoteTextbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.editTaskNoteTextbox.Location = new System.Drawing.Point(21, 207);
-            this.editTaskNoteTextbox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.editTaskNoteTextbox.Name = "editTaskNoteTextbox";
-            this.editTaskNoteTextbox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.editTaskNoteTextbox.Size = new System.Drawing.Size(182, 77);
-            this.editTaskNoteTextbox.TabIndex = 9;
-            this.editTaskNoteTextbox.Text = "";
+            editTaskNoteTextbox.BorderStyle = BorderStyle.None;
+            editTaskNoteTextbox.Location = new Point(51, 476);
+            editTaskNoteTextbox.Margin = new Padding(17, 22, 17, 22);
+            editTaskNoteTextbox.Name = "editTaskNoteTextbox";
+            editTaskNoteTextbox.ScrollBars = RichTextBoxScrollBars.Vertical;
+            editTaskNoteTextbox.Size = new Size(442, 76);
+            editTaskNoteTextbox.TabIndex = 9;
+            editTaskNoteTextbox.Text = "";
             // 
             // editTaskTitleLabel
             // 
-            this.editTaskTitleLabel.AutoSize = true;
-            this.editTaskTitleLabel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.editTaskTitleLabel.Location = new System.Drawing.Point(21, 21);
-            this.editTaskTitleLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
-            this.editTaskTitleLabel.Name = "editTaskTitleLabel";
-            this.editTaskTitleLabel.Size = new System.Drawing.Size(38, 19);
-            this.editTaskTitleLabel.TabIndex = 0;
-            this.editTaskTitleLabel.Text = "Task";
+            editTaskTitleLabel.AutoSize = true;
+            editTaskTitleLabel.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            editTaskTitleLabel.Location = new Point(34, 23);
+            editTaskTitleLabel.Margin = new Padding(17, 0, 17, 0);
+            editTaskTitleLabel.Name = "editTaskTitleLabel";
+            editTaskTitleLabel.Size = new Size(89, 46);
+            editTaskTitleLabel.TabIndex = 0;
+            editTaskTitleLabel.Text = "Task";
             // 
             // editTaskDatePicker
             // 
-            this.editTaskDatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.editTaskDatePicker.Location = new System.Drawing.Point(23, 76);
-            this.editTaskDatePicker.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.editTaskDatePicker.Name = "editTaskDatePicker";
-            this.editTaskDatePicker.Size = new System.Drawing.Size(89, 23);
-            this.editTaskDatePicker.TabIndex = 3;
+            editTaskDatePicker.Format = DateTimePickerFormat.Short;
+            editTaskDatePicker.Location = new Point(39, 174);
+            editTaskDatePicker.Margin = new Padding(17, 22, 17, 22);
+            editTaskDatePicker.Name = "editTaskDatePicker";
+            editTaskDatePicker.Size = new Size(210, 47);
+            editTaskDatePicker.TabIndex = 3;
             // 
             // editTaskTimePicker1
             // 
-            this.editTaskTimePicker1.CustomFormat = "hh:mm tt";
-            this.editTaskTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.editTaskTimePicker1.Location = new System.Drawing.Point(65, 111);
-            this.editTaskTimePicker1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.editTaskTimePicker1.Name = "editTaskTimePicker1";
-            this.editTaskTimePicker1.ShowUpDown = true;
-            this.editTaskTimePicker1.Size = new System.Drawing.Size(77, 23);
-            this.editTaskTimePicker1.TabIndex = 2;
+            editTaskTimePicker1.CustomFormat = "hh:mm tt";
+            editTaskTimePicker1.Format = DateTimePickerFormat.Custom;
+            editTaskTimePicker1.Location = new Point(141, 269);
+            editTaskTimePicker1.Margin = new Padding(17, 22, 17, 22);
+            editTaskTimePicker1.Name = "editTaskTimePicker1";
+            editTaskTimePicker1.ShowUpDown = true;
+            editTaskTimePicker1.Size = new Size(181, 47);
+            editTaskTimePicker1.TabIndex = 2;
             // 
             // editTaskTitleTextBox
             // 
-            this.editTaskTitleTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.editTaskTitleTextBox.Location = new System.Drawing.Point(21, 49);
-            this.editTaskTitleTextBox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
-            this.editTaskTitleTextBox.Name = "editTaskTitleTextBox";
-            this.editTaskTitleTextBox.Size = new System.Drawing.Size(102, 16);
-            this.editTaskTitleTextBox.TabIndex = 1;
-            this.editTaskTitleTextBox.TextChanged += new System.EventHandler(this.editTaskTitleTextBox_TextChanged);
+            editTaskTitleTextBox.BorderStyle = BorderStyle.None;
+            editTaskTitleTextBox.Location = new Point(34, 100);
+            editTaskTitleTextBox.Margin = new Padding(17, 22, 17, 22);
+            editTaskTitleTextBox.Name = "editTaskTitleTextBox";
+            editTaskTitleTextBox.Size = new Size(248, 40);
+            editTaskTitleTextBox.TabIndex = 1;
+            editTaskTitleTextBox.TextChanged += editTaskTitleTextBox_TextChanged;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(5, 403);
-            this.button4.Margin = new System.Windows.Forms.Padding(1);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(190, 90);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Settings";
-            this.button4.UseVisualStyleBackColor = true;
+            button4.Location = new Point(12, 1102);
+            button4.Margin = new Padding(2, 3, 2, 3);
+            button4.Name = "button4";
+            button4.Size = new Size(461, 246);
+            button4.TabIndex = 5;
+            button4.Text = "Settings";
+            button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(5, 315);
-            this.button3.Margin = new System.Windows.Forms.Padding(1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(190, 90);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Calendar";
-            this.button3.UseVisualStyleBackColor = true;
+            button3.Location = new Point(12, 861);
+            button3.Margin = new Padding(2, 3, 2, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(461, 246);
+            button3.TabIndex = 4;
+            button3.Text = "Calendar";
+            button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(5, 227);
-            this.button2.Margin = new System.Windows.Forms.Padding(1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(190, 90);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Timetable";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Location = new Point(12, 620);
+            button2.Margin = new Padding(2, 3, 2, 3);
+            button2.Name = "button2";
+            button2.Size = new Size(461, 246);
+            button2.TabIndex = 3;
+            button2.Text = "Timetable";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(5, 140);
-            this.button1.Margin = new System.Windows.Forms.Padding(1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 90);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Home";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Location = new Point(12, 383);
+            button1.Margin = new Padding(2, 3, 2, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(461, 246);
+            button1.TabIndex = 2;
+            button1.Text = "Home";
+            button1.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(5, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox1.Size = new System.Drawing.Size(190, 133);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "StudentProfile";
+            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Location = new Point(12, 11);
+            groupBox1.Margin = new Padding(2, 3, 2, 3);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Padding = new Padding(2, 3, 2, 3);
+            groupBox1.Size = new Size(461, 364);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "StudentProfile";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 60);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(105, 23);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.Text = "7924434";
+            textBox3.Location = new Point(202, 164);
+            textBox3.Margin = new Padding(2, 3, 2, 3);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(249, 47);
+            textBox3.TabIndex = 1;
+            textBox3.Text = "7924434";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(9, 62);
-            this.label3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "StudentID:";
+            label3.AutoSize = true;
+            label3.Location = new Point(22, 169);
+            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(157, 41);
+            label3.TabIndex = 1;
+            label3.Text = "StudentID:";
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 38);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(23, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "12";
+            textBox2.Location = new Point(202, 104);
+            textBox2.Margin = new Padding(2, 3, 2, 3);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(50, 47);
+            textBox2.TabIndex = 1;
+            textBox2.Text = "12";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 16);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(105, 23);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "John Wick";
+            textBox1.Location = new Point(202, 44);
+            textBox1.Margin = new Padding(2, 3, 2, 3);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(249, 47);
+            textBox1.TabIndex = 1;
+            textBox1.Text = "John Wick";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 40);
-            this.label2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "YR:";
+            label2.AutoSize = true;
+            label2.Location = new Point(22, 109);
+            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 41);
+            label2.TabIndex = 2;
+            label2.Text = "YR:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 19);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Name: ";
+            label1.AutoSize = true;
+            label1.Location = new Point(22, 52);
+            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(112, 41);
+            label1.TabIndex = 1;
+            label1.Text = "Name: ";
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(1, 4);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(678, 580);
-            this.tabControl1.TabIndex = 0;
+            tabControl1.Controls.Add(tabPage1);
+            tabControl1.Controls.Add(tabPage2);
+            tabControl1.Controls.Add(tabPage4);
+            tabControl1.Controls.Add(tabPage3);
+            tabControl1.Location = new Point(2, 11);
+            tabControl1.Margin = new Padding(2, 3, 2, 3);
+            tabControl1.Name = "tabControl1";
+            tabControl1.SelectedIndex = 0;
+            tabControl1.Size = new Size(1647, 1585);
+            tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(1);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPage1.Size = new System.Drawing.Size(670, 552);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Home";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Controls.Add(groupBox3);
+            tabPage1.Controls.Add(groupBox2);
+            tabPage1.Location = new Point(10, 58);
+            tabPage1.Margin = new Padding(2, 3, 2, 3);
+            tabPage1.Name = "tabPage1";
+            tabPage1.Padding = new Padding(2, 3, 2, 3);
+            tabPage1.Size = new Size(1627, 1517);
+            tabPage1.TabIndex = 0;
+            tabPage1.Text = "Home";
+            tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Location = new System.Drawing.Point(2, 2);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(1);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox3.Size = new System.Drawing.Size(559, 278);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            groupBox3.Controls.Add(tableLayoutPanel1);
+            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Location = new Point(5, 5);
+            groupBox3.Margin = new Padding(2, 3, 2, 3);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Padding = new Padding(2, 3, 2, 3);
+            groupBox3.Size = new Size(1358, 760);
+            groupBox3.TabIndex = 4;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "groupBox3";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.95434F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.04566F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 91);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.04459F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.95541F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 27F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(451, 181);
-            this.tableLayoutPanel1.TabIndex = 3;
+            tableLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.95434F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.04566F));
+            tableLayoutPanel1.Location = new Point(5, 249);
+            tableLayoutPanel1.Margin = new Padding(2, 3, 2, 3);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 6;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 49.04459F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50.95541F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 74F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 79F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 87F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 85F));
+            tableLayoutPanel1.Size = new Size(1095, 495);
+            tableLayoutPanel1.TabIndex = 3;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(367, 35);
-            this.label5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 15);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "DATEHERE";
+            label5.AutoSize = true;
+            label5.Location = new Point(891, 96);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(155, 41);
+            label5.TabIndex = 1;
+            label5.Text = "DATEHERE";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(28, 29);
-            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(253, 26);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Your day at a glance...";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 15.9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(68, 79);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(574, 61);
+            label4.TabIndex = 0;
+            label4.Text = "Your day at a glance...";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.checkedListBox1);
-            this.groupBox2.Location = new System.Drawing.Point(5, 283);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(1);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(1);
-            this.groupBox2.Size = new System.Drawing.Size(554, 270);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "To-do";
+            groupBox2.Controls.Add(checkedListBox1);
+            groupBox2.Location = new Point(12, 774);
+            groupBox2.Margin = new Padding(2, 3, 2, 3);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Padding = new Padding(2, 3, 2, 3);
+            groupBox2.Size = new Size(1345, 738);
+            groupBox2.TabIndex = 2;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "To-do";
             // 
             // checkedListBox1
             // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 11.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Hand in letter",
-            "Talk to physics teacher about assignment",
-            "Hand in programming assignment"});
-            this.checkedListBox1.Location = new System.Drawing.Point(30, 23);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(1);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(336, 92);
-            this.checkedListBox1.TabIndex = 0;
+            checkedListBox1.Font = new Font("Segoe UI", 11.1F, FontStyle.Regular, GraphicsUnit.Point);
+            checkedListBox1.FormattingEnabled = true;
+            checkedListBox1.Items.AddRange(new object[] { "Hand in letter", "Talk to physics teacher about assignment", "Hand in programming assignment" });
+            checkedListBox1.Location = new Point(73, 63);
+            checkedListBox1.Margin = new Padding(2, 3, 2, 3);
+            checkedListBox1.Name = "checkedListBox1";
+            checkedListBox1.Size = new Size(810, 220);
+            checkedListBox1.TabIndex = 0;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.buttonTimetableClear);
-            this.tabPage2.Controls.Add(this.buttonTimetableEditDone);
-            this.tabPage2.Controls.Add(this.buttonEditTimetable);
-            this.tabPage2.Controls.Add(this.tableLayoutPanelTimetable);
-            this.tabPage2.Controls.Add(this.label6);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(1);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(1);
-            this.tabPage2.Size = new System.Drawing.Size(670, 552);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Timetable";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            tabPage2.Controls.Add(buttonTimetableClear);
+            tabPage2.Controls.Add(buttonTimetableEditDone);
+            tabPage2.Controls.Add(buttonEditTimetable);
+            tabPage2.Controls.Add(tableLayoutPanelTimetable);
+            tabPage2.Controls.Add(label6);
+            tabPage2.Location = new Point(10, 58);
+            tabPage2.Margin = new Padding(2, 3, 2, 3);
+            tabPage2.Name = "tabPage2";
+            tabPage2.Padding = new Padding(2, 3, 2, 3);
+            tabPage2.Size = new Size(1627, 1517);
+            tabPage2.TabIndex = 1;
+            tabPage2.Text = "Timetable";
+            tabPage2.UseVisualStyleBackColor = true;
             // 
             // buttonTimetableClear
             // 
-            this.buttonTimetableClear.Location = new System.Drawing.Point(430, 494);
-            this.buttonTimetableClear.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonTimetableClear.Name = "buttonTimetableClear";
-            this.buttonTimetableClear.Size = new System.Drawing.Size(77, 21);
-            this.buttonTimetableClear.TabIndex = 4;
-            this.buttonTimetableClear.Text = "CLEAR";
-            this.buttonTimetableClear.UseVisualStyleBackColor = true;
+            buttonTimetableClear.Location = new Point(1044, 1350);
+            buttonTimetableClear.Margin = new Padding(2, 3, 2, 3);
+            buttonTimetableClear.Name = "buttonTimetableClear";
+            buttonTimetableClear.Size = new Size(187, 57);
+            buttonTimetableClear.TabIndex = 4;
+            buttonTimetableClear.Text = "CLEAR";
+            buttonTimetableClear.UseVisualStyleBackColor = true;
+            buttonTimetableClear.Visible = false;
+            buttonTimetableClear.Click += buttonTimetableClear_Click;
             // 
             // buttonTimetableEditDone
             // 
-            this.buttonTimetableEditDone.Location = new System.Drawing.Point(521, 494);
-            this.buttonTimetableEditDone.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonTimetableEditDone.Name = "buttonTimetableEditDone";
-            this.buttonTimetableEditDone.Size = new System.Drawing.Size(77, 21);
-            this.buttonTimetableEditDone.TabIndex = 3;
-            this.buttonTimetableEditDone.Text = "DONE";
-            this.buttonTimetableEditDone.UseVisualStyleBackColor = true;
+            buttonTimetableEditDone.Location = new Point(1265, 1350);
+            buttonTimetableEditDone.Margin = new Padding(2, 3, 2, 3);
+            buttonTimetableEditDone.Name = "buttonTimetableEditDone";
+            buttonTimetableEditDone.Size = new Size(187, 57);
+            buttonTimetableEditDone.TabIndex = 3;
+            buttonTimetableEditDone.Text = "DONE";
+            buttonTimetableEditDone.UseVisualStyleBackColor = true;
+            buttonTimetableEditDone.Visible = false;
+            buttonTimetableEditDone.Click += buttonTimetableEditDone_Click;
             // 
             // buttonEditTimetable
             // 
-            this.buttonEditTimetable.Location = new System.Drawing.Point(505, 31);
-            this.buttonEditTimetable.Margin = new System.Windows.Forms.Padding(1);
-            this.buttonEditTimetable.Name = "buttonEditTimetable";
-            this.buttonEditTimetable.Size = new System.Drawing.Size(77, 21);
-            this.buttonEditTimetable.TabIndex = 2;
-            this.buttonEditTimetable.Text = "EDIT";
-            this.buttonEditTimetable.UseVisualStyleBackColor = true;
+            buttonEditTimetable.Location = new Point(1226, 85);
+            buttonEditTimetable.Margin = new Padding(2, 3, 2, 3);
+            buttonEditTimetable.Name = "buttonEditTimetable";
+            buttonEditTimetable.Size = new Size(187, 57);
+            buttonEditTimetable.TabIndex = 2;
+            buttonEditTimetable.Text = "EDIT";
+            buttonEditTimetable.UseVisualStyleBackColor = true;
+            buttonEditTimetable.Click += buttonEditTimetable_Click;
             // 
             // tableLayoutPanelTimetable
             // 
-            this.tableLayoutPanelTimetable.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.tableLayoutPanelTimetable.ColumnCount = 6;
-            this.tableLayoutPanelTimetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.76471F));
-            this.tableLayoutPanelTimetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
-            this.tableLayoutPanelTimetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
-            this.tableLayoutPanelTimetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
-            this.tableLayoutPanelTimetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
-            this.tableLayoutPanelTimetable.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706F));
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTTuP6Sub, 2, 8);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelPeriod1, 0, 1);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelPeriod2, 0, 2);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelPeriod3, 0, 4);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelPeriod4, 0, 5);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelPeriod5, 0, 7);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelPeriod6, 0, 8);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelRecessTime, 0, 3);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelLunchTime, 0, 6);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelTTMonday, 1, 0);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelTTTuesday, 2, 0);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelTTWednesday, 3, 0);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelTTThursday, 4, 0);
-            this.tableLayoutPanelTimetable.Controls.Add(this.labelTTFriday, 5, 0);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTMnP1Sub, 1, 1);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTMnP2Sub, 1, 2);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTMnP3Sub, 1, 4);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTMnP4Sub, 1, 5);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTMnP5Sub, 1, 7);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTMnP6Sub, 1, 8);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTTuP1Sub, 2, 1);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTWedP1Sub, 3, 1);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTThuP1Sub, 4, 1);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTFriP1Sub, 5, 1);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTTuP2Sub, 2, 2);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTWedP2Sub, 3, 2);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTThuP2Sub, 4, 2);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTFriP2Sub, 5, 2);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTTuP3Sub, 2, 4);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTWedP3Sub, 3, 4);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTThuP3Sub, 4, 4);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTFriP3Sub, 5, 4);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTTuP4Sub, 2, 5);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTWedP4Sub, 3, 5);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTThuP4Sub, 4, 5);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTFriP4Sub, 5, 5);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTTuP5Sub, 2, 7);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTWedP5Sub, 3, 7);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTThuP5Sub, 4, 7);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTFriP5Sub, 5, 7);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTFriP6Sub, 5, 8);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTThuP6Sub, 4, 8);
-            this.tableLayoutPanelTimetable.Controls.Add(this.textBoxTTWedP6Sub, 3, 8);
-            this.tableLayoutPanelTimetable.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tableLayoutPanelTimetable.Location = new System.Drawing.Point(12, 63);
-            this.tableLayoutPanelTimetable.Margin = new System.Windows.Forms.Padding(1);
-            this.tableLayoutPanelTimetable.Name = "tableLayoutPanelTimetable";
-            this.tableLayoutPanelTimetable.RowCount = 9;
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.016064F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65864F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65864F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.016064F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65864F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65864F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.016064F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65864F));
-            this.tableLayoutPanelTimetable.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.65864F));
-            this.tableLayoutPanelTimetable.Size = new System.Drawing.Size(630, 405);
-            this.tableLayoutPanelTimetable.TabIndex = 1;
+            tableLayoutPanelTimetable.BackColor = SystemColors.AppWorkspace;
+            tableLayoutPanelTimetable.ColumnCount = 6;
+            tableLayoutPanelTimetable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 11.76471F));
+            tableLayoutPanelTimetable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.64706F));
+            tableLayoutPanelTimetable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.64706F));
+            tableLayoutPanelTimetable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.64706F));
+            tableLayoutPanelTimetable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.64706F));
+            tableLayoutPanelTimetable.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 17.64706F));
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTTuP6Sub, 2, 8);
+            tableLayoutPanelTimetable.Controls.Add(labelPeriod1, 0, 1);
+            tableLayoutPanelTimetable.Controls.Add(labelPeriod2, 0, 2);
+            tableLayoutPanelTimetable.Controls.Add(labelPeriod3, 0, 4);
+            tableLayoutPanelTimetable.Controls.Add(labelPeriod4, 0, 5);
+            tableLayoutPanelTimetable.Controls.Add(labelPeriod5, 0, 7);
+            tableLayoutPanelTimetable.Controls.Add(labelPeriod6, 0, 8);
+            tableLayoutPanelTimetable.Controls.Add(labelRecessTime, 0, 3);
+            tableLayoutPanelTimetable.Controls.Add(labelLunchTime, 0, 6);
+            tableLayoutPanelTimetable.Controls.Add(labelTTMonday, 1, 0);
+            tableLayoutPanelTimetable.Controls.Add(labelTTTuesday, 2, 0);
+            tableLayoutPanelTimetable.Controls.Add(labelTTWednesday, 3, 0);
+            tableLayoutPanelTimetable.Controls.Add(labelTTThursday, 4, 0);
+            tableLayoutPanelTimetable.Controls.Add(labelTTFriday, 5, 0);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTMnP1Sub, 1, 1);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTMnP2Sub, 1, 2);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTMnP3Sub, 1, 4);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTMnP4Sub, 1, 5);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTMnP5Sub, 1, 7);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTMnP6Sub, 1, 8);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTTuP1Sub, 2, 1);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTWedP1Sub, 3, 1);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTThuP1Sub, 4, 1);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTFriP1Sub, 5, 1);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTTuP2Sub, 2, 2);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTWedP2Sub, 3, 2);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTThuP2Sub, 4, 2);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTFriP2Sub, 5, 2);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTTuP3Sub, 2, 4);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTWedP3Sub, 3, 4);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTThuP3Sub, 4, 4);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTFriP3Sub, 5, 4);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTTuP4Sub, 2, 5);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTWedP4Sub, 3, 5);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTThuP4Sub, 4, 5);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTFriP4Sub, 5, 5);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTTuP5Sub, 2, 7);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTWedP5Sub, 3, 7);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTThuP5Sub, 4, 7);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTFriP5Sub, 5, 7);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTFriP6Sub, 5, 8);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTThuP6Sub, 4, 8);
+            tableLayoutPanelTimetable.Controls.Add(textBoxTTWedP6Sub, 3, 8);
+            tableLayoutPanelTimetable.ForeColor = SystemColors.ControlText;
+            tableLayoutPanelTimetable.Location = new Point(29, 172);
+            tableLayoutPanelTimetable.Margin = new Padding(2, 3, 2, 3);
+            tableLayoutPanelTimetable.Name = "tableLayoutPanelTimetable";
+            tableLayoutPanelTimetable.RowCount = 9;
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 4.016064F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 14.65864F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 14.65864F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 4.016064F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 14.65864F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 14.65864F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 4.016064F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 14.65864F));
+            tableLayoutPanelTimetable.RowStyles.Add(new RowStyle(SizeType.Percent, 14.65864F));
+            tableLayoutPanelTimetable.Size = new Size(1530, 1107);
+            tableLayoutPanelTimetable.TabIndex = 1;
             // 
             // textBoxTTTuP6Sub
             // 
-            this.textBoxTTTuP6Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTTuP6Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTTuP6Sub.Location = new System.Drawing.Point(186, 381);
-            this.textBoxTTTuP6Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTTuP6Sub.Name = "textBoxTTTuP6Sub";
-            this.textBoxTTTuP6Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTTuP6Sub.TabIndex = 42;
+            textBoxTTTuP6Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTTuP6Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTTuP6Sub.Location = new Point(451, 1057);
+            textBoxTTTuP6Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTTuP6Sub.Name = "textBoxTTTuP6Sub";
+            textBoxTTTuP6Sub.ReadOnly = true;
+            textBoxTTTuP6Sub.Size = new Size(265, 47);
+            textBoxTTTuP6Sub.TabIndex = 42;
             // 
             // labelPeriod1
             // 
-            this.labelPeriod1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPeriod1.AutoSize = true;
-            this.labelPeriod1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPeriod1.Location = new System.Drawing.Point(1, 45);
-            this.labelPeriod1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPeriod1.Name = "labelPeriod1";
-            this.labelPeriod1.Size = new System.Drawing.Size(72, 30);
-            this.labelPeriod1.TabIndex = 0;
-            this.labelPeriod1.Text = "Period1: 9:00-10:00";
+            labelPeriod1.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelPeriod1.AutoSize = true;
+            labelPeriod1.BackColor = SystemColors.ActiveCaption;
+            labelPeriod1.Location = new Point(2, 124);
+            labelPeriod1.Margin = new Padding(2, 0, 2, 0);
+            labelPeriod1.Name = "labelPeriod1";
+            labelPeriod1.Size = new Size(176, 82);
+            labelPeriod1.TabIndex = 0;
+            labelPeriod1.Text = "Period1: 9:00-10:00";
             // 
             // labelPeriod2
             // 
-            this.labelPeriod2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPeriod2.AutoSize = true;
-            this.labelPeriod2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPeriod2.Location = new System.Drawing.Point(1, 104);
-            this.labelPeriod2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPeriod2.Name = "labelPeriod2";
-            this.labelPeriod2.Size = new System.Drawing.Size(72, 30);
-            this.labelPeriod2.TabIndex = 1;
-            this.labelPeriod2.Text = "Period2: 10:00-11:00";
+            labelPeriod2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelPeriod2.AutoSize = true;
+            labelPeriod2.BackColor = SystemColors.ActiveCaption;
+            labelPeriod2.Location = new Point(2, 286);
+            labelPeriod2.Margin = new Padding(2, 0, 2, 0);
+            labelPeriod2.Name = "labelPeriod2";
+            labelPeriod2.Size = new Size(176, 82);
+            labelPeriod2.TabIndex = 1;
+            labelPeriod2.Text = "Period2: 10:00-11:00";
             // 
             // labelPeriod3
             // 
-            this.labelPeriod3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPeriod3.AutoSize = true;
-            this.labelPeriod3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPeriod3.Location = new System.Drawing.Point(1, 179);
-            this.labelPeriod3.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPeriod3.Name = "labelPeriod3";
-            this.labelPeriod3.Size = new System.Drawing.Size(72, 30);
-            this.labelPeriod3.TabIndex = 2;
-            this.labelPeriod3.Text = "Period3: 11:15-12:15";
+            labelPeriod3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelPeriod3.AutoSize = true;
+            labelPeriod3.BackColor = SystemColors.ActiveCaption;
+            labelPeriod3.Location = new Point(2, 492);
+            labelPeriod3.Margin = new Padding(2, 0, 2, 0);
+            labelPeriod3.Name = "labelPeriod3";
+            labelPeriod3.Size = new Size(176, 82);
+            labelPeriod3.TabIndex = 2;
+            labelPeriod3.Text = "Period3: 11:15-12:15";
             // 
             // labelPeriod4
             // 
-            this.labelPeriod4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPeriod4.AutoSize = true;
-            this.labelPeriod4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPeriod4.Location = new System.Drawing.Point(1, 238);
-            this.labelPeriod4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPeriod4.Name = "labelPeriod4";
-            this.labelPeriod4.Size = new System.Drawing.Size(72, 30);
-            this.labelPeriod4.TabIndex = 3;
-            this.labelPeriod4.Text = "Period4: 12:15-1:00";
+            labelPeriod4.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelPeriod4.AutoSize = true;
+            labelPeriod4.BackColor = SystemColors.ActiveCaption;
+            labelPeriod4.Location = new Point(2, 654);
+            labelPeriod4.Margin = new Padding(2, 0, 2, 0);
+            labelPeriod4.Name = "labelPeriod4";
+            labelPeriod4.Size = new Size(176, 82);
+            labelPeriod4.TabIndex = 3;
+            labelPeriod4.Text = "Period4: 12:15-1:00";
             // 
             // labelPeriod5
             // 
-            this.labelPeriod5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPeriod5.AutoSize = true;
-            this.labelPeriod5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPeriod5.Location = new System.Drawing.Point(1, 313);
-            this.labelPeriod5.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPeriod5.Name = "labelPeriod5";
-            this.labelPeriod5.Size = new System.Drawing.Size(72, 30);
-            this.labelPeriod5.TabIndex = 4;
-            this.labelPeriod5.Text = "Period5: 2:00-3:00";
+            labelPeriod5.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelPeriod5.AutoSize = true;
+            labelPeriod5.BackColor = SystemColors.ActiveCaption;
+            labelPeriod5.Location = new Point(2, 860);
+            labelPeriod5.Margin = new Padding(2, 0, 2, 0);
+            labelPeriod5.Name = "labelPeriod5";
+            labelPeriod5.Size = new Size(176, 82);
+            labelPeriod5.TabIndex = 4;
+            labelPeriod5.Text = "Period5: 2:00-3:00";
             // 
             // labelPeriod6
             // 
-            this.labelPeriod6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPeriod6.AutoSize = true;
-            this.labelPeriod6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPeriod6.Location = new System.Drawing.Point(1, 375);
-            this.labelPeriod6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelPeriod6.Name = "labelPeriod6";
-            this.labelPeriod6.Size = new System.Drawing.Size(72, 30);
-            this.labelPeriod6.TabIndex = 5;
-            this.labelPeriod6.Text = "Period6: 3:00-4:00";
+            labelPeriod6.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelPeriod6.AutoSize = true;
+            labelPeriod6.BackColor = SystemColors.ActiveCaption;
+            labelPeriod6.Location = new Point(2, 1025);
+            labelPeriod6.Margin = new Padding(2, 0, 2, 0);
+            labelPeriod6.Name = "labelPeriod6";
+            labelPeriod6.Size = new Size(176, 82);
+            labelPeriod6.TabIndex = 5;
+            labelPeriod6.Text = "Period6: 3:00-4:00";
             // 
             // labelRecessTime
             // 
-            this.labelRecessTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelRecessTime.AutoSize = true;
-            this.labelRecessTime.BackColor = System.Drawing.SystemColors.Info;
-            this.labelRecessTime.Location = new System.Drawing.Point(1, 135);
-            this.labelRecessTime.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelRecessTime.Name = "labelRecessTime";
-            this.labelRecessTime.Size = new System.Drawing.Size(72, 15);
-            this.labelRecessTime.TabIndex = 6;
-            this.labelRecessTime.Text = "Recess";
+            labelRecessTime.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelRecessTime.AutoSize = true;
+            labelRecessTime.BackColor = SystemColors.Info;
+            labelRecessTime.Location = new Point(2, 371);
+            labelRecessTime.Margin = new Padding(2, 0, 2, 0);
+            labelRecessTime.Name = "labelRecessTime";
+            labelRecessTime.Size = new Size(176, 41);
+            labelRecessTime.TabIndex = 6;
+            labelRecessTime.Text = "Recess";
             // 
             // labelLunchTime
             // 
-            this.labelLunchTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelLunchTime.AutoSize = true;
-            this.labelLunchTime.BackColor = System.Drawing.SystemColors.Info;
-            this.labelLunchTime.Location = new System.Drawing.Point(1, 268);
-            this.labelLunchTime.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelLunchTime.Name = "labelLunchTime";
-            this.labelLunchTime.Size = new System.Drawing.Size(72, 16);
-            this.labelLunchTime.TabIndex = 7;
-            this.labelLunchTime.Text = "Lunch";
+            labelLunchTime.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            labelLunchTime.AutoSize = true;
+            labelLunchTime.BackColor = SystemColors.Info;
+            labelLunchTime.Location = new Point(2, 736);
+            labelLunchTime.Margin = new Padding(2, 0, 2, 0);
+            labelLunchTime.Name = "labelLunchTime";
+            labelLunchTime.Size = new Size(176, 44);
+            labelLunchTime.TabIndex = 7;
+            labelLunchTime.Text = "Lunch";
             // 
             // labelTTMonday
             // 
-            this.labelTTMonday.AutoSize = true;
-            this.labelTTMonday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelTTMonday.Location = new System.Drawing.Point(75, 0);
-            this.labelTTMonday.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTTMonday.Name = "labelTTMonday";
-            this.labelTTMonday.Size = new System.Drawing.Size(51, 15);
-            this.labelTTMonday.TabIndex = 8;
-            this.labelTTMonday.Text = "Monday";
+            labelTTMonday.AutoSize = true;
+            labelTTMonday.BackColor = Color.FromArgb(255, 128, 128);
+            labelTTMonday.Location = new Point(182, 0);
+            labelTTMonday.Margin = new Padding(2, 0, 2, 0);
+            labelTTMonday.Name = "labelTTMonday";
+            labelTTMonday.Size = new Size(128, 41);
+            labelTTMonday.TabIndex = 8;
+            labelTTMonday.Text = "Monday";
             // 
             // labelTTTuesday
             // 
-            this.labelTTTuesday.AutoSize = true;
-            this.labelTTTuesday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelTTTuesday.Location = new System.Drawing.Point(186, 0);
-            this.labelTTTuesday.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTTTuesday.Name = "labelTTTuesday";
-            this.labelTTTuesday.Size = new System.Drawing.Size(50, 15);
-            this.labelTTTuesday.TabIndex = 9;
-            this.labelTTTuesday.Text = "Tuesday";
+            labelTTTuesday.AutoSize = true;
+            labelTTTuesday.BackColor = Color.FromArgb(255, 128, 128);
+            labelTTTuesday.Location = new Point(451, 0);
+            labelTTTuesday.Margin = new Padding(2, 0, 2, 0);
+            labelTTTuesday.Name = "labelTTTuesday";
+            labelTTTuesday.Size = new Size(128, 41);
+            labelTTTuesday.TabIndex = 9;
+            labelTTTuesday.Text = "Tuesday";
             // 
             // labelTTWednesday
             // 
-            this.labelTTWednesday.AutoSize = true;
-            this.labelTTWednesday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelTTWednesday.Location = new System.Drawing.Point(297, 0);
-            this.labelTTWednesday.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTTWednesday.Name = "labelTTWednesday";
-            this.labelTTWednesday.Size = new System.Drawing.Size(68, 15);
-            this.labelTTWednesday.TabIndex = 10;
-            this.labelTTWednesday.Text = "Wednesday";
+            labelTTWednesday.AutoSize = true;
+            labelTTWednesday.BackColor = Color.FromArgb(255, 128, 128);
+            labelTTWednesday.Location = new Point(720, 0);
+            labelTTWednesday.Margin = new Padding(2, 0, 2, 0);
+            labelTTWednesday.Name = "labelTTWednesday";
+            labelTTWednesday.Size = new Size(173, 41);
+            labelTTWednesday.TabIndex = 10;
+            labelTTWednesday.Text = "Wednesday";
             // 
             // labelTTThursday
             // 
-            this.labelTTThursday.AutoSize = true;
-            this.labelTTThursday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelTTThursday.Location = new System.Drawing.Point(408, 0);
-            this.labelTTThursday.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTTThursday.Name = "labelTTThursday";
-            this.labelTTThursday.Size = new System.Drawing.Size(55, 15);
-            this.labelTTThursday.TabIndex = 11;
-            this.labelTTThursday.Text = "Thursday";
+            labelTTThursday.AutoSize = true;
+            labelTTThursday.BackColor = Color.FromArgb(255, 128, 128);
+            labelTTThursday.Location = new Point(989, 0);
+            labelTTThursday.Margin = new Padding(2, 0, 2, 0);
+            labelTTThursday.Name = "labelTTThursday";
+            labelTTThursday.Size = new Size(139, 41);
+            labelTTThursday.TabIndex = 11;
+            labelTTThursday.Text = "Thursday";
             // 
             // labelTTFriday
             // 
-            this.labelTTFriday.AutoSize = true;
-            this.labelTTFriday.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.labelTTFriday.Location = new System.Drawing.Point(519, 0);
-            this.labelTTFriday.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.labelTTFriday.Name = "labelTTFriday";
-            this.labelTTFriday.Size = new System.Drawing.Size(39, 15);
-            this.labelTTFriday.TabIndex = 12;
-            this.labelTTFriday.Text = "Friday";
+            labelTTFriday.AutoSize = true;
+            labelTTFriday.BackColor = Color.FromArgb(255, 128, 128);
+            labelTTFriday.Location = new Point(1258, 0);
+            labelTTFriday.Margin = new Padding(2, 0, 2, 0);
+            labelTTFriday.Name = "labelTTFriday";
+            labelTTFriday.Size = new Size(98, 41);
+            labelTTFriday.TabIndex = 12;
+            labelTTFriday.Text = "Friday";
             // 
             // textBoxTTMnP1Sub
             // 
-            this.textBoxTTMnP1Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTMnP1Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTMnP1Sub.Location = new System.Drawing.Point(75, 51);
-            this.textBoxTTMnP1Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTMnP1Sub.Name = "textBoxTTMnP1Sub";
-            this.textBoxTTMnP1Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTMnP1Sub.TabIndex = 13;
+            textBoxTTMnP1Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTMnP1Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTMnP1Sub.Location = new Point(182, 156);
+            textBoxTTMnP1Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTMnP1Sub.Name = "textBoxTTMnP1Sub";
+            textBoxTTMnP1Sub.ReadOnly = true;
+            textBoxTTMnP1Sub.Size = new Size(265, 47);
+            textBoxTTMnP1Sub.TabIndex = 13;
             // 
             // textBoxTTMnP2Sub
             // 
-            this.textBoxTTMnP2Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTMnP2Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTMnP2Sub.Location = new System.Drawing.Point(75, 110);
-            this.textBoxTTMnP2Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTMnP2Sub.Name = "textBoxTTMnP2Sub";
-            this.textBoxTTMnP2Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTMnP2Sub.TabIndex = 14;
+            textBoxTTMnP2Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTMnP2Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTMnP2Sub.Location = new Point(182, 318);
+            textBoxTTMnP2Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTMnP2Sub.Name = "textBoxTTMnP2Sub";
+            textBoxTTMnP2Sub.ReadOnly = true;
+            textBoxTTMnP2Sub.Size = new Size(265, 47);
+            textBoxTTMnP2Sub.TabIndex = 14;
             // 
             // textBoxTTMnP3Sub
             // 
-            this.textBoxTTMnP3Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTMnP3Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTMnP3Sub.Location = new System.Drawing.Point(75, 185);
-            this.textBoxTTMnP3Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTMnP3Sub.Name = "textBoxTTMnP3Sub";
-            this.textBoxTTMnP3Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTMnP3Sub.TabIndex = 15;
+            textBoxTTMnP3Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTMnP3Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTMnP3Sub.Location = new Point(182, 524);
+            textBoxTTMnP3Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTMnP3Sub.Name = "textBoxTTMnP3Sub";
+            textBoxTTMnP3Sub.ReadOnly = true;
+            textBoxTTMnP3Sub.Size = new Size(265, 47);
+            textBoxTTMnP3Sub.TabIndex = 15;
             // 
             // textBoxTTMnP4Sub
             // 
-            this.textBoxTTMnP4Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTMnP4Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTMnP4Sub.Location = new System.Drawing.Point(75, 244);
-            this.textBoxTTMnP4Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTMnP4Sub.Name = "textBoxTTMnP4Sub";
-            this.textBoxTTMnP4Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTMnP4Sub.TabIndex = 16;
+            textBoxTTMnP4Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTMnP4Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTMnP4Sub.Location = new Point(182, 686);
+            textBoxTTMnP4Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTMnP4Sub.Name = "textBoxTTMnP4Sub";
+            textBoxTTMnP4Sub.ReadOnly = true;
+            textBoxTTMnP4Sub.Size = new Size(265, 47);
+            textBoxTTMnP4Sub.TabIndex = 16;
             // 
             // textBoxTTMnP5Sub
             // 
-            this.textBoxTTMnP5Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTMnP5Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTMnP5Sub.Location = new System.Drawing.Point(75, 319);
-            this.textBoxTTMnP5Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTMnP5Sub.Name = "textBoxTTMnP5Sub";
-            this.textBoxTTMnP5Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTMnP5Sub.TabIndex = 17;
+            textBoxTTMnP5Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTMnP5Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTMnP5Sub.Location = new Point(182, 892);
+            textBoxTTMnP5Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTMnP5Sub.Name = "textBoxTTMnP5Sub";
+            textBoxTTMnP5Sub.ReadOnly = true;
+            textBoxTTMnP5Sub.Size = new Size(265, 47);
+            textBoxTTMnP5Sub.TabIndex = 17;
             // 
             // textBoxTTMnP6Sub
             // 
-            this.textBoxTTMnP6Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTMnP6Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTMnP6Sub.Location = new System.Drawing.Point(75, 381);
-            this.textBoxTTMnP6Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTMnP6Sub.Name = "textBoxTTMnP6Sub";
-            this.textBoxTTMnP6Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTMnP6Sub.TabIndex = 18;
+            textBoxTTMnP6Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTMnP6Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTMnP6Sub.Location = new Point(182, 1057);
+            textBoxTTMnP6Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTMnP6Sub.Name = "textBoxTTMnP6Sub";
+            textBoxTTMnP6Sub.ReadOnly = true;
+            textBoxTTMnP6Sub.Size = new Size(265, 47);
+            textBoxTTMnP6Sub.TabIndex = 18;
             // 
             // textBoxTTTuP1Sub
             // 
-            this.textBoxTTTuP1Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTTuP1Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTTuP1Sub.Location = new System.Drawing.Point(186, 51);
-            this.textBoxTTTuP1Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTTuP1Sub.Name = "textBoxTTTuP1Sub";
-            this.textBoxTTTuP1Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTTuP1Sub.TabIndex = 19;
+            textBoxTTTuP1Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTTuP1Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTTuP1Sub.Location = new Point(451, 156);
+            textBoxTTTuP1Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTTuP1Sub.Name = "textBoxTTTuP1Sub";
+            textBoxTTTuP1Sub.ReadOnly = true;
+            textBoxTTTuP1Sub.Size = new Size(265, 47);
+            textBoxTTTuP1Sub.TabIndex = 19;
             // 
             // textBoxTTWedP1Sub
             // 
-            this.textBoxTTWedP1Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTWedP1Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTWedP1Sub.Location = new System.Drawing.Point(297, 51);
-            this.textBoxTTWedP1Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTWedP1Sub.Name = "textBoxTTWedP1Sub";
-            this.textBoxTTWedP1Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTWedP1Sub.TabIndex = 20;
+            textBoxTTWedP1Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTWedP1Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTWedP1Sub.Location = new Point(720, 156);
+            textBoxTTWedP1Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTWedP1Sub.Name = "textBoxTTWedP1Sub";
+            textBoxTTWedP1Sub.ReadOnly = true;
+            textBoxTTWedP1Sub.Size = new Size(265, 47);
+            textBoxTTWedP1Sub.TabIndex = 20;
             // 
             // textBoxTTThuP1Sub
             // 
-            this.textBoxTTThuP1Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTThuP1Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTThuP1Sub.Location = new System.Drawing.Point(408, 51);
-            this.textBoxTTThuP1Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTThuP1Sub.Name = "textBoxTTThuP1Sub";
-            this.textBoxTTThuP1Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTThuP1Sub.TabIndex = 21;
+            textBoxTTThuP1Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTThuP1Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTThuP1Sub.Location = new Point(989, 156);
+            textBoxTTThuP1Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTThuP1Sub.Name = "textBoxTTThuP1Sub";
+            textBoxTTThuP1Sub.ReadOnly = true;
+            textBoxTTThuP1Sub.Size = new Size(265, 47);
+            textBoxTTThuP1Sub.TabIndex = 21;
             // 
             // textBoxTTFriP1Sub
             // 
-            this.textBoxTTFriP1Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTFriP1Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTFriP1Sub.Location = new System.Drawing.Point(519, 51);
-            this.textBoxTTFriP1Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTFriP1Sub.Name = "textBoxTTFriP1Sub";
-            this.textBoxTTFriP1Sub.Size = new System.Drawing.Size(110, 23);
-            this.textBoxTTFriP1Sub.TabIndex = 22;
+            textBoxTTFriP1Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTFriP1Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTFriP1Sub.Location = new Point(1258, 156);
+            textBoxTTFriP1Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTFriP1Sub.Name = "textBoxTTFriP1Sub";
+            textBoxTTFriP1Sub.ReadOnly = true;
+            textBoxTTFriP1Sub.Size = new Size(270, 47);
+            textBoxTTFriP1Sub.TabIndex = 22;
             // 
             // textBoxTTTuP2Sub
             // 
-            this.textBoxTTTuP2Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTTuP2Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTTuP2Sub.Location = new System.Drawing.Point(186, 110);
-            this.textBoxTTTuP2Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTTuP2Sub.Name = "textBoxTTTuP2Sub";
-            this.textBoxTTTuP2Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTTuP2Sub.TabIndex = 23;
+            textBoxTTTuP2Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTTuP2Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTTuP2Sub.Location = new Point(451, 318);
+            textBoxTTTuP2Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTTuP2Sub.Name = "textBoxTTTuP2Sub";
+            textBoxTTTuP2Sub.ReadOnly = true;
+            textBoxTTTuP2Sub.Size = new Size(265, 47);
+            textBoxTTTuP2Sub.TabIndex = 23;
             // 
             // textBoxTTWedP2Sub
             // 
-            this.textBoxTTWedP2Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTWedP2Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTWedP2Sub.Location = new System.Drawing.Point(297, 110);
-            this.textBoxTTWedP2Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTWedP2Sub.Name = "textBoxTTWedP2Sub";
-            this.textBoxTTWedP2Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTWedP2Sub.TabIndex = 24;
+            textBoxTTWedP2Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTWedP2Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTWedP2Sub.Location = new Point(720, 318);
+            textBoxTTWedP2Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTWedP2Sub.Name = "textBoxTTWedP2Sub";
+            textBoxTTWedP2Sub.ReadOnly = true;
+            textBoxTTWedP2Sub.Size = new Size(265, 47);
+            textBoxTTWedP2Sub.TabIndex = 24;
             // 
             // textBoxTTThuP2Sub
             // 
-            this.textBoxTTThuP2Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTThuP2Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTThuP2Sub.Location = new System.Drawing.Point(408, 110);
-            this.textBoxTTThuP2Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTThuP2Sub.Name = "textBoxTTThuP2Sub";
-            this.textBoxTTThuP2Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTThuP2Sub.TabIndex = 25;
+            textBoxTTThuP2Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTThuP2Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTThuP2Sub.Location = new Point(989, 318);
+            textBoxTTThuP2Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTThuP2Sub.Name = "textBoxTTThuP2Sub";
+            textBoxTTThuP2Sub.ReadOnly = true;
+            textBoxTTThuP2Sub.Size = new Size(265, 47);
+            textBoxTTThuP2Sub.TabIndex = 25;
             // 
             // textBoxTTFriP2Sub
             // 
-            this.textBoxTTFriP2Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTFriP2Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTFriP2Sub.Location = new System.Drawing.Point(519, 110);
-            this.textBoxTTFriP2Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTFriP2Sub.Name = "textBoxTTFriP2Sub";
-            this.textBoxTTFriP2Sub.Size = new System.Drawing.Size(110, 23);
-            this.textBoxTTFriP2Sub.TabIndex = 26;
+            textBoxTTFriP2Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTFriP2Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTFriP2Sub.Location = new Point(1258, 318);
+            textBoxTTFriP2Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTFriP2Sub.Name = "textBoxTTFriP2Sub";
+            textBoxTTFriP2Sub.ReadOnly = true;
+            textBoxTTFriP2Sub.Size = new Size(270, 47);
+            textBoxTTFriP2Sub.TabIndex = 26;
             // 
             // textBoxTTTuP3Sub
             // 
-            this.textBoxTTTuP3Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTTuP3Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTTuP3Sub.Location = new System.Drawing.Point(186, 185);
-            this.textBoxTTTuP3Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTTuP3Sub.Name = "textBoxTTTuP3Sub";
-            this.textBoxTTTuP3Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTTuP3Sub.TabIndex = 27;
+            textBoxTTTuP3Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTTuP3Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTTuP3Sub.Location = new Point(451, 524);
+            textBoxTTTuP3Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTTuP3Sub.Name = "textBoxTTTuP3Sub";
+            textBoxTTTuP3Sub.ReadOnly = true;
+            textBoxTTTuP3Sub.Size = new Size(265, 47);
+            textBoxTTTuP3Sub.TabIndex = 27;
             // 
             // textBoxTTWedP3Sub
             // 
-            this.textBoxTTWedP3Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTWedP3Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTWedP3Sub.Location = new System.Drawing.Point(297, 185);
-            this.textBoxTTWedP3Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTWedP3Sub.Name = "textBoxTTWedP3Sub";
-            this.textBoxTTWedP3Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTWedP3Sub.TabIndex = 28;
+            textBoxTTWedP3Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTWedP3Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTWedP3Sub.Location = new Point(720, 524);
+            textBoxTTWedP3Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTWedP3Sub.Name = "textBoxTTWedP3Sub";
+            textBoxTTWedP3Sub.ReadOnly = true;
+            textBoxTTWedP3Sub.Size = new Size(265, 47);
+            textBoxTTWedP3Sub.TabIndex = 28;
             // 
             // textBoxTTThuP3Sub
             // 
-            this.textBoxTTThuP3Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTThuP3Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTThuP3Sub.Location = new System.Drawing.Point(408, 185);
-            this.textBoxTTThuP3Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTThuP3Sub.Name = "textBoxTTThuP3Sub";
-            this.textBoxTTThuP3Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTThuP3Sub.TabIndex = 29;
+            textBoxTTThuP3Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTThuP3Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTThuP3Sub.Location = new Point(989, 524);
+            textBoxTTThuP3Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTThuP3Sub.Name = "textBoxTTThuP3Sub";
+            textBoxTTThuP3Sub.ReadOnly = true;
+            textBoxTTThuP3Sub.Size = new Size(265, 47);
+            textBoxTTThuP3Sub.TabIndex = 29;
             // 
             // textBoxTTFriP3Sub
             // 
-            this.textBoxTTFriP3Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTFriP3Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTFriP3Sub.Location = new System.Drawing.Point(519, 185);
-            this.textBoxTTFriP3Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTFriP3Sub.Name = "textBoxTTFriP3Sub";
-            this.textBoxTTFriP3Sub.Size = new System.Drawing.Size(110, 23);
-            this.textBoxTTFriP3Sub.TabIndex = 30;
+            textBoxTTFriP3Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTFriP3Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTFriP3Sub.Location = new Point(1258, 524);
+            textBoxTTFriP3Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTFriP3Sub.Name = "textBoxTTFriP3Sub";
+            textBoxTTFriP3Sub.ReadOnly = true;
+            textBoxTTFriP3Sub.Size = new Size(270, 47);
+            textBoxTTFriP3Sub.TabIndex = 30;
             // 
             // textBoxTTTuP4Sub
             // 
-            this.textBoxTTTuP4Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTTuP4Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTTuP4Sub.Location = new System.Drawing.Point(186, 244);
-            this.textBoxTTTuP4Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTTuP4Sub.Name = "textBoxTTTuP4Sub";
-            this.textBoxTTTuP4Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTTuP4Sub.TabIndex = 31;
+            textBoxTTTuP4Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTTuP4Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTTuP4Sub.Location = new Point(451, 686);
+            textBoxTTTuP4Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTTuP4Sub.Name = "textBoxTTTuP4Sub";
+            textBoxTTTuP4Sub.ReadOnly = true;
+            textBoxTTTuP4Sub.Size = new Size(265, 47);
+            textBoxTTTuP4Sub.TabIndex = 31;
             // 
             // textBoxTTWedP4Sub
             // 
-            this.textBoxTTWedP4Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTWedP4Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTWedP4Sub.Location = new System.Drawing.Point(297, 244);
-            this.textBoxTTWedP4Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTWedP4Sub.Name = "textBoxTTWedP4Sub";
-            this.textBoxTTWedP4Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTWedP4Sub.TabIndex = 32;
+            textBoxTTWedP4Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTWedP4Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTWedP4Sub.Location = new Point(720, 686);
+            textBoxTTWedP4Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTWedP4Sub.Name = "textBoxTTWedP4Sub";
+            textBoxTTWedP4Sub.ReadOnly = true;
+            textBoxTTWedP4Sub.Size = new Size(265, 47);
+            textBoxTTWedP4Sub.TabIndex = 32;
             // 
             // textBoxTTThuP4Sub
             // 
-            this.textBoxTTThuP4Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTThuP4Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTThuP4Sub.Location = new System.Drawing.Point(408, 244);
-            this.textBoxTTThuP4Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTThuP4Sub.Name = "textBoxTTThuP4Sub";
-            this.textBoxTTThuP4Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTThuP4Sub.TabIndex = 33;
+            textBoxTTThuP4Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTThuP4Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTThuP4Sub.Location = new Point(989, 686);
+            textBoxTTThuP4Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTThuP4Sub.Name = "textBoxTTThuP4Sub";
+            textBoxTTThuP4Sub.ReadOnly = true;
+            textBoxTTThuP4Sub.Size = new Size(265, 47);
+            textBoxTTThuP4Sub.TabIndex = 33;
             // 
             // textBoxTTFriP4Sub
             // 
-            this.textBoxTTFriP4Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTFriP4Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTFriP4Sub.Location = new System.Drawing.Point(519, 244);
-            this.textBoxTTFriP4Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTFriP4Sub.Name = "textBoxTTFriP4Sub";
-            this.textBoxTTFriP4Sub.Size = new System.Drawing.Size(110, 23);
-            this.textBoxTTFriP4Sub.TabIndex = 34;
+            textBoxTTFriP4Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTFriP4Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTFriP4Sub.Location = new Point(1258, 686);
+            textBoxTTFriP4Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTFriP4Sub.Name = "textBoxTTFriP4Sub";
+            textBoxTTFriP4Sub.ReadOnly = true;
+            textBoxTTFriP4Sub.Size = new Size(270, 47);
+            textBoxTTFriP4Sub.TabIndex = 34;
             // 
             // textBoxTTTuP5Sub
             // 
-            this.textBoxTTTuP5Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTTuP5Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTTuP5Sub.Location = new System.Drawing.Point(186, 319);
-            this.textBoxTTTuP5Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTTuP5Sub.Name = "textBoxTTTuP5Sub";
-            this.textBoxTTTuP5Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTTuP5Sub.TabIndex = 35;
+            textBoxTTTuP5Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTTuP5Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTTuP5Sub.Location = new Point(451, 892);
+            textBoxTTTuP5Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTTuP5Sub.Name = "textBoxTTTuP5Sub";
+            textBoxTTTuP5Sub.ReadOnly = true;
+            textBoxTTTuP5Sub.Size = new Size(265, 47);
+            textBoxTTTuP5Sub.TabIndex = 35;
             // 
             // textBoxTTWedP5Sub
             // 
-            this.textBoxTTWedP5Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTWedP5Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTWedP5Sub.Location = new System.Drawing.Point(297, 319);
-            this.textBoxTTWedP5Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTWedP5Sub.Name = "textBoxTTWedP5Sub";
-            this.textBoxTTWedP5Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTWedP5Sub.TabIndex = 36;
+            textBoxTTWedP5Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTWedP5Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTWedP5Sub.Location = new Point(720, 892);
+            textBoxTTWedP5Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTWedP5Sub.Name = "textBoxTTWedP5Sub";
+            textBoxTTWedP5Sub.ReadOnly = true;
+            textBoxTTWedP5Sub.Size = new Size(265, 47);
+            textBoxTTWedP5Sub.TabIndex = 36;
             // 
             // textBoxTTThuP5Sub
             // 
-            this.textBoxTTThuP5Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTThuP5Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTThuP5Sub.Location = new System.Drawing.Point(408, 319);
-            this.textBoxTTThuP5Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTThuP5Sub.Name = "textBoxTTThuP5Sub";
-            this.textBoxTTThuP5Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTThuP5Sub.TabIndex = 37;
+            textBoxTTThuP5Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTThuP5Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTThuP5Sub.Location = new Point(989, 892);
+            textBoxTTThuP5Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTThuP5Sub.Name = "textBoxTTThuP5Sub";
+            textBoxTTThuP5Sub.ReadOnly = true;
+            textBoxTTThuP5Sub.Size = new Size(265, 47);
+            textBoxTTThuP5Sub.TabIndex = 37;
             // 
             // textBoxTTFriP5Sub
             // 
-            this.textBoxTTFriP5Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTFriP5Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTFriP5Sub.Location = new System.Drawing.Point(519, 319);
-            this.textBoxTTFriP5Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTFriP5Sub.Name = "textBoxTTFriP5Sub";
-            this.textBoxTTFriP5Sub.Size = new System.Drawing.Size(110, 23);
-            this.textBoxTTFriP5Sub.TabIndex = 38;
+            textBoxTTFriP5Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTFriP5Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTFriP5Sub.Location = new Point(1258, 892);
+            textBoxTTFriP5Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTFriP5Sub.Name = "textBoxTTFriP5Sub";
+            textBoxTTFriP5Sub.ReadOnly = true;
+            textBoxTTFriP5Sub.Size = new Size(270, 47);
+            textBoxTTFriP5Sub.TabIndex = 38;
             // 
             // textBoxTTFriP6Sub
             // 
-            this.textBoxTTFriP6Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTFriP6Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTFriP6Sub.Location = new System.Drawing.Point(519, 381);
-            this.textBoxTTFriP6Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTFriP6Sub.Name = "textBoxTTFriP6Sub";
-            this.textBoxTTFriP6Sub.Size = new System.Drawing.Size(110, 23);
-            this.textBoxTTFriP6Sub.TabIndex = 39;
+            textBoxTTFriP6Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTFriP6Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTFriP6Sub.Location = new Point(1258, 1057);
+            textBoxTTFriP6Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTFriP6Sub.Name = "textBoxTTFriP6Sub";
+            textBoxTTFriP6Sub.ReadOnly = true;
+            textBoxTTFriP6Sub.Size = new Size(270, 47);
+            textBoxTTFriP6Sub.TabIndex = 39;
             // 
             // textBoxTTThuP6Sub
             // 
-            this.textBoxTTThuP6Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTThuP6Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTThuP6Sub.Location = new System.Drawing.Point(408, 381);
-            this.textBoxTTThuP6Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTThuP6Sub.Name = "textBoxTTThuP6Sub";
-            this.textBoxTTThuP6Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTThuP6Sub.TabIndex = 40;
+            textBoxTTThuP6Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTThuP6Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTThuP6Sub.Location = new Point(989, 1057);
+            textBoxTTThuP6Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTThuP6Sub.Name = "textBoxTTThuP6Sub";
+            textBoxTTThuP6Sub.ReadOnly = true;
+            textBoxTTThuP6Sub.Size = new Size(265, 47);
+            textBoxTTThuP6Sub.TabIndex = 40;
             // 
             // textBoxTTWedP6Sub
             // 
-            this.textBoxTTWedP6Sub.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTTWedP6Sub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.textBoxTTWedP6Sub.Location = new System.Drawing.Point(297, 381);
-            this.textBoxTTWedP6Sub.Margin = new System.Windows.Forms.Padding(1);
-            this.textBoxTTWedP6Sub.Name = "textBoxTTWedP6Sub";
-            this.textBoxTTWedP6Sub.Size = new System.Drawing.Size(109, 23);
-            this.textBoxTTWedP6Sub.TabIndex = 41;
+            textBoxTTWedP6Sub.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxTTWedP6Sub.BackColor = Color.FromArgb(192, 255, 192);
+            textBoxTTWedP6Sub.Location = new Point(720, 1057);
+            textBoxTTWedP6Sub.Margin = new Padding(2, 3, 2, 3);
+            textBoxTTWedP6Sub.Name = "textBoxTTWedP6Sub";
+            textBoxTTWedP6Sub.ReadOnly = true;
+            textBoxTTWedP6Sub.Size = new Size(265, 47);
+            textBoxTTWedP6Sub.TabIndex = 41;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(156, 26);
-            this.label6.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(133, 15);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Timetable for Week XXX";
+            label6.AutoSize = true;
+            label6.Location = new Point(379, 71);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(338, 41);
+            label6.TabIndex = 0;
+            label6.Text = "Timetable for Week XXX";
             // 
             // tabPage4
             // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 24);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(1);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(670, 552);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Settings";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            tabPage4.Location = new Point(10, 58);
+            tabPage4.Margin = new Padding(2, 3, 2, 3);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(1627, 1517);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "Settings";
+            tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.flowLayoutPanelCalendar);
-            this.tabPage3.Controls.Add(this.panel1);
-            this.tabPage3.Controls.Add(this.toolStrip1);
-            this.tabPage3.Controls.Add(this.taskButton);
-            this.tabPage3.Controls.Add(this.popupTaskPanel);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(1);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(670, 552);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Calendar";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            tabPage3.Controls.Add(flowLayoutPanelCalendar);
+            tabPage3.Controls.Add(panel1);
+            tabPage3.Controls.Add(toolStrip1);
+            tabPage3.Controls.Add(taskButton);
+            tabPage3.Controls.Add(popupTaskPanel);
+            tabPage3.Location = new Point(10, 58);
+            tabPage3.Margin = new Padding(2, 3, 2, 3);
+            tabPage3.Name = "tabPage3";
+            tabPage3.Size = new Size(1627, 1517);
+            tabPage3.TabIndex = 2;
+            tabPage3.Text = "Calendar";
+            tabPage3.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanelCalendar
             // 
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay1);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay2);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay3);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay4);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay5);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay6);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay7);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay8);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay9);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay10);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay11);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay12);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay13);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay14);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay15);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay16);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay17);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay18);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay19);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay20);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay21);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay22);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay23);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay24);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay25);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay26);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay27);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay28);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay29);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay30);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay31);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay32);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay33);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay34);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay35);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay36);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay37);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay38);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay39);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay40);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay41);
-            this.flowLayoutPanelCalendar.Controls.Add(this.panelCalendarDay42);
-            this.flowLayoutPanelCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelCalendar.Location = new System.Drawing.Point(0, 50);
-            this.flowLayoutPanelCalendar.Name = "flowLayoutPanelCalendar";
-            this.flowLayoutPanelCalendar.Size = new System.Drawing.Size(670, 502);
-            this.flowLayoutPanelCalendar.TabIndex = 4;
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay1);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay2);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay3);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay4);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay5);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay6);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay7);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay8);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay9);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay10);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay11);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay12);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay13);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay14);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay15);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay16);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay17);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay18);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay19);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay20);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay21);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay22);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay23);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay24);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay25);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay26);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay27);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay28);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay29);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay30);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay31);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay32);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay33);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay34);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay35);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay36);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay37);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay38);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay39);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay40);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay41);
+            flowLayoutPanelCalendar.Controls.Add(panelCalendarDay42);
+            flowLayoutPanelCalendar.Dock = DockStyle.Fill;
+            flowLayoutPanelCalendar.Location = new Point(0, 117);
+            flowLayoutPanelCalendar.Margin = new Padding(7, 8, 7, 8);
+            flowLayoutPanelCalendar.Name = "flowLayoutPanelCalendar";
+            flowLayoutPanelCalendar.Size = new Size(1627, 1400);
+            flowLayoutPanelCalendar.TabIndex = 4;
             // 
             // panelCalendarDay1
             // 
-            this.panelCalendarDay1.Controls.Add(this.labelCalendarDay1);
-            this.panelCalendarDay1.Location = new System.Drawing.Point(2, 2);
-            this.panelCalendarDay1.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay1.Name = "panelCalendarDay1";
-            this.panelCalendarDay1.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay1.TabIndex = 0;
+            panelCalendarDay1.Controls.Add(labelCalendarDay1);
+            panelCalendarDay1.Location = new Point(5, 5);
+            panelCalendarDay1.Margin = new Padding(5);
+            panelCalendarDay1.Name = "panelCalendarDay1";
+            panelCalendarDay1.Size = new Size(221, 216);
+            panelCalendarDay1.TabIndex = 0;
             // 
             // labelCalendarDay1
             // 
-            this.labelCalendarDay1.AutoSize = true;
-            this.labelCalendarDay1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay1.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay1.Name = "labelCalendarDay1";
-            this.labelCalendarDay1.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay1.TabIndex = 0;
-            this.labelCalendarDay1.Text = "15";
+            labelCalendarDay1.AutoSize = true;
+            labelCalendarDay1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay1.Location = new Point(2, 3);
+            labelCalendarDay1.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay1.Name = "labelCalendarDay1";
+            labelCalendarDay1.Size = new Size(87, 67);
+            labelCalendarDay1.TabIndex = 0;
+            labelCalendarDay1.Text = "15";
             // 
             // panelCalendarDay2
             // 
-            this.panelCalendarDay2.Controls.Add(this.labelCalendarDay2);
-            this.panelCalendarDay2.Location = new System.Drawing.Point(97, 2);
-            this.panelCalendarDay2.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay2.Name = "panelCalendarDay2";
-            this.panelCalendarDay2.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay2.TabIndex = 1;
+            panelCalendarDay2.Controls.Add(labelCalendarDay2);
+            panelCalendarDay2.Location = new Point(236, 5);
+            panelCalendarDay2.Margin = new Padding(5);
+            panelCalendarDay2.Name = "panelCalendarDay2";
+            panelCalendarDay2.Size = new Size(221, 216);
+            panelCalendarDay2.TabIndex = 1;
             // 
             // labelCalendarDay2
             // 
-            this.labelCalendarDay2.AutoSize = true;
-            this.labelCalendarDay2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay2.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay2.Name = "labelCalendarDay2";
-            this.labelCalendarDay2.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay2.TabIndex = 1;
-            this.labelCalendarDay2.Text = "15";
+            labelCalendarDay2.AutoSize = true;
+            labelCalendarDay2.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay2.Location = new Point(2, 3);
+            labelCalendarDay2.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay2.Name = "labelCalendarDay2";
+            labelCalendarDay2.Size = new Size(87, 67);
+            labelCalendarDay2.TabIndex = 1;
+            labelCalendarDay2.Text = "15";
             // 
             // panelCalendarDay3
             // 
-            this.panelCalendarDay3.Controls.Add(this.labelCalendarDay3);
-            this.panelCalendarDay3.Location = new System.Drawing.Point(192, 2);
-            this.panelCalendarDay3.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay3.Name = "panelCalendarDay3";
-            this.panelCalendarDay3.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay3.TabIndex = 2;
+            panelCalendarDay3.Controls.Add(labelCalendarDay3);
+            panelCalendarDay3.Location = new Point(467, 5);
+            panelCalendarDay3.Margin = new Padding(5);
+            panelCalendarDay3.Name = "panelCalendarDay3";
+            panelCalendarDay3.Size = new Size(221, 216);
+            panelCalendarDay3.TabIndex = 2;
             // 
             // labelCalendarDay3
             // 
-            this.labelCalendarDay3.AutoSize = true;
-            this.labelCalendarDay3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay3.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay3.Name = "labelCalendarDay3";
-            this.labelCalendarDay3.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay3.TabIndex = 2;
-            this.labelCalendarDay3.Text = "15";
+            labelCalendarDay3.AutoSize = true;
+            labelCalendarDay3.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay3.Location = new Point(2, 3);
+            labelCalendarDay3.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay3.Name = "labelCalendarDay3";
+            labelCalendarDay3.Size = new Size(87, 67);
+            labelCalendarDay3.TabIndex = 2;
+            labelCalendarDay3.Text = "15";
             // 
             // panelCalendarDay4
             // 
-            this.panelCalendarDay4.Controls.Add(this.labelCalendarDay4);
-            this.panelCalendarDay4.Location = new System.Drawing.Point(287, 2);
-            this.panelCalendarDay4.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay4.Name = "panelCalendarDay4";
-            this.panelCalendarDay4.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay4.TabIndex = 3;
+            panelCalendarDay4.Controls.Add(labelCalendarDay4);
+            panelCalendarDay4.Location = new Point(698, 5);
+            panelCalendarDay4.Margin = new Padding(5);
+            panelCalendarDay4.Name = "panelCalendarDay4";
+            panelCalendarDay4.Size = new Size(221, 216);
+            panelCalendarDay4.TabIndex = 3;
             // 
             // labelCalendarDay4
             // 
-            this.labelCalendarDay4.AutoSize = true;
-            this.labelCalendarDay4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay4.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay4.Name = "labelCalendarDay4";
-            this.labelCalendarDay4.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay4.TabIndex = 3;
-            this.labelCalendarDay4.Text = "15";
+            labelCalendarDay4.AutoSize = true;
+            labelCalendarDay4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay4.Location = new Point(2, 3);
+            labelCalendarDay4.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay4.Name = "labelCalendarDay4";
+            labelCalendarDay4.Size = new Size(87, 67);
+            labelCalendarDay4.TabIndex = 3;
+            labelCalendarDay4.Text = "15";
             // 
             // panelCalendarDay5
             // 
-            this.panelCalendarDay5.Controls.Add(this.labelCalendarDay5);
-            this.panelCalendarDay5.Location = new System.Drawing.Point(382, 2);
-            this.panelCalendarDay5.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay5.Name = "panelCalendarDay5";
-            this.panelCalendarDay5.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay5.TabIndex = 4;
+            panelCalendarDay5.Controls.Add(labelCalendarDay5);
+            panelCalendarDay5.Location = new Point(929, 5);
+            panelCalendarDay5.Margin = new Padding(5);
+            panelCalendarDay5.Name = "panelCalendarDay5";
+            panelCalendarDay5.Size = new Size(221, 216);
+            panelCalendarDay5.TabIndex = 4;
             // 
             // labelCalendarDay5
             // 
-            this.labelCalendarDay5.AutoSize = true;
-            this.labelCalendarDay5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay5.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay5.Name = "labelCalendarDay5";
-            this.labelCalendarDay5.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay5.TabIndex = 4;
-            this.labelCalendarDay5.Text = "15";
+            labelCalendarDay5.AutoSize = true;
+            labelCalendarDay5.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay5.Location = new Point(2, 3);
+            labelCalendarDay5.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay5.Name = "labelCalendarDay5";
+            labelCalendarDay5.Size = new Size(87, 67);
+            labelCalendarDay5.TabIndex = 4;
+            labelCalendarDay5.Text = "15";
             // 
             // panelCalendarDay6
             // 
-            this.panelCalendarDay6.Controls.Add(this.labelCalendarDay6);
-            this.panelCalendarDay6.Location = new System.Drawing.Point(477, 2);
-            this.panelCalendarDay6.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay6.Name = "panelCalendarDay6";
-            this.panelCalendarDay6.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay6.TabIndex = 5;
+            panelCalendarDay6.Controls.Add(labelCalendarDay6);
+            panelCalendarDay6.Location = new Point(1160, 5);
+            panelCalendarDay6.Margin = new Padding(5);
+            panelCalendarDay6.Name = "panelCalendarDay6";
+            panelCalendarDay6.Size = new Size(221, 216);
+            panelCalendarDay6.TabIndex = 5;
             // 
             // labelCalendarDay6
             // 
-            this.labelCalendarDay6.AutoSize = true;
-            this.labelCalendarDay6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay6.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay6.Name = "labelCalendarDay6";
-            this.labelCalendarDay6.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay6.TabIndex = 5;
-            this.labelCalendarDay6.Text = "15";
+            labelCalendarDay6.AutoSize = true;
+            labelCalendarDay6.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay6.Location = new Point(2, 3);
+            labelCalendarDay6.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay6.Name = "labelCalendarDay6";
+            labelCalendarDay6.Size = new Size(87, 67);
+            labelCalendarDay6.TabIndex = 5;
+            labelCalendarDay6.Text = "15";
             // 
             // panelCalendarDay7
             // 
-            this.panelCalendarDay7.Controls.Add(this.labelCalendarDay7);
-            this.panelCalendarDay7.Location = new System.Drawing.Point(572, 2);
-            this.panelCalendarDay7.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay7.Name = "panelCalendarDay7";
-            this.panelCalendarDay7.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay7.TabIndex = 6;
+            panelCalendarDay7.Controls.Add(labelCalendarDay7);
+            panelCalendarDay7.Location = new Point(1391, 5);
+            panelCalendarDay7.Margin = new Padding(5);
+            panelCalendarDay7.Name = "panelCalendarDay7";
+            panelCalendarDay7.Size = new Size(221, 216);
+            panelCalendarDay7.TabIndex = 6;
             // 
             // labelCalendarDay7
             // 
-            this.labelCalendarDay7.AutoSize = true;
-            this.labelCalendarDay7.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay7.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay7.Name = "labelCalendarDay7";
-            this.labelCalendarDay7.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay7.TabIndex = 6;
-            this.labelCalendarDay7.Text = "15";
+            labelCalendarDay7.AutoSize = true;
+            labelCalendarDay7.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay7.Location = new Point(2, 3);
+            labelCalendarDay7.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay7.Name = "labelCalendarDay7";
+            labelCalendarDay7.Size = new Size(87, 67);
+            labelCalendarDay7.TabIndex = 6;
+            labelCalendarDay7.Text = "15";
             // 
             // panelCalendarDay8
             // 
-            this.panelCalendarDay8.Controls.Add(this.labelCalendarDay8);
-            this.panelCalendarDay8.Location = new System.Drawing.Point(2, 85);
-            this.panelCalendarDay8.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay8.Name = "panelCalendarDay8";
-            this.panelCalendarDay8.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay8.TabIndex = 6;
+            panelCalendarDay8.Controls.Add(labelCalendarDay8);
+            panelCalendarDay8.Location = new Point(5, 231);
+            panelCalendarDay8.Margin = new Padding(5);
+            panelCalendarDay8.Name = "panelCalendarDay8";
+            panelCalendarDay8.Size = new Size(221, 216);
+            panelCalendarDay8.TabIndex = 6;
             // 
             // labelCalendarDay8
             // 
-            this.labelCalendarDay8.AutoSize = true;
-            this.labelCalendarDay8.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay8.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay8.Name = "labelCalendarDay8";
-            this.labelCalendarDay8.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay8.TabIndex = 7;
-            this.labelCalendarDay8.Text = "15";
+            labelCalendarDay8.AutoSize = true;
+            labelCalendarDay8.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay8.Location = new Point(2, 3);
+            labelCalendarDay8.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay8.Name = "labelCalendarDay8";
+            labelCalendarDay8.Size = new Size(87, 67);
+            labelCalendarDay8.TabIndex = 7;
+            labelCalendarDay8.Text = "15";
             // 
             // panelCalendarDay9
             // 
-            this.panelCalendarDay9.Controls.Add(this.labelCalendarDay9);
-            this.panelCalendarDay9.Location = new System.Drawing.Point(97, 85);
-            this.panelCalendarDay9.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay9.Name = "panelCalendarDay9";
-            this.panelCalendarDay9.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay9.TabIndex = 6;
+            panelCalendarDay9.Controls.Add(labelCalendarDay9);
+            panelCalendarDay9.Location = new Point(236, 231);
+            panelCalendarDay9.Margin = new Padding(5);
+            panelCalendarDay9.Name = "panelCalendarDay9";
+            panelCalendarDay9.Size = new Size(221, 216);
+            panelCalendarDay9.TabIndex = 6;
             // 
             // labelCalendarDay9
             // 
-            this.labelCalendarDay9.AutoSize = true;
-            this.labelCalendarDay9.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay9.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay9.Name = "labelCalendarDay9";
-            this.labelCalendarDay9.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay9.TabIndex = 8;
-            this.labelCalendarDay9.Text = "15";
+            labelCalendarDay9.AutoSize = true;
+            labelCalendarDay9.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay9.Location = new Point(2, 3);
+            labelCalendarDay9.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay9.Name = "labelCalendarDay9";
+            labelCalendarDay9.Size = new Size(87, 67);
+            labelCalendarDay9.TabIndex = 8;
+            labelCalendarDay9.Text = "15";
             // 
             // panelCalendarDay10
             // 
-            this.panelCalendarDay10.Controls.Add(this.labelCalendarDay10);
-            this.panelCalendarDay10.Location = new System.Drawing.Point(192, 85);
-            this.panelCalendarDay10.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay10.Name = "panelCalendarDay10";
-            this.panelCalendarDay10.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay10.TabIndex = 6;
+            panelCalendarDay10.Controls.Add(labelCalendarDay10);
+            panelCalendarDay10.Location = new Point(467, 231);
+            panelCalendarDay10.Margin = new Padding(5);
+            panelCalendarDay10.Name = "panelCalendarDay10";
+            panelCalendarDay10.Size = new Size(221, 216);
+            panelCalendarDay10.TabIndex = 6;
             // 
             // labelCalendarDay10
             // 
-            this.labelCalendarDay10.AutoSize = true;
-            this.labelCalendarDay10.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay10.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay10.Name = "labelCalendarDay10";
-            this.labelCalendarDay10.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay10.TabIndex = 9;
-            this.labelCalendarDay10.Text = "15";
+            labelCalendarDay10.AutoSize = true;
+            labelCalendarDay10.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay10.Location = new Point(2, 3);
+            labelCalendarDay10.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay10.Name = "labelCalendarDay10";
+            labelCalendarDay10.Size = new Size(87, 67);
+            labelCalendarDay10.TabIndex = 9;
+            labelCalendarDay10.Text = "15";
             // 
             // panelCalendarDay11
             // 
-            this.panelCalendarDay11.Controls.Add(this.labelCalendarDay11);
-            this.panelCalendarDay11.Location = new System.Drawing.Point(287, 85);
-            this.panelCalendarDay11.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay11.Name = "panelCalendarDay11";
-            this.panelCalendarDay11.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay11.TabIndex = 6;
+            panelCalendarDay11.Controls.Add(labelCalendarDay11);
+            panelCalendarDay11.Location = new Point(698, 231);
+            panelCalendarDay11.Margin = new Padding(5);
+            panelCalendarDay11.Name = "panelCalendarDay11";
+            panelCalendarDay11.Size = new Size(221, 216);
+            panelCalendarDay11.TabIndex = 6;
             // 
             // labelCalendarDay11
             // 
-            this.labelCalendarDay11.AutoSize = true;
-            this.labelCalendarDay11.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay11.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay11.Name = "labelCalendarDay11";
-            this.labelCalendarDay11.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay11.TabIndex = 10;
-            this.labelCalendarDay11.Text = "15";
+            labelCalendarDay11.AutoSize = true;
+            labelCalendarDay11.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay11.Location = new Point(2, 3);
+            labelCalendarDay11.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay11.Name = "labelCalendarDay11";
+            labelCalendarDay11.Size = new Size(87, 67);
+            labelCalendarDay11.TabIndex = 10;
+            labelCalendarDay11.Text = "15";
             // 
             // panelCalendarDay12
             // 
-            this.panelCalendarDay12.Controls.Add(this.labelCalendarDay12);
-            this.panelCalendarDay12.Location = new System.Drawing.Point(382, 85);
-            this.panelCalendarDay12.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay12.Name = "panelCalendarDay12";
-            this.panelCalendarDay12.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay12.TabIndex = 6;
+            panelCalendarDay12.Controls.Add(labelCalendarDay12);
+            panelCalendarDay12.Location = new Point(929, 231);
+            panelCalendarDay12.Margin = new Padding(5);
+            panelCalendarDay12.Name = "panelCalendarDay12";
+            panelCalendarDay12.Size = new Size(221, 216);
+            panelCalendarDay12.TabIndex = 6;
             // 
             // labelCalendarDay12
             // 
-            this.labelCalendarDay12.AutoSize = true;
-            this.labelCalendarDay12.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay12.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay12.Name = "labelCalendarDay12";
-            this.labelCalendarDay12.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay12.TabIndex = 11;
-            this.labelCalendarDay12.Text = "15";
+            labelCalendarDay12.AutoSize = true;
+            labelCalendarDay12.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay12.Location = new Point(2, 3);
+            labelCalendarDay12.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay12.Name = "labelCalendarDay12";
+            labelCalendarDay12.Size = new Size(87, 67);
+            labelCalendarDay12.TabIndex = 11;
+            labelCalendarDay12.Text = "15";
             // 
             // panelCalendarDay13
             // 
-            this.panelCalendarDay13.Controls.Add(this.labelCalendarDay13);
-            this.panelCalendarDay13.Location = new System.Drawing.Point(477, 85);
-            this.panelCalendarDay13.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay13.Name = "panelCalendarDay13";
-            this.panelCalendarDay13.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay13.TabIndex = 6;
+            panelCalendarDay13.Controls.Add(labelCalendarDay13);
+            panelCalendarDay13.Location = new Point(1160, 231);
+            panelCalendarDay13.Margin = new Padding(5);
+            panelCalendarDay13.Name = "panelCalendarDay13";
+            panelCalendarDay13.Size = new Size(221, 216);
+            panelCalendarDay13.TabIndex = 6;
             // 
             // labelCalendarDay13
             // 
-            this.labelCalendarDay13.AutoSize = true;
-            this.labelCalendarDay13.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay13.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay13.Name = "labelCalendarDay13";
-            this.labelCalendarDay13.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay13.TabIndex = 12;
-            this.labelCalendarDay13.Text = "15";
+            labelCalendarDay13.AutoSize = true;
+            labelCalendarDay13.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay13.Location = new Point(2, 3);
+            labelCalendarDay13.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay13.Name = "labelCalendarDay13";
+            labelCalendarDay13.Size = new Size(87, 67);
+            labelCalendarDay13.TabIndex = 12;
+            labelCalendarDay13.Text = "15";
             // 
             // panelCalendarDay14
             // 
-            this.panelCalendarDay14.Controls.Add(this.labelCalendarDay14);
-            this.panelCalendarDay14.Location = new System.Drawing.Point(572, 85);
-            this.panelCalendarDay14.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay14.Name = "panelCalendarDay14";
-            this.panelCalendarDay14.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay14.TabIndex = 6;
+            panelCalendarDay14.Controls.Add(labelCalendarDay14);
+            panelCalendarDay14.Location = new Point(1391, 231);
+            panelCalendarDay14.Margin = new Padding(5);
+            panelCalendarDay14.Name = "panelCalendarDay14";
+            panelCalendarDay14.Size = new Size(221, 216);
+            panelCalendarDay14.TabIndex = 6;
             // 
             // labelCalendarDay14
             // 
-            this.labelCalendarDay14.AutoSize = true;
-            this.labelCalendarDay14.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay14.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay14.Name = "labelCalendarDay14";
-            this.labelCalendarDay14.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay14.TabIndex = 13;
-            this.labelCalendarDay14.Text = "15";
+            labelCalendarDay14.AutoSize = true;
+            labelCalendarDay14.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay14.Location = new Point(2, 3);
+            labelCalendarDay14.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay14.Name = "labelCalendarDay14";
+            labelCalendarDay14.Size = new Size(87, 67);
+            labelCalendarDay14.TabIndex = 13;
+            labelCalendarDay14.Text = "15";
             // 
             // panelCalendarDay15
             // 
-            this.panelCalendarDay15.Controls.Add(this.labelCalendarDay15);
-            this.panelCalendarDay15.Location = new System.Drawing.Point(2, 168);
-            this.panelCalendarDay15.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay15.Name = "panelCalendarDay15";
-            this.panelCalendarDay15.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay15.TabIndex = 6;
+            panelCalendarDay15.Controls.Add(labelCalendarDay15);
+            panelCalendarDay15.Location = new Point(5, 457);
+            panelCalendarDay15.Margin = new Padding(5);
+            panelCalendarDay15.Name = "panelCalendarDay15";
+            panelCalendarDay15.Size = new Size(221, 216);
+            panelCalendarDay15.TabIndex = 6;
             // 
             // labelCalendarDay15
             // 
-            this.labelCalendarDay15.AutoSize = true;
-            this.labelCalendarDay15.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay15.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay15.Name = "labelCalendarDay15";
-            this.labelCalendarDay15.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay15.TabIndex = 14;
-            this.labelCalendarDay15.Text = "15";
+            labelCalendarDay15.AutoSize = true;
+            labelCalendarDay15.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay15.Location = new Point(2, 3);
+            labelCalendarDay15.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay15.Name = "labelCalendarDay15";
+            labelCalendarDay15.Size = new Size(87, 67);
+            labelCalendarDay15.TabIndex = 14;
+            labelCalendarDay15.Text = "15";
             // 
             // panelCalendarDay16
             // 
-            this.panelCalendarDay16.Controls.Add(this.labelCalendarDay16);
-            this.panelCalendarDay16.Location = new System.Drawing.Point(97, 168);
-            this.panelCalendarDay16.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay16.Name = "panelCalendarDay16";
-            this.panelCalendarDay16.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay16.TabIndex = 6;
+            panelCalendarDay16.Controls.Add(labelCalendarDay16);
+            panelCalendarDay16.Location = new Point(236, 457);
+            panelCalendarDay16.Margin = new Padding(5);
+            panelCalendarDay16.Name = "panelCalendarDay16";
+            panelCalendarDay16.Size = new Size(221, 216);
+            panelCalendarDay16.TabIndex = 6;
             // 
             // labelCalendarDay16
             // 
-            this.labelCalendarDay16.AutoSize = true;
-            this.labelCalendarDay16.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay16.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay16.Name = "labelCalendarDay16";
-            this.labelCalendarDay16.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay16.TabIndex = 15;
-            this.labelCalendarDay16.Text = "15";
+            labelCalendarDay16.AutoSize = true;
+            labelCalendarDay16.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay16.Location = new Point(2, 3);
+            labelCalendarDay16.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay16.Name = "labelCalendarDay16";
+            labelCalendarDay16.Size = new Size(87, 67);
+            labelCalendarDay16.TabIndex = 15;
+            labelCalendarDay16.Text = "15";
             // 
             // panelCalendarDay17
             // 
-            this.panelCalendarDay17.Controls.Add(this.labelCalendarDay17);
-            this.panelCalendarDay17.Location = new System.Drawing.Point(192, 168);
-            this.panelCalendarDay17.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay17.Name = "panelCalendarDay17";
-            this.panelCalendarDay17.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay17.TabIndex = 6;
+            panelCalendarDay17.Controls.Add(labelCalendarDay17);
+            panelCalendarDay17.Location = new Point(467, 457);
+            panelCalendarDay17.Margin = new Padding(5);
+            panelCalendarDay17.Name = "panelCalendarDay17";
+            panelCalendarDay17.Size = new Size(221, 216);
+            panelCalendarDay17.TabIndex = 6;
             // 
             // labelCalendarDay17
             // 
-            this.labelCalendarDay17.AutoSize = true;
-            this.labelCalendarDay17.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay17.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay17.Name = "labelCalendarDay17";
-            this.labelCalendarDay17.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay17.TabIndex = 16;
-            this.labelCalendarDay17.Text = "15";
+            labelCalendarDay17.AutoSize = true;
+            labelCalendarDay17.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay17.Location = new Point(2, 3);
+            labelCalendarDay17.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay17.Name = "labelCalendarDay17";
+            labelCalendarDay17.Size = new Size(87, 67);
+            labelCalendarDay17.TabIndex = 16;
+            labelCalendarDay17.Text = "15";
             // 
             // panelCalendarDay18
             // 
-            this.panelCalendarDay18.Controls.Add(this.labelCalendarDay18);
-            this.panelCalendarDay18.Location = new System.Drawing.Point(287, 168);
-            this.panelCalendarDay18.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay18.Name = "panelCalendarDay18";
-            this.panelCalendarDay18.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay18.TabIndex = 6;
+            panelCalendarDay18.Controls.Add(labelCalendarDay18);
+            panelCalendarDay18.Location = new Point(698, 457);
+            panelCalendarDay18.Margin = new Padding(5);
+            panelCalendarDay18.Name = "panelCalendarDay18";
+            panelCalendarDay18.Size = new Size(221, 216);
+            panelCalendarDay18.TabIndex = 6;
             // 
             // labelCalendarDay18
             // 
-            this.labelCalendarDay18.AutoSize = true;
-            this.labelCalendarDay18.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay18.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay18.Name = "labelCalendarDay18";
-            this.labelCalendarDay18.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay18.TabIndex = 17;
-            this.labelCalendarDay18.Text = "15";
+            labelCalendarDay18.AutoSize = true;
+            labelCalendarDay18.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay18.Location = new Point(2, 3);
+            labelCalendarDay18.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay18.Name = "labelCalendarDay18";
+            labelCalendarDay18.Size = new Size(87, 67);
+            labelCalendarDay18.TabIndex = 17;
+            labelCalendarDay18.Text = "15";
             // 
             // panelCalendarDay19
             // 
-            this.panelCalendarDay19.Controls.Add(this.labelCalendarDay19);
-            this.panelCalendarDay19.Location = new System.Drawing.Point(382, 168);
-            this.panelCalendarDay19.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay19.Name = "panelCalendarDay19";
-            this.panelCalendarDay19.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay19.TabIndex = 6;
+            panelCalendarDay19.Controls.Add(labelCalendarDay19);
+            panelCalendarDay19.Location = new Point(929, 457);
+            panelCalendarDay19.Margin = new Padding(5);
+            panelCalendarDay19.Name = "panelCalendarDay19";
+            panelCalendarDay19.Size = new Size(221, 216);
+            panelCalendarDay19.TabIndex = 6;
             // 
             // labelCalendarDay19
             // 
-            this.labelCalendarDay19.AutoSize = true;
-            this.labelCalendarDay19.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay19.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay19.Name = "labelCalendarDay19";
-            this.labelCalendarDay19.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay19.TabIndex = 18;
-            this.labelCalendarDay19.Text = "15";
+            labelCalendarDay19.AutoSize = true;
+            labelCalendarDay19.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay19.Location = new Point(2, 3);
+            labelCalendarDay19.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay19.Name = "labelCalendarDay19";
+            labelCalendarDay19.Size = new Size(87, 67);
+            labelCalendarDay19.TabIndex = 18;
+            labelCalendarDay19.Text = "15";
             // 
             // panelCalendarDay20
             // 
-            this.panelCalendarDay20.Controls.Add(this.labelCalendarDay20);
-            this.panelCalendarDay20.Location = new System.Drawing.Point(477, 168);
-            this.panelCalendarDay20.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay20.Name = "panelCalendarDay20";
-            this.panelCalendarDay20.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay20.TabIndex = 6;
+            panelCalendarDay20.Controls.Add(labelCalendarDay20);
+            panelCalendarDay20.Location = new Point(1160, 457);
+            panelCalendarDay20.Margin = new Padding(5);
+            panelCalendarDay20.Name = "panelCalendarDay20";
+            panelCalendarDay20.Size = new Size(221, 216);
+            panelCalendarDay20.TabIndex = 6;
             // 
             // labelCalendarDay20
             // 
-            this.labelCalendarDay20.AutoSize = true;
-            this.labelCalendarDay20.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay20.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay20.Name = "labelCalendarDay20";
-            this.labelCalendarDay20.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay20.TabIndex = 19;
-            this.labelCalendarDay20.Text = "15";
+            labelCalendarDay20.AutoSize = true;
+            labelCalendarDay20.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay20.Location = new Point(2, 3);
+            labelCalendarDay20.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay20.Name = "labelCalendarDay20";
+            labelCalendarDay20.Size = new Size(87, 67);
+            labelCalendarDay20.TabIndex = 19;
+            labelCalendarDay20.Text = "15";
             // 
             // panelCalendarDay21
             // 
-            this.panelCalendarDay21.Controls.Add(this.labelCalendarDay21);
-            this.panelCalendarDay21.Location = new System.Drawing.Point(572, 168);
-            this.panelCalendarDay21.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay21.Name = "panelCalendarDay21";
-            this.panelCalendarDay21.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay21.TabIndex = 6;
+            panelCalendarDay21.Controls.Add(labelCalendarDay21);
+            panelCalendarDay21.Location = new Point(1391, 457);
+            panelCalendarDay21.Margin = new Padding(5);
+            panelCalendarDay21.Name = "panelCalendarDay21";
+            panelCalendarDay21.Size = new Size(221, 216);
+            panelCalendarDay21.TabIndex = 6;
             // 
             // labelCalendarDay21
             // 
-            this.labelCalendarDay21.AutoSize = true;
-            this.labelCalendarDay21.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay21.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay21.Name = "labelCalendarDay21";
-            this.labelCalendarDay21.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay21.TabIndex = 20;
-            this.labelCalendarDay21.Text = "15";
+            labelCalendarDay21.AutoSize = true;
+            labelCalendarDay21.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay21.Location = new Point(2, 3);
+            labelCalendarDay21.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay21.Name = "labelCalendarDay21";
+            labelCalendarDay21.Size = new Size(87, 67);
+            labelCalendarDay21.TabIndex = 20;
+            labelCalendarDay21.Text = "15";
             // 
             // panelCalendarDay22
             // 
-            this.panelCalendarDay22.Controls.Add(this.labelCalendarDay22);
-            this.panelCalendarDay22.Location = new System.Drawing.Point(2, 251);
-            this.panelCalendarDay22.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay22.Name = "panelCalendarDay22";
-            this.panelCalendarDay22.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay22.TabIndex = 6;
+            panelCalendarDay22.Controls.Add(labelCalendarDay22);
+            panelCalendarDay22.Location = new Point(5, 683);
+            panelCalendarDay22.Margin = new Padding(5);
+            panelCalendarDay22.Name = "panelCalendarDay22";
+            panelCalendarDay22.Size = new Size(221, 216);
+            panelCalendarDay22.TabIndex = 6;
             // 
             // labelCalendarDay22
             // 
-            this.labelCalendarDay22.AutoSize = true;
-            this.labelCalendarDay22.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay22.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay22.Name = "labelCalendarDay22";
-            this.labelCalendarDay22.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay22.TabIndex = 27;
-            this.labelCalendarDay22.Text = "15";
+            labelCalendarDay22.AutoSize = true;
+            labelCalendarDay22.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay22.Location = new Point(2, 3);
+            labelCalendarDay22.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay22.Name = "labelCalendarDay22";
+            labelCalendarDay22.Size = new Size(87, 67);
+            labelCalendarDay22.TabIndex = 27;
+            labelCalendarDay22.Text = "15";
             // 
             // panelCalendarDay23
             // 
-            this.panelCalendarDay23.Controls.Add(this.labelCalendarDay23);
-            this.panelCalendarDay23.Location = new System.Drawing.Point(97, 251);
-            this.panelCalendarDay23.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay23.Name = "panelCalendarDay23";
-            this.panelCalendarDay23.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay23.TabIndex = 6;
+            panelCalendarDay23.Controls.Add(labelCalendarDay23);
+            panelCalendarDay23.Location = new Point(236, 683);
+            panelCalendarDay23.Margin = new Padding(5);
+            panelCalendarDay23.Name = "panelCalendarDay23";
+            panelCalendarDay23.Size = new Size(221, 216);
+            panelCalendarDay23.TabIndex = 6;
             // 
             // labelCalendarDay23
             // 
-            this.labelCalendarDay23.AutoSize = true;
-            this.labelCalendarDay23.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay23.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay23.Name = "labelCalendarDay23";
-            this.labelCalendarDay23.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay23.TabIndex = 26;
-            this.labelCalendarDay23.Text = "15";
+            labelCalendarDay23.AutoSize = true;
+            labelCalendarDay23.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay23.Location = new Point(2, 3);
+            labelCalendarDay23.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay23.Name = "labelCalendarDay23";
+            labelCalendarDay23.Size = new Size(87, 67);
+            labelCalendarDay23.TabIndex = 26;
+            labelCalendarDay23.Text = "15";
             // 
             // panelCalendarDay24
             // 
-            this.panelCalendarDay24.Controls.Add(this.labelCalendarDay24);
-            this.panelCalendarDay24.Location = new System.Drawing.Point(192, 251);
-            this.panelCalendarDay24.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay24.Name = "panelCalendarDay24";
-            this.panelCalendarDay24.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay24.TabIndex = 6;
+            panelCalendarDay24.Controls.Add(labelCalendarDay24);
+            panelCalendarDay24.Location = new Point(467, 683);
+            panelCalendarDay24.Margin = new Padding(5);
+            panelCalendarDay24.Name = "panelCalendarDay24";
+            panelCalendarDay24.Size = new Size(221, 216);
+            panelCalendarDay24.TabIndex = 6;
             // 
             // labelCalendarDay24
             // 
-            this.labelCalendarDay24.AutoSize = true;
-            this.labelCalendarDay24.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay24.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay24.Name = "labelCalendarDay24";
-            this.labelCalendarDay24.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay24.TabIndex = 25;
-            this.labelCalendarDay24.Text = "15";
+            labelCalendarDay24.AutoSize = true;
+            labelCalendarDay24.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay24.Location = new Point(2, 3);
+            labelCalendarDay24.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay24.Name = "labelCalendarDay24";
+            labelCalendarDay24.Size = new Size(87, 67);
+            labelCalendarDay24.TabIndex = 25;
+            labelCalendarDay24.Text = "15";
             // 
             // panelCalendarDay25
             // 
-            this.panelCalendarDay25.Controls.Add(this.labelCalendarDay25);
-            this.panelCalendarDay25.Location = new System.Drawing.Point(287, 251);
-            this.panelCalendarDay25.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay25.Name = "panelCalendarDay25";
-            this.panelCalendarDay25.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay25.TabIndex = 6;
+            panelCalendarDay25.Controls.Add(labelCalendarDay25);
+            panelCalendarDay25.Location = new Point(698, 683);
+            panelCalendarDay25.Margin = new Padding(5);
+            panelCalendarDay25.Name = "panelCalendarDay25";
+            panelCalendarDay25.Size = new Size(221, 216);
+            panelCalendarDay25.TabIndex = 6;
             // 
             // labelCalendarDay25
             // 
-            this.labelCalendarDay25.AutoSize = true;
-            this.labelCalendarDay25.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay25.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay25.Name = "labelCalendarDay25";
-            this.labelCalendarDay25.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay25.TabIndex = 24;
-            this.labelCalendarDay25.Text = "15";
+            labelCalendarDay25.AutoSize = true;
+            labelCalendarDay25.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay25.Location = new Point(2, 3);
+            labelCalendarDay25.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay25.Name = "labelCalendarDay25";
+            labelCalendarDay25.Size = new Size(87, 67);
+            labelCalendarDay25.TabIndex = 24;
+            labelCalendarDay25.Text = "15";
             // 
             // panelCalendarDay26
             // 
-            this.panelCalendarDay26.Controls.Add(this.labelCalendarDay26);
-            this.panelCalendarDay26.Location = new System.Drawing.Point(382, 251);
-            this.panelCalendarDay26.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay26.Name = "panelCalendarDay26";
-            this.panelCalendarDay26.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay26.TabIndex = 6;
+            panelCalendarDay26.Controls.Add(labelCalendarDay26);
+            panelCalendarDay26.Location = new Point(929, 683);
+            panelCalendarDay26.Margin = new Padding(5);
+            panelCalendarDay26.Name = "panelCalendarDay26";
+            panelCalendarDay26.Size = new Size(221, 216);
+            panelCalendarDay26.TabIndex = 6;
             // 
             // labelCalendarDay26
             // 
-            this.labelCalendarDay26.AutoSize = true;
-            this.labelCalendarDay26.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay26.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay26.Name = "labelCalendarDay26";
-            this.labelCalendarDay26.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay26.TabIndex = 23;
-            this.labelCalendarDay26.Text = "15";
+            labelCalendarDay26.AutoSize = true;
+            labelCalendarDay26.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay26.Location = new Point(2, 3);
+            labelCalendarDay26.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay26.Name = "labelCalendarDay26";
+            labelCalendarDay26.Size = new Size(87, 67);
+            labelCalendarDay26.TabIndex = 23;
+            labelCalendarDay26.Text = "15";
             // 
             // panelCalendarDay27
             // 
-            this.panelCalendarDay27.Controls.Add(this.labelCalendarDay27);
-            this.panelCalendarDay27.Location = new System.Drawing.Point(477, 251);
-            this.panelCalendarDay27.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay27.Name = "panelCalendarDay27";
-            this.panelCalendarDay27.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay27.TabIndex = 6;
+            panelCalendarDay27.Controls.Add(labelCalendarDay27);
+            panelCalendarDay27.Location = new Point(1160, 683);
+            panelCalendarDay27.Margin = new Padding(5);
+            panelCalendarDay27.Name = "panelCalendarDay27";
+            panelCalendarDay27.Size = new Size(221, 216);
+            panelCalendarDay27.TabIndex = 6;
             // 
             // labelCalendarDay27
             // 
-            this.labelCalendarDay27.AutoSize = true;
-            this.labelCalendarDay27.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay27.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay27.Name = "labelCalendarDay27";
-            this.labelCalendarDay27.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay27.TabIndex = 22;
-            this.labelCalendarDay27.Text = "15";
+            labelCalendarDay27.AutoSize = true;
+            labelCalendarDay27.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay27.Location = new Point(2, 3);
+            labelCalendarDay27.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay27.Name = "labelCalendarDay27";
+            labelCalendarDay27.Size = new Size(87, 67);
+            labelCalendarDay27.TabIndex = 22;
+            labelCalendarDay27.Text = "15";
             // 
             // panelCalendarDay28
             // 
-            this.panelCalendarDay28.Controls.Add(this.labelCalendarDay28);
-            this.panelCalendarDay28.Location = new System.Drawing.Point(572, 251);
-            this.panelCalendarDay28.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay28.Name = "panelCalendarDay28";
-            this.panelCalendarDay28.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay28.TabIndex = 6;
+            panelCalendarDay28.Controls.Add(labelCalendarDay28);
+            panelCalendarDay28.Location = new Point(1391, 683);
+            panelCalendarDay28.Margin = new Padding(5);
+            panelCalendarDay28.Name = "panelCalendarDay28";
+            panelCalendarDay28.Size = new Size(221, 216);
+            panelCalendarDay28.TabIndex = 6;
             // 
             // labelCalendarDay28
             // 
-            this.labelCalendarDay28.AutoSize = true;
-            this.labelCalendarDay28.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay28.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay28.Name = "labelCalendarDay28";
-            this.labelCalendarDay28.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay28.TabIndex = 21;
-            this.labelCalendarDay28.Text = "15";
+            labelCalendarDay28.AutoSize = true;
+            labelCalendarDay28.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay28.Location = new Point(2, 3);
+            labelCalendarDay28.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay28.Name = "labelCalendarDay28";
+            labelCalendarDay28.Size = new Size(87, 67);
+            labelCalendarDay28.TabIndex = 21;
+            labelCalendarDay28.Text = "15";
             // 
             // panelCalendarDay29
             // 
-            this.panelCalendarDay29.Controls.Add(this.labelCalendarDay29);
-            this.panelCalendarDay29.Location = new System.Drawing.Point(2, 334);
-            this.panelCalendarDay29.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay29.Name = "panelCalendarDay29";
-            this.panelCalendarDay29.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay29.TabIndex = 6;
+            panelCalendarDay29.Controls.Add(labelCalendarDay29);
+            panelCalendarDay29.Location = new Point(5, 909);
+            panelCalendarDay29.Margin = new Padding(5);
+            panelCalendarDay29.Name = "panelCalendarDay29";
+            panelCalendarDay29.Size = new Size(221, 216);
+            panelCalendarDay29.TabIndex = 6;
             // 
             // labelCalendarDay29
             // 
-            this.labelCalendarDay29.AutoSize = true;
-            this.labelCalendarDay29.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay29.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay29.Name = "labelCalendarDay29";
-            this.labelCalendarDay29.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay29.TabIndex = 28;
-            this.labelCalendarDay29.Text = "15";
+            labelCalendarDay29.AutoSize = true;
+            labelCalendarDay29.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay29.Location = new Point(2, 3);
+            labelCalendarDay29.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay29.Name = "labelCalendarDay29";
+            labelCalendarDay29.Size = new Size(87, 67);
+            labelCalendarDay29.TabIndex = 28;
+            labelCalendarDay29.Text = "15";
             // 
             // panelCalendarDay30
             // 
-            this.panelCalendarDay30.Controls.Add(this.labelCalendarDay30);
-            this.panelCalendarDay30.Location = new System.Drawing.Point(97, 334);
-            this.panelCalendarDay30.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay30.Name = "panelCalendarDay30";
-            this.panelCalendarDay30.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay30.TabIndex = 7;
+            panelCalendarDay30.Controls.Add(labelCalendarDay30);
+            panelCalendarDay30.Location = new Point(236, 909);
+            panelCalendarDay30.Margin = new Padding(5);
+            panelCalendarDay30.Name = "panelCalendarDay30";
+            panelCalendarDay30.Size = new Size(221, 216);
+            panelCalendarDay30.TabIndex = 7;
             // 
             // labelCalendarDay30
             // 
-            this.labelCalendarDay30.AutoSize = true;
-            this.labelCalendarDay30.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay30.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay30.Name = "labelCalendarDay30";
-            this.labelCalendarDay30.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay30.TabIndex = 29;
-            this.labelCalendarDay30.Text = "15";
+            labelCalendarDay30.AutoSize = true;
+            labelCalendarDay30.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay30.Location = new Point(2, 3);
+            labelCalendarDay30.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay30.Name = "labelCalendarDay30";
+            labelCalendarDay30.Size = new Size(87, 67);
+            labelCalendarDay30.TabIndex = 29;
+            labelCalendarDay30.Text = "15";
             // 
             // panelCalendarDay31
             // 
-            this.panelCalendarDay31.Controls.Add(this.labelCalendarDay31);
-            this.panelCalendarDay31.Location = new System.Drawing.Point(192, 334);
-            this.panelCalendarDay31.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay31.Name = "panelCalendarDay31";
-            this.panelCalendarDay31.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay31.TabIndex = 8;
+            panelCalendarDay31.Controls.Add(labelCalendarDay31);
+            panelCalendarDay31.Location = new Point(467, 909);
+            panelCalendarDay31.Margin = new Padding(5);
+            panelCalendarDay31.Name = "panelCalendarDay31";
+            panelCalendarDay31.Size = new Size(221, 216);
+            panelCalendarDay31.TabIndex = 8;
             // 
             // labelCalendarDay31
             // 
-            this.labelCalendarDay31.AutoSize = true;
-            this.labelCalendarDay31.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay31.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay31.Name = "labelCalendarDay31";
-            this.labelCalendarDay31.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay31.TabIndex = 30;
-            this.labelCalendarDay31.Text = "15";
+            labelCalendarDay31.AutoSize = true;
+            labelCalendarDay31.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay31.Location = new Point(2, 3);
+            labelCalendarDay31.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay31.Name = "labelCalendarDay31";
+            labelCalendarDay31.Size = new Size(87, 67);
+            labelCalendarDay31.TabIndex = 30;
+            labelCalendarDay31.Text = "15";
             // 
             // panelCalendarDay32
             // 
-            this.panelCalendarDay32.Controls.Add(this.labelCalendarDay32);
-            this.panelCalendarDay32.Location = new System.Drawing.Point(287, 334);
-            this.panelCalendarDay32.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay32.Name = "panelCalendarDay32";
-            this.panelCalendarDay32.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay32.TabIndex = 8;
+            panelCalendarDay32.Controls.Add(labelCalendarDay32);
+            panelCalendarDay32.Location = new Point(698, 909);
+            panelCalendarDay32.Margin = new Padding(5);
+            panelCalendarDay32.Name = "panelCalendarDay32";
+            panelCalendarDay32.Size = new Size(221, 216);
+            panelCalendarDay32.TabIndex = 8;
             // 
             // labelCalendarDay32
             // 
-            this.labelCalendarDay32.AutoSize = true;
-            this.labelCalendarDay32.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay32.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay32.Name = "labelCalendarDay32";
-            this.labelCalendarDay32.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay32.TabIndex = 31;
-            this.labelCalendarDay32.Text = "15";
+            labelCalendarDay32.AutoSize = true;
+            labelCalendarDay32.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay32.Location = new Point(2, 3);
+            labelCalendarDay32.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay32.Name = "labelCalendarDay32";
+            labelCalendarDay32.Size = new Size(87, 67);
+            labelCalendarDay32.TabIndex = 31;
+            labelCalendarDay32.Text = "15";
             // 
             // panelCalendarDay33
             // 
-            this.panelCalendarDay33.Controls.Add(this.labelCalendarDay33);
-            this.panelCalendarDay33.Location = new System.Drawing.Point(382, 334);
-            this.panelCalendarDay33.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay33.Name = "panelCalendarDay33";
-            this.panelCalendarDay33.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay33.TabIndex = 8;
+            panelCalendarDay33.Controls.Add(labelCalendarDay33);
+            panelCalendarDay33.Location = new Point(929, 909);
+            panelCalendarDay33.Margin = new Padding(5);
+            panelCalendarDay33.Name = "panelCalendarDay33";
+            panelCalendarDay33.Size = new Size(221, 216);
+            panelCalendarDay33.TabIndex = 8;
             // 
             // labelCalendarDay33
             // 
-            this.labelCalendarDay33.AutoSize = true;
-            this.labelCalendarDay33.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay33.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay33.Name = "labelCalendarDay33";
-            this.labelCalendarDay33.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay33.TabIndex = 32;
-            this.labelCalendarDay33.Text = "15";
+            labelCalendarDay33.AutoSize = true;
+            labelCalendarDay33.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay33.Location = new Point(2, 3);
+            labelCalendarDay33.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay33.Name = "labelCalendarDay33";
+            labelCalendarDay33.Size = new Size(87, 67);
+            labelCalendarDay33.TabIndex = 32;
+            labelCalendarDay33.Text = "15";
             // 
             // panelCalendarDay34
             // 
-            this.panelCalendarDay34.Controls.Add(this.labelCalendarDay34);
-            this.panelCalendarDay34.Location = new System.Drawing.Point(477, 334);
-            this.panelCalendarDay34.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay34.Name = "panelCalendarDay34";
-            this.panelCalendarDay34.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay34.TabIndex = 8;
+            panelCalendarDay34.Controls.Add(labelCalendarDay34);
+            panelCalendarDay34.Location = new Point(1160, 909);
+            panelCalendarDay34.Margin = new Padding(5);
+            panelCalendarDay34.Name = "panelCalendarDay34";
+            panelCalendarDay34.Size = new Size(221, 216);
+            panelCalendarDay34.TabIndex = 8;
             // 
             // labelCalendarDay34
             // 
-            this.labelCalendarDay34.AutoSize = true;
-            this.labelCalendarDay34.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay34.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay34.Name = "labelCalendarDay34";
-            this.labelCalendarDay34.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay34.TabIndex = 33;
-            this.labelCalendarDay34.Text = "15";
+            labelCalendarDay34.AutoSize = true;
+            labelCalendarDay34.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay34.Location = new Point(2, 3);
+            labelCalendarDay34.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay34.Name = "labelCalendarDay34";
+            labelCalendarDay34.Size = new Size(87, 67);
+            labelCalendarDay34.TabIndex = 33;
+            labelCalendarDay34.Text = "15";
             // 
             // panelCalendarDay35
             // 
-            this.panelCalendarDay35.Controls.Add(this.labelCalendarDay35);
-            this.panelCalendarDay35.Location = new System.Drawing.Point(572, 334);
-            this.panelCalendarDay35.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay35.Name = "panelCalendarDay35";
-            this.panelCalendarDay35.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay35.TabIndex = 8;
+            panelCalendarDay35.Controls.Add(labelCalendarDay35);
+            panelCalendarDay35.Location = new Point(1391, 909);
+            panelCalendarDay35.Margin = new Padding(5);
+            panelCalendarDay35.Name = "panelCalendarDay35";
+            panelCalendarDay35.Size = new Size(221, 216);
+            panelCalendarDay35.TabIndex = 8;
             // 
             // labelCalendarDay35
             // 
-            this.labelCalendarDay35.AutoSize = true;
-            this.labelCalendarDay35.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay35.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay35.Name = "labelCalendarDay35";
-            this.labelCalendarDay35.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay35.TabIndex = 34;
-            this.labelCalendarDay35.Text = "15";
+            labelCalendarDay35.AutoSize = true;
+            labelCalendarDay35.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay35.Location = new Point(2, 3);
+            labelCalendarDay35.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay35.Name = "labelCalendarDay35";
+            labelCalendarDay35.Size = new Size(87, 67);
+            labelCalendarDay35.TabIndex = 34;
+            labelCalendarDay35.Text = "15";
             // 
             // panelCalendarDay36
             // 
-            this.panelCalendarDay36.Controls.Add(this.labelCalendarDay36);
-            this.panelCalendarDay36.Location = new System.Drawing.Point(2, 417);
-            this.panelCalendarDay36.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay36.Name = "panelCalendarDay36";
-            this.panelCalendarDay36.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay36.TabIndex = 29;
+            panelCalendarDay36.Controls.Add(labelCalendarDay36);
+            panelCalendarDay36.Location = new Point(5, 1135);
+            panelCalendarDay36.Margin = new Padding(5);
+            panelCalendarDay36.Name = "panelCalendarDay36";
+            panelCalendarDay36.Size = new Size(221, 216);
+            panelCalendarDay36.TabIndex = 29;
             // 
             // labelCalendarDay36
             // 
-            this.labelCalendarDay36.AutoSize = true;
-            this.labelCalendarDay36.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay36.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay36.Name = "labelCalendarDay36";
-            this.labelCalendarDay36.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay36.TabIndex = 28;
-            this.labelCalendarDay36.Text = "15";
+            labelCalendarDay36.AutoSize = true;
+            labelCalendarDay36.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay36.Location = new Point(2, 3);
+            labelCalendarDay36.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay36.Name = "labelCalendarDay36";
+            labelCalendarDay36.Size = new Size(87, 67);
+            labelCalendarDay36.TabIndex = 28;
+            labelCalendarDay36.Text = "15";
             // 
             // panelCalendarDay37
             // 
-            this.panelCalendarDay37.Controls.Add(this.labelCalendarDay37);
-            this.panelCalendarDay37.Location = new System.Drawing.Point(97, 417);
-            this.panelCalendarDay37.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay37.Name = "panelCalendarDay37";
-            this.panelCalendarDay37.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay37.TabIndex = 30;
+            panelCalendarDay37.Controls.Add(labelCalendarDay37);
+            panelCalendarDay37.Location = new Point(236, 1135);
+            panelCalendarDay37.Margin = new Padding(5);
+            panelCalendarDay37.Name = "panelCalendarDay37";
+            panelCalendarDay37.Size = new Size(221, 216);
+            panelCalendarDay37.TabIndex = 30;
             // 
             // labelCalendarDay37
             // 
-            this.labelCalendarDay37.AutoSize = true;
-            this.labelCalendarDay37.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay37.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay37.Name = "labelCalendarDay37";
-            this.labelCalendarDay37.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay37.TabIndex = 28;
-            this.labelCalendarDay37.Text = "15";
+            labelCalendarDay37.AutoSize = true;
+            labelCalendarDay37.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay37.Location = new Point(2, 3);
+            labelCalendarDay37.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay37.Name = "labelCalendarDay37";
+            labelCalendarDay37.Size = new Size(87, 67);
+            labelCalendarDay37.TabIndex = 28;
+            labelCalendarDay37.Text = "15";
             // 
             // panelCalendarDay38
             // 
-            this.panelCalendarDay38.Controls.Add(this.labelCalendarDay38);
-            this.panelCalendarDay38.Location = new System.Drawing.Point(192, 417);
-            this.panelCalendarDay38.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay38.Name = "panelCalendarDay38";
-            this.panelCalendarDay38.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay38.TabIndex = 30;
+            panelCalendarDay38.Controls.Add(labelCalendarDay38);
+            panelCalendarDay38.Location = new Point(467, 1135);
+            panelCalendarDay38.Margin = new Padding(5);
+            panelCalendarDay38.Name = "panelCalendarDay38";
+            panelCalendarDay38.Size = new Size(221, 216);
+            panelCalendarDay38.TabIndex = 30;
             // 
             // labelCalendarDay38
             // 
-            this.labelCalendarDay38.AutoSize = true;
-            this.labelCalendarDay38.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay38.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay38.Name = "labelCalendarDay38";
-            this.labelCalendarDay38.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay38.TabIndex = 28;
-            this.labelCalendarDay38.Text = "15";
+            labelCalendarDay38.AutoSize = true;
+            labelCalendarDay38.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay38.Location = new Point(2, 3);
+            labelCalendarDay38.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay38.Name = "labelCalendarDay38";
+            labelCalendarDay38.Size = new Size(87, 67);
+            labelCalendarDay38.TabIndex = 28;
+            labelCalendarDay38.Text = "15";
             // 
             // panelCalendarDay39
             // 
-            this.panelCalendarDay39.Controls.Add(this.labelCalendarDay39);
-            this.panelCalendarDay39.Location = new System.Drawing.Point(287, 417);
-            this.panelCalendarDay39.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay39.Name = "panelCalendarDay39";
-            this.panelCalendarDay39.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay39.TabIndex = 30;
+            panelCalendarDay39.Controls.Add(labelCalendarDay39);
+            panelCalendarDay39.Location = new Point(698, 1135);
+            panelCalendarDay39.Margin = new Padding(5);
+            panelCalendarDay39.Name = "panelCalendarDay39";
+            panelCalendarDay39.Size = new Size(221, 216);
+            panelCalendarDay39.TabIndex = 30;
             // 
             // labelCalendarDay39
             // 
-            this.labelCalendarDay39.AutoSize = true;
-            this.labelCalendarDay39.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay39.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay39.Name = "labelCalendarDay39";
-            this.labelCalendarDay39.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay39.TabIndex = 28;
-            this.labelCalendarDay39.Text = "15";
+            labelCalendarDay39.AutoSize = true;
+            labelCalendarDay39.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay39.Location = new Point(2, 3);
+            labelCalendarDay39.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay39.Name = "labelCalendarDay39";
+            labelCalendarDay39.Size = new Size(87, 67);
+            labelCalendarDay39.TabIndex = 28;
+            labelCalendarDay39.Text = "15";
             // 
             // panelCalendarDay40
             // 
-            this.panelCalendarDay40.Controls.Add(this.labelCalendarDay40);
-            this.panelCalendarDay40.Location = new System.Drawing.Point(382, 417);
-            this.panelCalendarDay40.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay40.Name = "panelCalendarDay40";
-            this.panelCalendarDay40.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay40.TabIndex = 30;
+            panelCalendarDay40.Controls.Add(labelCalendarDay40);
+            panelCalendarDay40.Location = new Point(929, 1135);
+            panelCalendarDay40.Margin = new Padding(5);
+            panelCalendarDay40.Name = "panelCalendarDay40";
+            panelCalendarDay40.Size = new Size(221, 216);
+            panelCalendarDay40.TabIndex = 30;
             // 
             // labelCalendarDay40
             // 
-            this.labelCalendarDay40.AutoSize = true;
-            this.labelCalendarDay40.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay40.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay40.Name = "labelCalendarDay40";
-            this.labelCalendarDay40.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay40.TabIndex = 28;
-            this.labelCalendarDay40.Text = "15";
+            labelCalendarDay40.AutoSize = true;
+            labelCalendarDay40.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay40.Location = new Point(2, 3);
+            labelCalendarDay40.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay40.Name = "labelCalendarDay40";
+            labelCalendarDay40.Size = new Size(87, 67);
+            labelCalendarDay40.TabIndex = 28;
+            labelCalendarDay40.Text = "15";
             // 
             // panelCalendarDay41
             // 
-            this.panelCalendarDay41.Controls.Add(this.labelCalendarDay41);
-            this.panelCalendarDay41.Location = new System.Drawing.Point(477, 417);
-            this.panelCalendarDay41.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay41.Name = "panelCalendarDay41";
-            this.panelCalendarDay41.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay41.TabIndex = 30;
+            panelCalendarDay41.Controls.Add(labelCalendarDay41);
+            panelCalendarDay41.Location = new Point(1160, 1135);
+            panelCalendarDay41.Margin = new Padding(5);
+            panelCalendarDay41.Name = "panelCalendarDay41";
+            panelCalendarDay41.Size = new Size(221, 216);
+            panelCalendarDay41.TabIndex = 30;
             // 
             // labelCalendarDay41
             // 
-            this.labelCalendarDay41.AutoSize = true;
-            this.labelCalendarDay41.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay41.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay41.Name = "labelCalendarDay41";
-            this.labelCalendarDay41.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay41.TabIndex = 28;
-            this.labelCalendarDay41.Text = "15";
+            labelCalendarDay41.AutoSize = true;
+            labelCalendarDay41.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay41.Location = new Point(2, 3);
+            labelCalendarDay41.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay41.Name = "labelCalendarDay41";
+            labelCalendarDay41.Size = new Size(87, 67);
+            labelCalendarDay41.TabIndex = 28;
+            labelCalendarDay41.Text = "15";
             // 
             // panelCalendarDay42
             // 
-            this.panelCalendarDay42.Controls.Add(this.labelCalendarDay42);
-            this.panelCalendarDay42.Location = new System.Drawing.Point(572, 417);
-            this.panelCalendarDay42.Margin = new System.Windows.Forms.Padding(2);
-            this.panelCalendarDay42.Name = "panelCalendarDay42";
-            this.panelCalendarDay42.Size = new System.Drawing.Size(91, 79);
-            this.panelCalendarDay42.TabIndex = 30;
+            panelCalendarDay42.Controls.Add(labelCalendarDay42);
+            panelCalendarDay42.Location = new Point(1391, 1135);
+            panelCalendarDay42.Margin = new Padding(5);
+            panelCalendarDay42.Name = "panelCalendarDay42";
+            panelCalendarDay42.Size = new Size(221, 216);
+            panelCalendarDay42.TabIndex = 30;
             // 
             // labelCalendarDay42
             // 
-            this.labelCalendarDay42.AutoSize = true;
-            this.labelCalendarDay42.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCalendarDay42.Location = new System.Drawing.Point(1, 1);
-            this.labelCalendarDay42.Name = "labelCalendarDay42";
-            this.labelCalendarDay42.Size = new System.Drawing.Size(36, 28);
-            this.labelCalendarDay42.TabIndex = 28;
-            this.labelCalendarDay42.Text = "15";
+            labelCalendarDay42.AutoSize = true;
+            labelCalendarDay42.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
+            labelCalendarDay42.Location = new Point(2, 3);
+            labelCalendarDay42.Margin = new Padding(7, 0, 7, 0);
+            labelCalendarDay42.Name = "labelCalendarDay42";
+            labelCalendarDay42.Size = new Size(87, 67);
+            labelCalendarDay42.TabIndex = 28;
+            labelCalendarDay42.Text = "15";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.labelDaySaturday);
-            this.panel1.Controls.Add(this.labelDayFriday);
-            this.panel1.Controls.Add(this.labelDayThursday);
-            this.panel1.Controls.Add(this.labelDayTuesday);
-            this.panel1.Controls.Add(this.labelDayMonday);
-            this.panel1.Controls.Add(this.labelDayWednesday);
-            this.panel1.Controls.Add(this.labelDaySunday);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(670, 25);
-            this.panel1.TabIndex = 5;
+            panel1.Controls.Add(labelDaySaturday);
+            panel1.Controls.Add(labelDayFriday);
+            panel1.Controls.Add(labelDayThursday);
+            panel1.Controls.Add(labelDayTuesday);
+            panel1.Controls.Add(labelDayMonday);
+            panel1.Controls.Add(labelDayWednesday);
+            panel1.Controls.Add(labelDaySunday);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 49);
+            panel1.Margin = new Padding(7, 8, 7, 8);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1627, 68);
+            panel1.TabIndex = 5;
             // 
             // labelDaySaturday
             // 
-            this.labelDaySaturday.AutoSize = true;
-            this.labelDaySaturday.Location = new System.Drawing.Point(592, 6);
-            this.labelDaySaturday.Name = "labelDaySaturday";
-            this.labelDaySaturday.Size = new System.Drawing.Size(53, 15);
-            this.labelDaySaturday.TabIndex = 6;
-            this.labelDaySaturday.Text = "Saturday";
+            labelDaySaturday.AutoSize = true;
+            labelDaySaturday.Location = new Point(1438, 16);
+            labelDaySaturday.Margin = new Padding(7, 0, 7, 0);
+            labelDaySaturday.Name = "labelDaySaturday";
+            labelDaySaturday.Size = new Size(134, 41);
+            labelDaySaturday.TabIndex = 6;
+            labelDaySaturday.Text = "Saturday";
             // 
             // labelDayFriday
             // 
-            this.labelDayFriday.AutoSize = true;
-            this.labelDayFriday.Location = new System.Drawing.Point(504, 6);
-            this.labelDayFriday.Name = "labelDayFriday";
-            this.labelDayFriday.Size = new System.Drawing.Size(39, 15);
-            this.labelDayFriday.TabIndex = 5;
-            this.labelDayFriday.Text = "Friday";
+            labelDayFriday.AutoSize = true;
+            labelDayFriday.Location = new Point(1224, 16);
+            labelDayFriday.Margin = new Padding(7, 0, 7, 0);
+            labelDayFriday.Name = "labelDayFriday";
+            labelDayFriday.Size = new Size(98, 41);
+            labelDayFriday.TabIndex = 5;
+            labelDayFriday.Text = "Friday";
             // 
             // labelDayThursday
             // 
-            this.labelDayThursday.AutoSize = true;
-            this.labelDayThursday.Location = new System.Drawing.Point(400, 6);
-            this.labelDayThursday.Name = "labelDayThursday";
-            this.labelDayThursday.Size = new System.Drawing.Size(55, 15);
-            this.labelDayThursday.TabIndex = 4;
-            this.labelDayThursday.Text = "Thursday";
+            labelDayThursday.AutoSize = true;
+            labelDayThursday.Location = new Point(971, 16);
+            labelDayThursday.Margin = new Padding(7, 0, 7, 0);
+            labelDayThursday.Name = "labelDayThursday";
+            labelDayThursday.Size = new Size(139, 41);
+            labelDayThursday.TabIndex = 4;
+            labelDayThursday.Text = "Thursday";
             // 
             // labelDayTuesday
             // 
-            this.labelDayTuesday.AutoSize = true;
-            this.labelDayTuesday.Location = new System.Drawing.Point(212, 6);
-            this.labelDayTuesday.Name = "labelDayTuesday";
-            this.labelDayTuesday.Size = new System.Drawing.Size(50, 15);
-            this.labelDayTuesday.TabIndex = 3;
-            this.labelDayTuesday.Text = "Tuesday";
+            labelDayTuesday.AutoSize = true;
+            labelDayTuesday.Location = new Point(515, 16);
+            labelDayTuesday.Margin = new Padding(7, 0, 7, 0);
+            labelDayTuesday.Name = "labelDayTuesday";
+            labelDayTuesday.Size = new Size(128, 41);
+            labelDayTuesday.TabIndex = 3;
+            labelDayTuesday.Text = "Tuesday";
             // 
             // labelDayMonday
             // 
-            this.labelDayMonday.AutoSize = true;
-            this.labelDayMonday.Location = new System.Drawing.Point(118, 6);
-            this.labelDayMonday.Name = "labelDayMonday";
-            this.labelDayMonday.Size = new System.Drawing.Size(51, 15);
-            this.labelDayMonday.TabIndex = 2;
-            this.labelDayMonday.Text = "Monday";
+            labelDayMonday.AutoSize = true;
+            labelDayMonday.Location = new Point(287, 16);
+            labelDayMonday.Margin = new Padding(7, 0, 7, 0);
+            labelDayMonday.Name = "labelDayMonday";
+            labelDayMonday.Size = new Size(128, 41);
+            labelDayMonday.TabIndex = 2;
+            labelDayMonday.Text = "Monday";
             // 
             // labelDayWednesday
             // 
-            this.labelDayWednesday.AutoSize = true;
-            this.labelDayWednesday.Location = new System.Drawing.Point(298, 6);
-            this.labelDayWednesday.Name = "labelDayWednesday";
-            this.labelDayWednesday.Size = new System.Drawing.Size(68, 15);
-            this.labelDayWednesday.TabIndex = 1;
-            this.labelDayWednesday.Text = "Wednesday";
+            labelDayWednesday.AutoSize = true;
+            labelDayWednesday.Location = new Point(724, 16);
+            labelDayWednesday.Margin = new Padding(7, 0, 7, 0);
+            labelDayWednesday.Name = "labelDayWednesday";
+            labelDayWednesday.Size = new Size(173, 41);
+            labelDayWednesday.TabIndex = 1;
+            labelDayWednesday.Text = "Wednesday";
             // 
             // labelDaySunday
             // 
-            this.labelDaySunday.AutoSize = true;
-            this.labelDaySunday.Location = new System.Drawing.Point(25, 6);
-            this.labelDaySunday.Name = "labelDaySunday";
-            this.labelDaySunday.Size = new System.Drawing.Size(46, 15);
-            this.labelDaySunday.TabIndex = 0;
-            this.labelDaySunday.Text = "Sunday";
+            labelDaySunday.AutoSize = true;
+            labelDaySunday.Location = new Point(61, 16);
+            labelDaySunday.Margin = new Padding(7, 0, 7, 0);
+            labelDaySunday.Name = "labelDaySunday";
+            labelDaySunday.Size = new Size(116, 41);
+            labelDaySunday.TabIndex = 0;
+            labelDaySunday.Text = "Sunday";
             // 
             // toolStrip1
             // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonLeft,
-            this.toolStripLabelYear,
-            this.toolStripComboBoxYear,
-            this.toolStripLabelMonth,
-            this.toolStripComboBoxMonth,
-            this.toolStripButtonNewTask,
-            this.toolStripButtonRight});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(670, 25);
-            this.toolStrip1.TabIndex = 3;
-            this.toolStrip1.Text = "toolStrip1";
+            toolStrip1.ImageScalingSize = new Size(40, 40);
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripButtonLeft, toolStripLabelYear, toolStripComboBoxYear, toolStripLabelMonth, toolStripComboBoxMonth, toolStripButtonNewTask, toolStripButtonRight });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Padding = new Padding(0, 0, 5, 0);
+            toolStrip1.Size = new Size(1627, 49);
+            toolStrip1.TabIndex = 3;
+            toolStrip1.Text = "toolStrip1";
             // 
             // toolStripButtonLeft
             // 
-            this.toolStripButtonLeft.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonLeft.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonLeft.Name = "toolStripButtonLeft";
-            this.toolStripButtonLeft.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonLeft.Text = "toolStripButton2";
+            toolStripButtonLeft.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButtonLeft.ImageTransparentColor = Color.Magenta;
+            toolStripButtonLeft.Name = "toolStripButtonLeft";
+            toolStripButtonLeft.Size = new Size(58, 42);
+            toolStripButtonLeft.Text = "toolStripButton2";
             // 
             // toolStripLabelYear
             // 
-            this.toolStripLabelYear.Name = "toolStripLabelYear";
-            this.toolStripLabelYear.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.toolStripLabelYear.Size = new System.Drawing.Size(39, 22);
-            this.toolStripLabelYear.Text = "Year";
+            toolStripLabelYear.Name = "toolStripLabelYear";
+            toolStripLabelYear.Padding = new Padding(10, 0, 0, 0);
+            toolStripLabelYear.Size = new Size(83, 42);
+            toolStripLabelYear.Text = "Year";
             // 
             // toolStripComboBoxYear
             // 
-            this.toolStripComboBoxYear.DropDownHeight = 80;
-            this.toolStripComboBoxYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBoxYear.IntegralHeight = false;
-            this.toolStripComboBoxYear.MaxDropDownItems = 6;
-            this.toolStripComboBoxYear.MaxLength = 4;
-            this.toolStripComboBoxYear.Name = "toolStripComboBoxYear";
-            this.toolStripComboBoxYear.Size = new System.Drawing.Size(121, 25);
+            toolStripComboBoxYear.DropDownHeight = 80;
+            toolStripComboBoxYear.DropDownStyle = ComboBoxStyle.DropDownList;
+            toolStripComboBoxYear.IntegralHeight = false;
+            toolStripComboBoxYear.MaxDropDownItems = 6;
+            toolStripComboBoxYear.MaxLength = 4;
+            toolStripComboBoxYear.Name = "toolStripComboBoxYear";
+            toolStripComboBoxYear.Size = new Size(288, 49);
+            toolStripComboBoxYear.TextChanged += month_year_Changed;
             // 
             // toolStripLabelMonth
             // 
-            this.toolStripLabelMonth.Name = "toolStripLabelMonth";
-            this.toolStripLabelMonth.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.toolStripLabelMonth.Size = new System.Drawing.Size(53, 22);
-            this.toolStripLabelMonth.Text = "Month";
+            toolStripLabelMonth.Name = "toolStripLabelMonth";
+            toolStripLabelMonth.Padding = new Padding(10, 0, 0, 0);
+            toolStripLabelMonth.Size = new Size(117, 42);
+            toolStripLabelMonth.Text = "Month";
             // 
             // toolStripComboBoxMonth
             // 
-            this.toolStripComboBoxMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.toolStripComboBoxMonth.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.toolStripComboBoxMonth.Name = "toolStripComboBoxMonth";
-            this.toolStripComboBoxMonth.Size = new System.Drawing.Size(75, 25);
+            toolStripComboBoxMonth.DropDownStyle = ComboBoxStyle.DropDownList;
+            toolStripComboBoxMonth.Items.AddRange(new object[] { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" });
+            toolStripComboBoxMonth.Name = "toolStripComboBoxMonth";
+            toolStripComboBoxMonth.Size = new Size(176, 49);
+            toolStripComboBoxMonth.TextChanged += month_year_Changed;
             // 
             // toolStripButtonNewTask
             // 
-            this.toolStripButtonNewTask.BackColor = System.Drawing.Color.DimGray;
-            this.toolStripButtonNewTask.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonNewTask.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonNewTask.Name = "toolStripButtonNewTask";
-            this.toolStripButtonNewTask.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonNewTask.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.toolStripButtonNewTask.Click += new System.EventHandler(this.toolStripButtonNewTask_Click);
+            toolStripButtonNewTask.BackColor = Color.DimGray;
+            toolStripButtonNewTask.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButtonNewTask.ImageTransparentColor = Color.Magenta;
+            toolStripButtonNewTask.Name = "toolStripButtonNewTask";
+            toolStripButtonNewTask.Size = new Size(58, 42);
+            toolStripButtonNewTask.TextImageRelation = TextImageRelation.ImageAboveText;
+            toolStripButtonNewTask.Click += toolStripButtonNewTask_Click;
             // 
             // toolStripButtonRight
             // 
-            this.toolStripButtonRight.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonRight.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonRight.Margin = new System.Windows.Forms.Padding(127, 1, 0, 2);
-            this.toolStripButtonRight.Name = "toolStripButtonRight";
-            this.toolStripButtonRight.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonRight.Text = "toolStripButtonRight";
+            toolStripButtonRight.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            toolStripButtonRight.ImageTransparentColor = Color.Magenta;
+            toolStripButtonRight.Margin = new Padding(127, 1, 0, 2);
+            toolStripButtonRight.Name = "toolStripButtonRight";
+            toolStripButtonRight.Size = new Size(58, 46);
+            toolStripButtonRight.Text = "toolStripButtonRight";
             // 
             // taskButton
             // 
-            this.taskButton.BackColor = System.Drawing.Color.Orange;
-            this.taskButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.taskButton.FlatAppearance.BorderSize = 0;
-            this.taskButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.taskButton.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.taskButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.taskButton.Location = new System.Drawing.Point(26, 76);
-            this.taskButton.Name = "taskButton";
-            this.taskButton.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.taskButton.Size = new System.Drawing.Size(117, 66);
-            this.taskButton.TabIndex = 0;
-            this.taskButton.Text = "Task";
-            this.taskButton.UseVisualStyleBackColor = false;
+            taskButton.BackColor = Color.Orange;
+            taskButton.FlatAppearance.BorderColor = Color.White;
+            taskButton.FlatAppearance.BorderSize = 0;
+            taskButton.FlatStyle = FlatStyle.Flat;
+            taskButton.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            taskButton.ForeColor = SystemColors.ControlLightLight;
+            taskButton.Location = new Point(63, 208);
+            taskButton.Margin = new Padding(7, 8, 7, 8);
+            taskButton.Name = "taskButton";
+            taskButton.RightToLeft = RightToLeft.Yes;
+            taskButton.Size = new Size(284, 180);
+            taskButton.TabIndex = 0;
+            taskButton.Text = "Task";
+            taskButton.UseVisualStyleBackColor = false;
             // 
             // popupTaskPanel
             // 
-            this.popupTaskPanel.BackColor = System.Drawing.Color.Bisque;
-            this.popupTaskPanel.Controls.Add(this.popupTaskNoteTextBox);
-            this.popupTaskPanel.Controls.Add(this.popupTaskTimeLabel);
-            this.popupTaskPanel.Controls.Add(this.popupTaskDateLabel);
-            this.popupTaskPanel.Controls.Add(this.popupTaskTitleLabel);
-            this.popupTaskPanel.Location = new System.Drawing.Point(164, 76);
-            this.popupTaskPanel.Name = "popupTaskPanel";
-            this.popupTaskPanel.Size = new System.Drawing.Size(199, 118);
-            this.popupTaskPanel.TabIndex = 2;
-            this.popupTaskPanel.Visible = false;
+            popupTaskPanel.BackColor = Color.Bisque;
+            popupTaskPanel.Controls.Add(popupTaskNoteTextBox);
+            popupTaskPanel.Controls.Add(popupTaskTimeLabel);
+            popupTaskPanel.Controls.Add(popupTaskDateLabel);
+            popupTaskPanel.Controls.Add(popupTaskTitleLabel);
+            popupTaskPanel.Location = new Point(398, 208);
+            popupTaskPanel.Margin = new Padding(7, 8, 7, 8);
+            popupTaskPanel.Name = "popupTaskPanel";
+            popupTaskPanel.Size = new Size(483, 323);
+            popupTaskPanel.TabIndex = 2;
+            popupTaskPanel.Visible = false;
             // 
             // popupTaskNoteTextBox
             // 
-            this.popupTaskNoteTextBox.BackColor = System.Drawing.Color.Bisque;
-            this.popupTaskNoteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.popupTaskNoteTextBox.Location = new System.Drawing.Point(14, 58);
-            this.popupTaskNoteTextBox.Name = "popupTaskNoteTextBox";
-            this.popupTaskNoteTextBox.ReadOnly = true;
-            this.popupTaskNoteTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.popupTaskNoteTextBox.Size = new System.Drawing.Size(169, 50);
-            this.popupTaskNoteTextBox.TabIndex = 11;
-            this.popupTaskNoteTextBox.Text = "";
+            popupTaskNoteTextBox.BackColor = Color.Bisque;
+            popupTaskNoteTextBox.BorderStyle = BorderStyle.None;
+            popupTaskNoteTextBox.Location = new Point(34, 159);
+            popupTaskNoteTextBox.Margin = new Padding(7, 8, 7, 8);
+            popupTaskNoteTextBox.Name = "popupTaskNoteTextBox";
+            popupTaskNoteTextBox.ReadOnly = true;
+            popupTaskNoteTextBox.ScrollBars = RichTextBoxScrollBars.Vertical;
+            popupTaskNoteTextBox.Size = new Size(410, 137);
+            popupTaskNoteTextBox.TabIndex = 11;
+            popupTaskNoteTextBox.Text = "";
             // 
             // popupTaskTimeLabel
             // 
-            this.popupTaskTimeLabel.AutoSize = true;
-            this.popupTaskTimeLabel.Location = new System.Drawing.Point(103, 36);
-            this.popupTaskTimeLabel.Name = "popupTaskTimeLabel";
-            this.popupTaskTimeLabel.Size = new System.Drawing.Size(59, 15);
-            this.popupTaskTimeLabel.TabIndex = 2;
-            this.popupTaskTimeLabel.Text = "hh/mm tt";
+            popupTaskTimeLabel.AutoSize = true;
+            popupTaskTimeLabel.Location = new Point(250, 98);
+            popupTaskTimeLabel.Margin = new Padding(7, 0, 7, 0);
+            popupTaskTimeLabel.Name = "popupTaskTimeLabel";
+            popupTaskTimeLabel.Size = new Size(144, 41);
+            popupTaskTimeLabel.TabIndex = 2;
+            popupTaskTimeLabel.Text = "hh/mm tt";
             // 
             // popupTaskDateLabel
             // 
-            this.popupTaskDateLabel.AutoSize = true;
-            this.popupTaskDateLabel.Location = new System.Drawing.Point(14, 37);
-            this.popupTaskDateLabel.Name = "popupTaskDateLabel";
-            this.popupTaskDateLabel.Size = new System.Drawing.Size(65, 15);
-            this.popupTaskDateLabel.TabIndex = 1;
-            this.popupTaskDateLabel.Text = "dd/mm/yy";
+            popupTaskDateLabel.AutoSize = true;
+            popupTaskDateLabel.Location = new Point(34, 101);
+            popupTaskDateLabel.Margin = new Padding(7, 0, 7, 0);
+            popupTaskDateLabel.Name = "popupTaskDateLabel";
+            popupTaskDateLabel.Size = new Size(160, 41);
+            popupTaskDateLabel.TabIndex = 1;
+            popupTaskDateLabel.Text = "dd/mm/yy";
             // 
             // popupTaskTitleLabel
             // 
-            this.popupTaskTitleLabel.AutoSize = true;
-            this.popupTaskTitleLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.popupTaskTitleLabel.Location = new System.Drawing.Point(11, 8);
-            this.popupTaskTitleLabel.Name = "popupTaskTitleLabel";
-            this.popupTaskTitleLabel.Size = new System.Drawing.Size(50, 25);
-            this.popupTaskTitleLabel.TabIndex = 0;
-            this.popupTaskTitleLabel.Text = "Task";
+            popupTaskTitleLabel.AutoSize = true;
+            popupTaskTitleLabel.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            popupTaskTitleLabel.Location = new Point(27, 22);
+            popupTaskTitleLabel.Margin = new Padding(7, 0, 7, 0);
+            popupTaskTitleLabel.Name = "popupTaskTitleLabel";
+            popupTaskTitleLabel.Size = new Size(123, 62);
+            popupTaskTitleLabel.TabIndex = 0;
+            popupTaskTitleLabel.Text = "Task";
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.95434F));
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 6;
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel2.TabIndex = 0;
+            tableLayoutPanel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            tableLayoutPanel2.ColumnCount = 2;
+            tableLayoutPanel2.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.95434F));
+            tableLayoutPanel2.Location = new Point(0, 0);
+            tableLayoutPanel2.Name = "tableLayoutPanel2";
+            tableLayoutPanel2.RowCount = 6;
+            tableLayoutPanel2.Size = new Size(200, 100);
+            tableLayoutPanel2.TabIndex = 0;
             // 
             // loginPanel
             // 
-            this.loginPanel.Controls.Add(this.loginButton);
-            this.loginPanel.Controls.Add(this.exitButton);
-            this.loginPanel.Controls.Add(this.headerLabel);
-            this.loginPanel.Controls.Add(this.nameTextLabel);
-            this.loginPanel.Controls.Add(this.nameInput);
-            this.loginPanel.Controls.Add(this.passwordInput);
-            this.loginPanel.Controls.Add(this.passwordTextLabel);
-            this.loginPanel.Location = new System.Drawing.Point(0, 0);
-            this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(888, 585);
-            this.loginPanel.TabIndex = 1;
+            loginPanel.Controls.Add(loginButton);
+            loginPanel.Controls.Add(exitButton);
+            loginPanel.Controls.Add(headerLabel);
+            loginPanel.Controls.Add(nameTextLabel);
+            loginPanel.Controls.Add(nameInput);
+            loginPanel.Controls.Add(passwordInput);
+            loginPanel.Controls.Add(passwordTextLabel);
+            loginPanel.Location = new Point(0, 0);
+            loginPanel.Margin = new Padding(7, 8, 7, 8);
+            loginPanel.Name = "loginPanel";
+            loginPanel.Size = new Size(2157, 1599);
+            loginPanel.TabIndex = 1;
             // 
             // loginButton
             // 
-            this.loginButton.Location = new System.Drawing.Point(484, 206);
-            this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(75, 23);
-            this.loginButton.TabIndex = 0;
-            this.loginButton.Text = "Login";
+            loginButton.Location = new Point(1175, 563);
+            loginButton.Margin = new Padding(7, 8, 7, 8);
+            loginButton.Name = "loginButton";
+            loginButton.Size = new Size(182, 63);
+            loginButton.TabIndex = 0;
+            loginButton.Text = "Login";
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(484, 262);
-            this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(75, 23);
-            this.exitButton.TabIndex = 1;
-            this.exitButton.Text = "Close";
+            exitButton.Location = new Point(1175, 716);
+            exitButton.Margin = new Padding(7, 8, 7, 8);
+            exitButton.Name = "exitButton";
+            exitButton.Size = new Size(182, 63);
+            exitButton.TabIndex = 1;
+            exitButton.Text = "Close";
             // 
             // headerLabel
             // 
-            this.headerLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.headerLabel.Location = new System.Drawing.Point(385, 140);
-            this.headerLabel.Name = "headerLabel";
-            this.headerLabel.Size = new System.Drawing.Size(100, 23);
-            this.headerLabel.TabIndex = 2;
-            this.headerLabel.Text = "Login Page";
-            this.headerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            headerLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            headerLabel.Location = new Point(935, 383);
+            headerLabel.Margin = new Padding(7, 0, 7, 0);
+            headerLabel.Name = "headerLabel";
+            headerLabel.Size = new Size(243, 63);
+            headerLabel.TabIndex = 2;
+            headerLabel.Text = "Login Page";
+            headerLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // nameTextLabel
             // 
-            this.nameTextLabel.Location = new System.Drawing.Point(258, 210);
-            this.nameTextLabel.Name = "nameTextLabel";
-            this.nameTextLabel.Size = new System.Drawing.Size(55, 23);
-            this.nameTextLabel.TabIndex = 3;
-            this.nameTextLabel.Text = "Name";
+            nameTextLabel.Location = new Point(627, 574);
+            nameTextLabel.Margin = new Padding(7, 0, 7, 0);
+            nameTextLabel.Name = "nameTextLabel";
+            nameTextLabel.Size = new Size(134, 63);
+            nameTextLabel.TabIndex = 3;
+            nameTextLabel.Text = "Name";
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(317, 207);
-            this.nameInput.Name = "nameInput";
-            this.nameInput.Size = new System.Drawing.Size(100, 23);
-            this.nameInput.TabIndex = 4;
+            nameInput.Location = new Point(770, 566);
+            nameInput.Margin = new Padding(7, 8, 7, 8);
+            nameInput.Name = "nameInput";
+            nameInput.Size = new Size(237, 47);
+            nameInput.TabIndex = 4;
             // 
             // passwordInput
             // 
-            this.passwordInput.Location = new System.Drawing.Point(317, 262);
-            this.passwordInput.Name = "passwordInput";
-            this.passwordInput.Size = new System.Drawing.Size(100, 23);
-            this.passwordInput.TabIndex = 5;
-            this.passwordInput.UseSystemPasswordChar = true;
+            passwordInput.Location = new Point(770, 716);
+            passwordInput.Margin = new Padding(7, 8, 7, 8);
+            passwordInput.Name = "passwordInput";
+            passwordInput.Size = new Size(237, 47);
+            passwordInput.TabIndex = 5;
+            passwordInput.UseSystemPasswordChar = true;
             // 
             // passwordTextLabel
             // 
-            this.passwordTextLabel.Location = new System.Drawing.Point(250, 262);
-            this.passwordTextLabel.Name = "passwordTextLabel";
-            this.passwordTextLabel.Size = new System.Drawing.Size(59, 23);
-            this.passwordTextLabel.TabIndex = 6;
-            this.passwordTextLabel.Text = "Password";
+            passwordTextLabel.Location = new Point(607, 716);
+            passwordTextLabel.Margin = new Padding(7, 0, 7, 0);
+            passwordTextLabel.Name = "passwordTextLabel";
+            passwordTextLabel.Size = new Size(143, 63);
+            passwordTextLabel.TabIndex = 6;
+            passwordTextLabel.Text = "Password";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1196, 902);
-            this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.loginPanel);
-            this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            this.editTaskPanel.ResumeLayout(false);
-            this.editTaskPanel.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tableLayoutPanelTimetable.ResumeLayout(false);
-            this.tableLayoutPanelTimetable.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.flowLayoutPanelCalendar.ResumeLayout(false);
-            this.panelCalendarDay1.ResumeLayout(false);
-            this.panelCalendarDay1.PerformLayout();
-            this.panelCalendarDay2.ResumeLayout(false);
-            this.panelCalendarDay2.PerformLayout();
-            this.panelCalendarDay3.ResumeLayout(false);
-            this.panelCalendarDay3.PerformLayout();
-            this.panelCalendarDay4.ResumeLayout(false);
-            this.panelCalendarDay4.PerformLayout();
-            this.panelCalendarDay5.ResumeLayout(false);
-            this.panelCalendarDay5.PerformLayout();
-            this.panelCalendarDay6.ResumeLayout(false);
-            this.panelCalendarDay6.PerformLayout();
-            this.panelCalendarDay7.ResumeLayout(false);
-            this.panelCalendarDay7.PerformLayout();
-            this.panelCalendarDay8.ResumeLayout(false);
-            this.panelCalendarDay8.PerformLayout();
-            this.panelCalendarDay9.ResumeLayout(false);
-            this.panelCalendarDay9.PerformLayout();
-            this.panelCalendarDay10.ResumeLayout(false);
-            this.panelCalendarDay10.PerformLayout();
-            this.panelCalendarDay11.ResumeLayout(false);
-            this.panelCalendarDay11.PerformLayout();
-            this.panelCalendarDay12.ResumeLayout(false);
-            this.panelCalendarDay12.PerformLayout();
-            this.panelCalendarDay13.ResumeLayout(false);
-            this.panelCalendarDay13.PerformLayout();
-            this.panelCalendarDay14.ResumeLayout(false);
-            this.panelCalendarDay14.PerformLayout();
-            this.panelCalendarDay15.ResumeLayout(false);
-            this.panelCalendarDay15.PerformLayout();
-            this.panelCalendarDay16.ResumeLayout(false);
-            this.panelCalendarDay16.PerformLayout();
-            this.panelCalendarDay17.ResumeLayout(false);
-            this.panelCalendarDay17.PerformLayout();
-            this.panelCalendarDay18.ResumeLayout(false);
-            this.panelCalendarDay18.PerformLayout();
-            this.panelCalendarDay19.ResumeLayout(false);
-            this.panelCalendarDay19.PerformLayout();
-            this.panelCalendarDay20.ResumeLayout(false);
-            this.panelCalendarDay20.PerformLayout();
-            this.panelCalendarDay21.ResumeLayout(false);
-            this.panelCalendarDay21.PerformLayout();
-            this.panelCalendarDay22.ResumeLayout(false);
-            this.panelCalendarDay22.PerformLayout();
-            this.panelCalendarDay23.ResumeLayout(false);
-            this.panelCalendarDay23.PerformLayout();
-            this.panelCalendarDay24.ResumeLayout(false);
-            this.panelCalendarDay24.PerformLayout();
-            this.panelCalendarDay25.ResumeLayout(false);
-            this.panelCalendarDay25.PerformLayout();
-            this.panelCalendarDay26.ResumeLayout(false);
-            this.panelCalendarDay26.PerformLayout();
-            this.panelCalendarDay27.ResumeLayout(false);
-            this.panelCalendarDay27.PerformLayout();
-            this.panelCalendarDay28.ResumeLayout(false);
-            this.panelCalendarDay28.PerformLayout();
-            this.panelCalendarDay29.ResumeLayout(false);
-            this.panelCalendarDay29.PerformLayout();
-            this.panelCalendarDay30.ResumeLayout(false);
-            this.panelCalendarDay30.PerformLayout();
-            this.panelCalendarDay31.ResumeLayout(false);
-            this.panelCalendarDay31.PerformLayout();
-            this.panelCalendarDay32.ResumeLayout(false);
-            this.panelCalendarDay32.PerformLayout();
-            this.panelCalendarDay33.ResumeLayout(false);
-            this.panelCalendarDay33.PerformLayout();
-            this.panelCalendarDay34.ResumeLayout(false);
-            this.panelCalendarDay34.PerformLayout();
-            this.panelCalendarDay35.ResumeLayout(false);
-            this.panelCalendarDay35.PerformLayout();
-            this.panelCalendarDay36.ResumeLayout(false);
-            this.panelCalendarDay36.PerformLayout();
-            this.panelCalendarDay37.ResumeLayout(false);
-            this.panelCalendarDay37.PerformLayout();
-            this.panelCalendarDay38.ResumeLayout(false);
-            this.panelCalendarDay38.PerformLayout();
-            this.panelCalendarDay39.ResumeLayout(false);
-            this.panelCalendarDay39.PerformLayout();
-            this.panelCalendarDay40.ResumeLayout(false);
-            this.panelCalendarDay40.PerformLayout();
-            this.panelCalendarDay41.ResumeLayout(false);
-            this.panelCalendarDay41.PerformLayout();
-            this.panelCalendarDay42.ResumeLayout(false);
-            this.panelCalendarDay42.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
-            this.popupTaskPanel.ResumeLayout(false);
-            this.popupTaskPanel.PerformLayout();
-            this.loginPanel.ResumeLayout(false);
-            this.loginPanel.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(2905, 2108);
+            Controls.Add(splitContainer1);
+            Controls.Add(loginPanel);
+            Margin = new Padding(2, 3, 2, 3);
+            Name = "Form1";
+            Text = "Form1";
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            editTaskPanel.ResumeLayout(false);
+            editTaskPanel.PerformLayout();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            tabControl1.ResumeLayout(false);
+            tabPage1.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            tabPage2.ResumeLayout(false);
+            tabPage2.PerformLayout();
+            tableLayoutPanelTimetable.ResumeLayout(false);
+            tableLayoutPanelTimetable.PerformLayout();
+            tabPage3.ResumeLayout(false);
+            tabPage3.PerformLayout();
+            flowLayoutPanelCalendar.ResumeLayout(false);
+            panelCalendarDay1.ResumeLayout(false);
+            panelCalendarDay1.PerformLayout();
+            panelCalendarDay2.ResumeLayout(false);
+            panelCalendarDay2.PerformLayout();
+            panelCalendarDay3.ResumeLayout(false);
+            panelCalendarDay3.PerformLayout();
+            panelCalendarDay4.ResumeLayout(false);
+            panelCalendarDay4.PerformLayout();
+            panelCalendarDay5.ResumeLayout(false);
+            panelCalendarDay5.PerformLayout();
+            panelCalendarDay6.ResumeLayout(false);
+            panelCalendarDay6.PerformLayout();
+            panelCalendarDay7.ResumeLayout(false);
+            panelCalendarDay7.PerformLayout();
+            panelCalendarDay8.ResumeLayout(false);
+            panelCalendarDay8.PerformLayout();
+            panelCalendarDay9.ResumeLayout(false);
+            panelCalendarDay9.PerformLayout();
+            panelCalendarDay10.ResumeLayout(false);
+            panelCalendarDay10.PerformLayout();
+            panelCalendarDay11.ResumeLayout(false);
+            panelCalendarDay11.PerformLayout();
+            panelCalendarDay12.ResumeLayout(false);
+            panelCalendarDay12.PerformLayout();
+            panelCalendarDay13.ResumeLayout(false);
+            panelCalendarDay13.PerformLayout();
+            panelCalendarDay14.ResumeLayout(false);
+            panelCalendarDay14.PerformLayout();
+            panelCalendarDay15.ResumeLayout(false);
+            panelCalendarDay15.PerformLayout();
+            panelCalendarDay16.ResumeLayout(false);
+            panelCalendarDay16.PerformLayout();
+            panelCalendarDay17.ResumeLayout(false);
+            panelCalendarDay17.PerformLayout();
+            panelCalendarDay18.ResumeLayout(false);
+            panelCalendarDay18.PerformLayout();
+            panelCalendarDay19.ResumeLayout(false);
+            panelCalendarDay19.PerformLayout();
+            panelCalendarDay20.ResumeLayout(false);
+            panelCalendarDay20.PerformLayout();
+            panelCalendarDay21.ResumeLayout(false);
+            panelCalendarDay21.PerformLayout();
+            panelCalendarDay22.ResumeLayout(false);
+            panelCalendarDay22.PerformLayout();
+            panelCalendarDay23.ResumeLayout(false);
+            panelCalendarDay23.PerformLayout();
+            panelCalendarDay24.ResumeLayout(false);
+            panelCalendarDay24.PerformLayout();
+            panelCalendarDay25.ResumeLayout(false);
+            panelCalendarDay25.PerformLayout();
+            panelCalendarDay26.ResumeLayout(false);
+            panelCalendarDay26.PerformLayout();
+            panelCalendarDay27.ResumeLayout(false);
+            panelCalendarDay27.PerformLayout();
+            panelCalendarDay28.ResumeLayout(false);
+            panelCalendarDay28.PerformLayout();
+            panelCalendarDay29.ResumeLayout(false);
+            panelCalendarDay29.PerformLayout();
+            panelCalendarDay30.ResumeLayout(false);
+            panelCalendarDay30.PerformLayout();
+            panelCalendarDay31.ResumeLayout(false);
+            panelCalendarDay31.PerformLayout();
+            panelCalendarDay32.ResumeLayout(false);
+            panelCalendarDay32.PerformLayout();
+            panelCalendarDay33.ResumeLayout(false);
+            panelCalendarDay33.PerformLayout();
+            panelCalendarDay34.ResumeLayout(false);
+            panelCalendarDay34.PerformLayout();
+            panelCalendarDay35.ResumeLayout(false);
+            panelCalendarDay35.PerformLayout();
+            panelCalendarDay36.ResumeLayout(false);
+            panelCalendarDay36.PerformLayout();
+            panelCalendarDay37.ResumeLayout(false);
+            panelCalendarDay37.PerformLayout();
+            panelCalendarDay38.ResumeLayout(false);
+            panelCalendarDay38.PerformLayout();
+            panelCalendarDay39.ResumeLayout(false);
+            panelCalendarDay39.PerformLayout();
+            panelCalendarDay40.ResumeLayout(false);
+            panelCalendarDay40.PerformLayout();
+            panelCalendarDay41.ResumeLayout(false);
+            panelCalendarDay41.PerformLayout();
+            panelCalendarDay42.ResumeLayout(false);
+            panelCalendarDay42.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            toolStrip1.ResumeLayout(false);
+            toolStrip1.PerformLayout();
+            popupTaskPanel.ResumeLayout(false);
+            popupTaskPanel.PerformLayout();
+            loginPanel.ResumeLayout(false);
+            loginPanel.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion

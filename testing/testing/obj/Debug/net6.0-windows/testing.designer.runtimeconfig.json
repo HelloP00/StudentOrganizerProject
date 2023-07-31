@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\evely\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\evely\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\d\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\d\\.nuget\\packages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
