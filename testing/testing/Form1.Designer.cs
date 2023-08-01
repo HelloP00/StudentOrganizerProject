@@ -59,7 +59,6 @@ namespace testing
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             groupBox3 = new GroupBox();
-            tableLayoutPanel1 = new TableLayoutPanel();
             label5 = new Label();
             label4 = new Label();
             groupBox2 = new GroupBox();
@@ -231,6 +230,19 @@ namespace testing
             nameInput = new TextBox();
             passwordInput = new TextBox();
             passwordTextLabel = new Label();
+            labelHomePageP1 = new Label();
+            labelHomePageP2 = new Label();
+            labelHomePageP3 = new Label();
+            labelHomePageP4 = new Label();
+            labelHomePageP5 = new Label();
+            labelHomePageP6 = new Label();
+            labelHomePagetext = new Label();
+            labelHomePageSub1 = new Label();
+            labelHomePageSub2 = new Label();
+            labelHomePageSub3 = new Label();
+            labelHomePageSub4 = new Label();
+            labelHomePageSub5 = new Label();
+            labelHomePageSub6 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -673,7 +685,19 @@ namespace testing
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(tableLayoutPanel1);
+            groupBox3.Controls.Add(labelHomePageSub6);
+            groupBox3.Controls.Add(labelHomePageSub5);
+            groupBox3.Controls.Add(labelHomePageSub4);
+            groupBox3.Controls.Add(labelHomePageSub3);
+            groupBox3.Controls.Add(labelHomePageSub2);
+            groupBox3.Controls.Add(labelHomePageSub1);
+            groupBox3.Controls.Add(labelHomePagetext);
+            groupBox3.Controls.Add(labelHomePageP6);
+            groupBox3.Controls.Add(labelHomePageP5);
+            groupBox3.Controls.Add(labelHomePageP4);
+            groupBox3.Controls.Add(labelHomePageP3);
+            groupBox3.Controls.Add(labelHomePageP2);
+            groupBox3.Controls.Add(labelHomePageP1);
             groupBox3.Controls.Add(label5);
             groupBox3.Controls.Add(label4);
             groupBox3.Location = new Point(5, 5);
@@ -684,25 +708,6 @@ namespace testing
             groupBox3.TabIndex = 4;
             groupBox3.TabStop = false;
             groupBox3.Text = "groupBox3";
-            // 
-            // tableLayoutPanel1
-            // 
-            tableLayoutPanel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            tableLayoutPanel1.ColumnCount = 2;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.95434F));
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.04566F));
-            tableLayoutPanel1.Location = new Point(5, 249);
-            tableLayoutPanel1.Margin = new Padding(2, 3, 2, 3);
-            tableLayoutPanel1.Name = "tableLayoutPanel1";
-            tableLayoutPanel1.RowCount = 6;
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 49.04459F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 50.95541F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 74F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 79F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 87F));
-            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 85F));
-            tableLayoutPanel1.Size = new Size(1095, 495);
-            tableLayoutPanel1.TabIndex = 3;
             // 
             // label5
             // 
@@ -2598,6 +2603,123 @@ namespace testing
             passwordTextLabel.TabIndex = 6;
             passwordTextLabel.Text = "Password";
             // 
+            // labelHomePageP1
+            // 
+            labelHomePageP1.AutoSize = true;
+            labelHomePageP1.Location = new Point(80, 290);
+            labelHomePageP1.Name = "labelHomePageP1";
+            labelHomePageP1.Size = new Size(156, 41);
+            labelHomePageP1.TabIndex = 2;
+            labelHomePageP1.Text = "9:00-10:00";
+            // 
+            // labelHomePageP2
+            // 
+            labelHomePageP2.AutoSize = true;
+            labelHomePageP2.Location = new Point(80, 331);
+            labelHomePageP2.Name = "labelHomePageP2";
+            labelHomePageP2.Size = new Size(156, 41);
+            labelHomePageP2.TabIndex = 3;
+            labelHomePageP2.Text = "9:00-10:00";
+            // 
+            // labelHomePageP3
+            // 
+            labelHomePageP3.AutoSize = true;
+            labelHomePageP3.Location = new Point(80, 371);
+            labelHomePageP3.Name = "labelHomePageP3";
+            labelHomePageP3.Size = new Size(156, 41);
+            labelHomePageP3.TabIndex = 4;
+            labelHomePageP3.Text = "9:00-10:00";
+            // 
+            // labelHomePageP4
+            // 
+            labelHomePageP4.AutoSize = true;
+            labelHomePageP4.Location = new Point(80, 412);
+            labelHomePageP4.Name = "labelHomePageP4";
+            labelHomePageP4.Size = new Size(156, 41);
+            labelHomePageP4.TabIndex = 5;
+            labelHomePageP4.Text = "9:00-10:00";
+            // 
+            // labelHomePageP5
+            // 
+            labelHomePageP5.AutoSize = true;
+            labelHomePageP5.Location = new Point(80, 453);
+            labelHomePageP5.Name = "labelHomePageP5";
+            labelHomePageP5.Size = new Size(156, 41);
+            labelHomePageP5.TabIndex = 6;
+            labelHomePageP5.Text = "9:00-10:00";
+            // 
+            // labelHomePageP6
+            // 
+            labelHomePageP6.AutoSize = true;
+            labelHomePageP6.Location = new Point(80, 495);
+            labelHomePageP6.Name = "labelHomePageP6";
+            labelHomePageP6.Size = new Size(156, 41);
+            labelHomePageP6.TabIndex = 7;
+            labelHomePageP6.Text = "9:00-10:00";
+            // 
+            // labelHomePagetext
+            // 
+            labelHomePagetext.AutoSize = true;
+            labelHomePagetext.Location = new Point(92, 179);
+            labelHomePagetext.Name = "labelHomePagetext";
+            labelHomePagetext.Size = new Size(539, 41);
+            labelHomePagetext.TabIndex = 8;
+            labelHomePagetext.Text = "Today is monday, here are your classes:";
+            // 
+            // labelHomePageSub1
+            // 
+            labelHomePageSub1.AutoSize = true;
+            labelHomePageSub1.Location = new Point(271, 290);
+            labelHomePageSub1.Name = "labelHomePageSub1";
+            labelHomePageSub1.Size = new Size(60, 41);
+            labelHomePageSub1.TabIndex = 9;
+            labelHomePageSub1.Text = "xxx";
+            // 
+            // labelHomePageSub2
+            // 
+            labelHomePageSub2.AutoSize = true;
+            labelHomePageSub2.Location = new Point(271, 331);
+            labelHomePageSub2.Name = "labelHomePageSub2";
+            labelHomePageSub2.Size = new Size(60, 41);
+            labelHomePageSub2.TabIndex = 10;
+            labelHomePageSub2.Text = "xxx";
+            // 
+            // labelHomePageSub3
+            // 
+            labelHomePageSub3.AutoSize = true;
+            labelHomePageSub3.Location = new Point(271, 372);
+            labelHomePageSub3.Name = "labelHomePageSub3";
+            labelHomePageSub3.Size = new Size(60, 41);
+            labelHomePageSub3.TabIndex = 11;
+            labelHomePageSub3.Text = "xxx";
+            // 
+            // labelHomePageSub4
+            // 
+            labelHomePageSub4.AutoSize = true;
+            labelHomePageSub4.Location = new Point(271, 412);
+            labelHomePageSub4.Name = "labelHomePageSub4";
+            labelHomePageSub4.Size = new Size(60, 41);
+            labelHomePageSub4.TabIndex = 12;
+            labelHomePageSub4.Text = "xxx";
+            // 
+            // labelHomePageSub5
+            // 
+            labelHomePageSub5.AutoSize = true;
+            labelHomePageSub5.Location = new Point(271, 453);
+            labelHomePageSub5.Name = "labelHomePageSub5";
+            labelHomePageSub5.Size = new Size(60, 41);
+            labelHomePageSub5.TabIndex = 13;
+            labelHomePageSub5.Text = "xxx";
+            // 
+            // labelHomePageSub6
+            // 
+            labelHomePageSub6.AutoSize = true;
+            labelHomePageSub6.Location = new Point(271, 498);
+            labelHomePageSub6.Name = "labelHomePageSub6";
+            labelHomePageSub6.Size = new Size(60, 41);
+            labelHomePageSub6.TabIndex = 14;
+            labelHomePageSub6.Text = "xxx";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
@@ -2741,7 +2863,6 @@ namespace testing
         private Label label5;
         private GroupBox groupBox2;
         private CheckedListBox checkedListBox1;
-        private TableLayoutPanel tableLayoutPanel1;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private GroupBox groupBox3;
@@ -2933,6 +3054,19 @@ namespace testing
         private TextBox textBoxTTFriP6Sub;
         private TextBox textBoxTTThuP6Sub;
         private TextBox textBoxTTWedP6Sub;
+        private Label labelHomePageSub2;
+        private Label labelHomePageSub1;
+        private Label labelHomePagetext;
+        private Label labelHomePageP6;
+        private Label labelHomePageP5;
+        private Label labelHomePageP4;
+        private Label labelHomePageP3;
+        private Label labelHomePageP2;
+        private Label labelHomePageP1;
+        private Label labelHomePageSub6;
+        private Label labelHomePageSub5;
+        private Label labelHomePageSub4;
+        private Label labelHomePageSub3;
     }
 
 
