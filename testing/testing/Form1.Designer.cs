@@ -51,15 +51,28 @@ namespace testing
             button1 = new Button();
             groupBox1 = new GroupBox();
             textBox3 = new TextBox();
-            label3 = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            labelStudentProfileSID = new Label();
+            textBoxStudentProfileYR = new TextBox();
+            textBoxStudentProfileName = new TextBox();
             label2 = new Label();
             label1 = new Label();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             groupBox3 = new GroupBox();
-            label5 = new Label();
+            labelHomePageSub6 = new Label();
+            labelHomePageSub5 = new Label();
+            labelHomePageSub4 = new Label();
+            labelHomePageSub3 = new Label();
+            labelHomePageSub2 = new Label();
+            labelHomePageSub1 = new Label();
+            labelHomePagetext = new Label();
+            labelHomePageP6 = new Label();
+            labelHomePageP5 = new Label();
+            labelHomePageP4 = new Label();
+            labelHomePageP3 = new Label();
+            labelHomePageP2 = new Label();
+            labelHomePageP1 = new Label();
+            labelDateHere = new Label();
             label4 = new Label();
             groupBox2 = new GroupBox();
             checkedListBox1 = new CheckedListBox();
@@ -112,7 +125,6 @@ namespace testing
             textBoxTTThuP6Sub = new TextBox();
             textBoxTTWedP6Sub = new TextBox();
             label6 = new Label();
-            tabPage4 = new TabPage();
             tabPage3 = new TabPage();
             flowLayoutPanelCalendar = new FlowLayoutPanel();
             panelCalendarDay1 = new Panel();
@@ -221,6 +233,11 @@ namespace testing
             popupTaskTimeLabel = new Label();
             popupTaskDateLabel = new Label();
             popupTaskTitleLabel = new Label();
+            tabPage4 = new TabPage();
+            comboBox1 = new ComboBox();
+            labelSettingsTheme = new Label();
+            buttonSettingsChangePassword = new Button();
+            labelSettingsPersonalDetails = new Label();
             tableLayoutPanel2 = new TableLayoutPanel();
             loginPanel = new Panel();
             loginButton = new Button();
@@ -230,19 +247,6 @@ namespace testing
             nameInput = new TextBox();
             passwordInput = new TextBox();
             passwordTextLabel = new Label();
-            labelHomePageP1 = new Label();
-            labelHomePageP2 = new Label();
-            labelHomePageP3 = new Label();
-            labelHomePageP4 = new Label();
-            labelHomePageP5 = new Label();
-            labelHomePageP6 = new Label();
-            labelHomePagetext = new Label();
-            labelHomePageSub1 = new Label();
-            labelHomePageSub2 = new Label();
-            labelHomePageSub3 = new Label();
-            labelHomePageSub4 = new Label();
-            labelHomePageSub5 = new Label();
-            labelHomePageSub6 = new Label();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
             splitContainer1.Panel1.SuspendLayout();
             splitContainer1.Panel2.SuspendLayout();
@@ -302,6 +306,7 @@ namespace testing
             panel1.SuspendLayout();
             toolStrip1.SuspendLayout();
             popupTaskPanel.SuspendLayout();
+            tabPage4.SuspendLayout();
             loginPanel.SuspendLayout();
             SuspendLayout();
             // 
@@ -586,9 +591,9 @@ namespace testing
             // groupBox1
             // 
             groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(labelStudentProfileSID);
+            groupBox1.Controls.Add(textBoxStudentProfileYR);
+            groupBox1.Controls.Add(textBoxStudentProfileName);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Location = new Point(12, 11);
@@ -609,33 +614,33 @@ namespace testing
             textBox3.TabIndex = 1;
             textBox3.Text = "7924434";
             // 
-            // label3
+            // labelStudentProfileSID
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(22, 169);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(157, 41);
-            label3.TabIndex = 1;
-            label3.Text = "StudentID:";
+            labelStudentProfileSID.AutoSize = true;
+            labelStudentProfileSID.Location = new Point(22, 169);
+            labelStudentProfileSID.Margin = new Padding(2, 0, 2, 0);
+            labelStudentProfileSID.Name = "labelStudentProfileSID";
+            labelStudentProfileSID.Size = new Size(157, 41);
+            labelStudentProfileSID.TabIndex = 1;
+            labelStudentProfileSID.Text = "StudentID:";
             // 
-            // textBox2
+            // textBoxStudentProfileYR
             // 
-            textBox2.Location = new Point(202, 104);
-            textBox2.Margin = new Padding(2, 3, 2, 3);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(50, 47);
-            textBox2.TabIndex = 1;
-            textBox2.Text = "12";
+            textBoxStudentProfileYR.Location = new Point(202, 104);
+            textBoxStudentProfileYR.Margin = new Padding(2, 3, 2, 3);
+            textBoxStudentProfileYR.Name = "textBoxStudentProfileYR";
+            textBoxStudentProfileYR.Size = new Size(50, 47);
+            textBoxStudentProfileYR.TabIndex = 1;
+            textBoxStudentProfileYR.Text = "12";
             // 
-            // textBox1
+            // textBoxStudentProfileName
             // 
-            textBox1.Location = new Point(202, 44);
-            textBox1.Margin = new Padding(2, 3, 2, 3);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(249, 47);
-            textBox1.TabIndex = 1;
-            textBox1.Text = "John Wick";
+            textBoxStudentProfileName.Location = new Point(202, 44);
+            textBoxStudentProfileName.Margin = new Padding(2, 3, 2, 3);
+            textBoxStudentProfileName.Name = "textBoxStudentProfileName";
+            textBoxStudentProfileName.Size = new Size(249, 47);
+            textBoxStudentProfileName.TabIndex = 1;
+            textBoxStudentProfileName.Text = "John Wick";
             // 
             // label2
             // 
@@ -661,8 +666,8 @@ namespace testing
             // 
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
-            tabControl1.Controls.Add(tabPage4);
             tabControl1.Controls.Add(tabPage3);
+            tabControl1.Controls.Add(tabPage4);
             tabControl1.Location = new Point(2, 11);
             tabControl1.Margin = new Padding(2, 3, 2, 3);
             tabControl1.Name = "tabControl1";
@@ -698,7 +703,7 @@ namespace testing
             groupBox3.Controls.Add(labelHomePageP3);
             groupBox3.Controls.Add(labelHomePageP2);
             groupBox3.Controls.Add(labelHomePageP1);
-            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(labelDateHere);
             groupBox3.Controls.Add(label4);
             groupBox3.Location = new Point(5, 5);
             groupBox3.Margin = new Padding(2, 3, 2, 3);
@@ -709,15 +714,132 @@ namespace testing
             groupBox3.TabStop = false;
             groupBox3.Text = "groupBox3";
             // 
-            // label5
+            // labelHomePageSub6
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(891, 96);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(155, 41);
-            label5.TabIndex = 1;
-            label5.Text = "DATEHERE";
+            labelHomePageSub6.AutoSize = true;
+            labelHomePageSub6.Location = new Point(242, 495);
+            labelHomePageSub6.Name = "labelHomePageSub6";
+            labelHomePageSub6.Size = new Size(72, 41);
+            labelHomePageSub6.TabIndex = 20;
+            labelHomePageSub6.Text = "XXX";
+            // 
+            // labelHomePageSub5
+            // 
+            labelHomePageSub5.AutoSize = true;
+            labelHomePageSub5.Location = new Point(242, 453);
+            labelHomePageSub5.Name = "labelHomePageSub5";
+            labelHomePageSub5.Size = new Size(72, 41);
+            labelHomePageSub5.TabIndex = 19;
+            labelHomePageSub5.Text = "XXX";
+            // 
+            // labelHomePageSub4
+            // 
+            labelHomePageSub4.AutoSize = true;
+            labelHomePageSub4.Location = new Point(242, 412);
+            labelHomePageSub4.Name = "labelHomePageSub4";
+            labelHomePageSub4.Size = new Size(72, 41);
+            labelHomePageSub4.TabIndex = 18;
+            labelHomePageSub4.Text = "XXX";
+            // 
+            // labelHomePageSub3
+            // 
+            labelHomePageSub3.AutoSize = true;
+            labelHomePageSub3.Location = new Point(242, 371);
+            labelHomePageSub3.Name = "labelHomePageSub3";
+            labelHomePageSub3.Size = new Size(72, 41);
+            labelHomePageSub3.TabIndex = 17;
+            labelHomePageSub3.Text = "XXX";
+            // 
+            // labelHomePageSub2
+            // 
+            labelHomePageSub2.AutoSize = true;
+            labelHomePageSub2.Location = new Point(242, 331);
+            labelHomePageSub2.Name = "labelHomePageSub2";
+            labelHomePageSub2.Size = new Size(72, 41);
+            labelHomePageSub2.TabIndex = 16;
+            labelHomePageSub2.Text = "XXX";
+            // 
+            // labelHomePageSub1
+            // 
+            labelHomePageSub1.AutoSize = true;
+            labelHomePageSub1.Location = new Point(242, 290);
+            labelHomePageSub1.Name = "labelHomePageSub1";
+            labelHomePageSub1.Size = new Size(72, 41);
+            labelHomePageSub1.TabIndex = 15;
+            labelHomePageSub1.Text = "XXX";
+            // 
+            // labelHomePagetext
+            // 
+            labelHomePagetext.AutoSize = true;
+            labelHomePagetext.Location = new Point(92, 179);
+            labelHomePagetext.Name = "labelHomePagetext";
+            labelHomePagetext.Size = new Size(539, 41);
+            labelHomePagetext.TabIndex = 8;
+            labelHomePagetext.Text = "Today is monday, here are your classes:";
+            // 
+            // labelHomePageP6
+            // 
+            labelHomePageP6.AutoSize = true;
+            labelHomePageP6.Location = new Point(80, 495);
+            labelHomePageP6.Name = "labelHomePageP6";
+            labelHomePageP6.Size = new Size(156, 41);
+            labelHomePageP6.TabIndex = 7;
+            labelHomePageP6.Text = "9:00-10:00";
+            // 
+            // labelHomePageP5
+            // 
+            labelHomePageP5.AutoSize = true;
+            labelHomePageP5.Location = new Point(80, 453);
+            labelHomePageP5.Name = "labelHomePageP5";
+            labelHomePageP5.Size = new Size(156, 41);
+            labelHomePageP5.TabIndex = 6;
+            labelHomePageP5.Text = "9:00-10:00";
+            // 
+            // labelHomePageP4
+            // 
+            labelHomePageP4.AutoSize = true;
+            labelHomePageP4.Location = new Point(80, 412);
+            labelHomePageP4.Name = "labelHomePageP4";
+            labelHomePageP4.Size = new Size(156, 41);
+            labelHomePageP4.TabIndex = 5;
+            labelHomePageP4.Text = "9:00-10:00";
+            // 
+            // labelHomePageP3
+            // 
+            labelHomePageP3.AutoSize = true;
+            labelHomePageP3.Location = new Point(80, 371);
+            labelHomePageP3.Name = "labelHomePageP3";
+            labelHomePageP3.Size = new Size(156, 41);
+            labelHomePageP3.TabIndex = 4;
+            labelHomePageP3.Text = "9:00-10:00";
+            // 
+            // labelHomePageP2
+            // 
+            labelHomePageP2.AutoSize = true;
+            labelHomePageP2.Location = new Point(80, 331);
+            labelHomePageP2.Name = "labelHomePageP2";
+            labelHomePageP2.Size = new Size(156, 41);
+            labelHomePageP2.TabIndex = 3;
+            labelHomePageP2.Text = "9:00-10:00";
+            // 
+            // labelHomePageP1
+            // 
+            labelHomePageP1.AutoSize = true;
+            labelHomePageP1.Location = new Point(80, 290);
+            labelHomePageP1.Name = "labelHomePageP1";
+            labelHomePageP1.Size = new Size(156, 41);
+            labelHomePageP1.TabIndex = 2;
+            labelHomePageP1.Text = "9:00-10:00";
+            // 
+            // labelDateHere
+            // 
+            labelDateHere.AutoSize = true;
+            labelDateHere.Location = new Point(891, 96);
+            labelDateHere.Margin = new Padding(2, 0, 2, 0);
+            labelDateHere.Name = "labelDateHere";
+            labelDateHere.Size = new Size(155, 41);
+            labelDateHere.TabIndex = 1;
+            labelDateHere.Text = "DATEHERE";
             // 
             // label4
             // 
@@ -1364,16 +1486,6 @@ namespace testing
             label6.Size = new Size(338, 41);
             label6.TabIndex = 0;
             label6.Text = "Timetable for Week XXX";
-            // 
-            // tabPage4
-            // 
-            tabPage4.Location = new Point(10, 58);
-            tabPage4.Margin = new Padding(2, 3, 2, 3);
-            tabPage4.Name = "tabPage4";
-            tabPage4.Size = new Size(1627, 1517);
-            tabPage4.TabIndex = 3;
-            tabPage4.Text = "Settings";
-            tabPage4.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
@@ -2513,6 +2625,57 @@ namespace testing
             popupTaskTitleLabel.TabIndex = 0;
             popupTaskTitleLabel.Text = "Task";
             // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(comboBox1);
+            tabPage4.Controls.Add(labelSettingsTheme);
+            tabPage4.Controls.Add(buttonSettingsChangePassword);
+            tabPage4.Controls.Add(labelSettingsPersonalDetails);
+            tabPage4.Location = new Point(10, 58);
+            tabPage4.Margin = new Padding(2, 3, 2, 3);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(1627, 1517);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "Settings";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Simple White", "Techno Blue" });
+            comboBox1.Location = new Point(663, 358);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(302, 49);
+            comboBox1.TabIndex = 3;
+            comboBox1.Text = "Change Theme";
+            // 
+            // labelSettingsTheme
+            // 
+            labelSettingsTheme.AutoSize = true;
+            labelSettingsTheme.Location = new Point(663, 151);
+            labelSettingsTheme.Name = "labelSettingsTheme";
+            labelSettingsTheme.Size = new Size(109, 41);
+            labelSettingsTheme.TabIndex = 2;
+            labelSettingsTheme.Text = "Theme";
+            // 
+            // buttonSettingsChangePassword
+            // 
+            buttonSettingsChangePassword.Location = new Point(99, 349);
+            buttonSettingsChangePassword.Name = "buttonSettingsChangePassword";
+            buttonSettingsChangePassword.Size = new Size(299, 58);
+            buttonSettingsChangePassword.TabIndex = 1;
+            buttonSettingsChangePassword.Text = "Change Password";
+            buttonSettingsChangePassword.UseVisualStyleBackColor = true;
+            // 
+            // labelSettingsPersonalDetails
+            // 
+            labelSettingsPersonalDetails.AutoSize = true;
+            labelSettingsPersonalDetails.Location = new Point(71, 142);
+            labelSettingsPersonalDetails.Name = "labelSettingsPersonalDetails";
+            labelSettingsPersonalDetails.Size = new Size(227, 41);
+            labelSettingsPersonalDetails.TabIndex = 0;
+            labelSettingsPersonalDetails.Text = "Personal Details";
+            // 
             // tableLayoutPanel2
             // 
             tableLayoutPanel2.AutoSizeMode = AutoSizeMode.GrowAndShrink;
@@ -2603,123 +2766,6 @@ namespace testing
             passwordTextLabel.TabIndex = 6;
             passwordTextLabel.Text = "Password";
             // 
-            // labelHomePageP1
-            // 
-            labelHomePageP1.AutoSize = true;
-            labelHomePageP1.Location = new Point(80, 290);
-            labelHomePageP1.Name = "labelHomePageP1";
-            labelHomePageP1.Size = new Size(156, 41);
-            labelHomePageP1.TabIndex = 2;
-            labelHomePageP1.Text = "9:00-10:00";
-            // 
-            // labelHomePageP2
-            // 
-            labelHomePageP2.AutoSize = true;
-            labelHomePageP2.Location = new Point(80, 331);
-            labelHomePageP2.Name = "labelHomePageP2";
-            labelHomePageP2.Size = new Size(156, 41);
-            labelHomePageP2.TabIndex = 3;
-            labelHomePageP2.Text = "9:00-10:00";
-            // 
-            // labelHomePageP3
-            // 
-            labelHomePageP3.AutoSize = true;
-            labelHomePageP3.Location = new Point(80, 371);
-            labelHomePageP3.Name = "labelHomePageP3";
-            labelHomePageP3.Size = new Size(156, 41);
-            labelHomePageP3.TabIndex = 4;
-            labelHomePageP3.Text = "9:00-10:00";
-            // 
-            // labelHomePageP4
-            // 
-            labelHomePageP4.AutoSize = true;
-            labelHomePageP4.Location = new Point(80, 412);
-            labelHomePageP4.Name = "labelHomePageP4";
-            labelHomePageP4.Size = new Size(156, 41);
-            labelHomePageP4.TabIndex = 5;
-            labelHomePageP4.Text = "9:00-10:00";
-            // 
-            // labelHomePageP5
-            // 
-            labelHomePageP5.AutoSize = true;
-            labelHomePageP5.Location = new Point(80, 453);
-            labelHomePageP5.Name = "labelHomePageP5";
-            labelHomePageP5.Size = new Size(156, 41);
-            labelHomePageP5.TabIndex = 6;
-            labelHomePageP5.Text = "9:00-10:00";
-            // 
-            // labelHomePageP6
-            // 
-            labelHomePageP6.AutoSize = true;
-            labelHomePageP6.Location = new Point(80, 495);
-            labelHomePageP6.Name = "labelHomePageP6";
-            labelHomePageP6.Size = new Size(156, 41);
-            labelHomePageP6.TabIndex = 7;
-            labelHomePageP6.Text = "9:00-10:00";
-            // 
-            // labelHomePagetext
-            // 
-            labelHomePagetext.AutoSize = true;
-            labelHomePagetext.Location = new Point(92, 179);
-            labelHomePagetext.Name = "labelHomePagetext";
-            labelHomePagetext.Size = new Size(539, 41);
-            labelHomePagetext.TabIndex = 8;
-            labelHomePagetext.Text = "Today is monday, here are your classes:";
-            // 
-            // labelHomePageSub1
-            // 
-            labelHomePageSub1.AutoSize = true;
-            labelHomePageSub1.Location = new Point(271, 290);
-            labelHomePageSub1.Name = "labelHomePageSub1";
-            labelHomePageSub1.Size = new Size(60, 41);
-            labelHomePageSub1.TabIndex = 9;
-            labelHomePageSub1.Text = "xxx";
-            // 
-            // labelHomePageSub2
-            // 
-            labelHomePageSub2.AutoSize = true;
-            labelHomePageSub2.Location = new Point(271, 331);
-            labelHomePageSub2.Name = "labelHomePageSub2";
-            labelHomePageSub2.Size = new Size(60, 41);
-            labelHomePageSub2.TabIndex = 10;
-            labelHomePageSub2.Text = "xxx";
-            // 
-            // labelHomePageSub3
-            // 
-            labelHomePageSub3.AutoSize = true;
-            labelHomePageSub3.Location = new Point(271, 372);
-            labelHomePageSub3.Name = "labelHomePageSub3";
-            labelHomePageSub3.Size = new Size(60, 41);
-            labelHomePageSub3.TabIndex = 11;
-            labelHomePageSub3.Text = "xxx";
-            // 
-            // labelHomePageSub4
-            // 
-            labelHomePageSub4.AutoSize = true;
-            labelHomePageSub4.Location = new Point(271, 412);
-            labelHomePageSub4.Name = "labelHomePageSub4";
-            labelHomePageSub4.Size = new Size(60, 41);
-            labelHomePageSub4.TabIndex = 12;
-            labelHomePageSub4.Text = "xxx";
-            // 
-            // labelHomePageSub5
-            // 
-            labelHomePageSub5.AutoSize = true;
-            labelHomePageSub5.Location = new Point(271, 453);
-            labelHomePageSub5.Name = "labelHomePageSub5";
-            labelHomePageSub5.Size = new Size(60, 41);
-            labelHomePageSub5.TabIndex = 13;
-            labelHomePageSub5.Text = "xxx";
-            // 
-            // labelHomePageSub6
-            // 
-            labelHomePageSub6.AutoSize = true;
-            labelHomePageSub6.Location = new Point(271, 498);
-            labelHomePageSub6.Name = "labelHomePageSub6";
-            labelHomePageSub6.Size = new Size(60, 41);
-            labelHomePageSub6.TabIndex = 14;
-            labelHomePageSub6.Text = "xxx";
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
@@ -2730,6 +2776,7 @@ namespace testing
             Margin = new Padding(2, 3, 2, 3);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load_1;
             splitContainer1.Panel1.ResumeLayout(false);
             splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
@@ -2840,6 +2887,8 @@ namespace testing
             toolStrip1.PerformLayout();
             popupTaskPanel.ResumeLayout(false);
             popupTaskPanel.PerformLayout();
+            tabPage4.ResumeLayout(false);
+            tabPage4.PerformLayout();
             loginPanel.ResumeLayout(false);
             loginPanel.PerformLayout();
             ResumeLayout(false);
@@ -2850,9 +2899,9 @@ namespace testing
         private SplitContainer splitContainer1;
         private GroupBox groupBox1;
         private TextBox textBox3;
-        private Label label3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Label labelStudentProfileSID;
+        private TextBox textBoxStudentProfileYR;
+        private TextBox textBoxStudentProfileName;
         private Label label2;
         private Label label1;
         private Button button4;
@@ -2860,7 +2909,7 @@ namespace testing
         private Button button2;
         private Button button1;
         private Label label4;
-        private Label label5;
+        private Label labelDateHere;
         private GroupBox groupBox2;
         private CheckedListBox checkedListBox1;
         private TabControl tabControl1;
@@ -3054,8 +3103,6 @@ namespace testing
         private TextBox textBoxTTFriP6Sub;
         private TextBox textBoxTTThuP6Sub;
         private TextBox textBoxTTWedP6Sub;
-        private Label labelHomePageSub2;
-        private Label labelHomePageSub1;
         private Label labelHomePagetext;
         private Label labelHomePageP6;
         private Label labelHomePageP5;
@@ -3063,10 +3110,16 @@ namespace testing
         private Label labelHomePageP3;
         private Label labelHomePageP2;
         private Label labelHomePageP1;
-        private Label labelHomePageSub6;
-        private Label labelHomePageSub5;
+        private Label labelHomePageSub1;
+        private Label labelHomePageSub2;
         private Label labelHomePageSub4;
         private Label labelHomePageSub3;
+        private Label labelHomePageSub6;
+        private Label labelHomePageSub5;
+        private Label labelSettingsPersonalDetails;
+        private ComboBox comboBox1;
+        private Label labelSettingsTheme;
+        private Button buttonSettingsChangePassword;
     }
 
 

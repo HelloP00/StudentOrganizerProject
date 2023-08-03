@@ -36,9 +36,12 @@ namespace testing
             calendarChange(DateTime.Now.Year, DateTime.Now.Month);
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form1_Load_1(object sender, EventArgs e)
         {
-            label5.Text = DateTime.Now.ToLongDateString();
+            //update home page subject
+            int dateCurrent = (int)DateTime.Now.DayOfWeek;
+
+            updateLabelHomePageSub1To6(dateCurrent);
         }
 
 
@@ -474,6 +477,78 @@ namespace testing
 
             buttonTimetableClear.Visible = false;
             buttonTimetableEditDone.Visible = false;
+
+
+            //update home page subjects
+
+            int dateCurrent = (int)DateTime.Now.DayOfWeek;
+
+            updateLabelHomePageSub1To6(dateCurrent);
+
+
         }
+
+
+
+        private void updateLabelHomePageSub1To6(int day)
+        {
+            switch (day)
+            {
+                case 1: //Monday
+                    labelHomePageSub1.Text = textBoxTTMnP1Sub.Text;
+                    labelHomePageSub2.Text = textBoxTTMnP2Sub.Text;
+                    labelHomePageSub3.Text = textBoxTTMnP3Sub.Text;
+                    labelHomePageSub4.Text = textBoxTTMnP4Sub.Text;
+                    labelHomePageSub5.Text = textBoxTTMnP5Sub.Text;
+                    labelHomePageSub6.Text = textBoxTTMnP6Sub.Text;
+                    break;
+
+                case 2:
+                    labelHomePageSub1.Text = textBoxTTTuP1Sub.Text;
+                    labelHomePageSub2.Text = textBoxTTTuP2Sub.Text;
+                    labelHomePageSub3.Text = textBoxTTTuP3Sub.Text;
+                    labelHomePageSub4.Text = textBoxTTTuP4Sub.Text;
+                    labelHomePageSub5.Text = textBoxTTTuP5Sub.Text;
+                    labelHomePageSub6.Text = textBoxTTTuP6Sub.Text;
+                    break;
+
+                case 3:
+                    labelHomePageSub1.Text = textBoxTTWedP1Sub.Text;
+                    labelHomePageSub2.Text = textBoxTTWedP2Sub.Text;
+                    labelHomePageSub3.Text = textBoxTTWedP3Sub.Text;
+                    labelHomePageSub4.Text = textBoxTTWedP4Sub.Text;
+                    labelHomePageSub5.Text = textBoxTTWedP5Sub.Text;
+                    labelHomePageSub6.Text = textBoxTTWedP6Sub.Text;
+                    break;
+
+                case 4:
+                    labelHomePageSub1.Text = textBoxTTThuP1Sub.Text;
+                    labelHomePageSub2.Text = textBoxTTThuP2Sub.Text;
+                    labelHomePageSub3.Text = textBoxTTThuP3Sub.Text;
+                    labelHomePageSub4.Text = textBoxTTThuP4Sub.Text;
+                    labelHomePageSub5.Text = textBoxTTThuP5Sub.Text;
+                    labelHomePageSub6.Text = textBoxTTThuP6Sub.Text;
+                    break;
+
+                case 5:
+                    labelHomePageSub1.Text = textBoxTTFriP1Sub.Text;
+                    labelHomePageSub2.Text = textBoxTTFriP2Sub.Text;
+                    labelHomePageSub3.Text = textBoxTTFriP3Sub.Text;
+                    labelHomePageSub4.Text = textBoxTTFriP4Sub.Text;
+                    labelHomePageSub5.Text = textBoxTTFriP5Sub.Text;
+                    labelHomePageSub6.Text = textBoxTTFriP6Sub.Text;
+                    break;
+
+                default:
+                    labelHomePageSub1.Text = "NO SCHOOL";
+                    labelHomePageSub2.Text = "NO SCHOOL";
+                    labelHomePageSub3.Text = "NO SCHOOL";
+                    labelHomePageSub4.Text = "NO SCHOOL";
+                    labelHomePageSub5.Text = "NO SCHOOL";
+                    labelHomePageSub6.Text = "NO SCHOOL";
+                    break;
+            }
+        }
+
     }
 }
