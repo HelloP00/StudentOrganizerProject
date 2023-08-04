@@ -69,31 +69,7 @@ namespace testing
             tabControl1.SelectedTab = tabPage4;
         }
 
-        private void taskButton_Click(object sender, EventArgs e)
-        {
-            //Sets temp button so that the program knows which task is being viewed (this system may be changed)
-            //It probably won't always be "taskButton"
-            //taskHold = taskButton;
-
-            //Clickable task which reveals task editing panel and hides task panel
-            popupTaskPanel.Visible = false;
-            editTaskPanel.Visible = true;
-        }
-
-        private void taskButton_MouseHover(object sender, EventArgs e)
-        {
-            //Hover over task to reveal task editing panel
-            if (editTaskPanel.Visible == false)
-            {
-                popupTaskPanel.Visible = true;
-            }
-        }
-
-        private void taskButton_MouseLeave(object sender, EventArgs e)
-        {
-            popupTaskPanel.Visible = false;
-        }
-
+        //Should have 4 references: colourOrangeCheckBox, colourPurpleCheckBox, colourGreenCheckBox, colourBlueCheckBox and it should be when CheckedChanged
         private void colourCheckBox_CheckedChanged(object sender, EventArgs e)
         {
             //This function is used by all of the color checkboxes,
@@ -119,21 +95,20 @@ namespace testing
             }
         }
 
+        //Should have 1 reference: saveButton.click
         private void saveButton_Click(object sender, EventArgs e)
         {
             if (editTaskTitleLabel.Text != "")
             {
                 editTaskPanel.Visible = false;
 
-                //Temporary until database
-                //popupTaskTitleLabel.Text = editTaskTitleLabel.Text;
-                //taskButton.Text = editTaskTitleLabel.Text;
-
-                //Temporary until database
-                //popupTaskDateLabel.Text = editTaskDatePicker.Text;
-                //popupTaskTimeLabel.Text = editTaskTimePicker.Text;
-
-                //popupTaskNoteTextBox.Text = editTaskNoteTextbox.Text;
+                foreach (Control control in Controls)
+                {
+                    if (control != editTaskPanel)
+                    {
+                        control.Enabled = true;
+                    }
+                }
 
                 //Save changes to data base (Colour, Date, Time, Title etc) here
 
@@ -144,9 +119,6 @@ namespace testing
                 //this is repeated to create a calendar
                 //taskHold.BackColor = colourHold;
 
-                //Temporary until database
-                //changePopupTaskTheme(colourHold);
-
                 yearHold = editTaskDatePicker.Value.Year;
                 monthHold = editTaskDatePicker.Value.Month;
                 dayHold = editTaskDatePicker.Value.Day;
@@ -155,20 +127,15 @@ namespace testing
                 textHold = editTaskNoteTextbox.Text;
                 titleHold = editTaskTitleLabel.Text;
 
-                //Check if year == current year & month == current month
-                //If true then use a addtask function
-                if (taskSender == toolStripButtonNewTask)
+                if (currentYear == yearHold && currentMonth == monthHold)
                 {
-                    addTask(yearHold, monthHold, dayHold, timeHold1, timeHold2, colourHold);
-                    taskSender = saveButton;
+                    if (taskSender == toolStripButtonNewTask)
+                    {
+                        addTask(yearHold, monthHold, dayHold, timeHold1, timeHold2, colourHold);
+                        taskSender = saveButton;
+                    }
+                    taskHold.Text = titleHold;
                 }
-                taskHold.Text = titleHold;
-
-                foreach (Panel panel in flowLayoutPanelCalendar.Controls.OfType<Panel>())
-                {
-                    panel.Enabled = true;
-                }
-                toolStripButtonNewTask.Enabled = true;
             }
             else
             {
@@ -176,6 +143,7 @@ namespace testing
             }
         }
 
+        //Should have 1 reference: editTaskTitleTextBox.TextChanged 
         private void editTaskTitleTextBox_TextChanged(object sender, EventArgs e)
         {
             if (editTaskTitleTextBox.TextLength == maxTitleLength - 1)
@@ -190,6 +158,8 @@ namespace testing
 
             editTaskTitleLabel.Text = editTaskTitleTextBox.Text;
         }
+
+        //Should have 0 references
         private void changePopupTaskTheme(Color color)
         {
             //Should change Popup Task Theme when hovering a button/task and READ the color of the button/task
@@ -219,6 +189,7 @@ namespace testing
                 MessageBox.Show("Error when changing Popup Task Theme");
             }
         }
+        //Should have 1 reference inside colourCheckBox_CheckedChanged (Not an event)
         private void changeEditTaskTheme(Color color)
         {
             //To be used to change the theme of the "Edit Task" Panel
@@ -270,6 +241,7 @@ namespace testing
 
             return 0;
         }
+        //Should have 1 reference: loginButton.Click
         private void loginButton_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Login button was clicked");
@@ -285,16 +257,21 @@ namespace testing
             }
             return;
         }
+        //Should have 1 reference: exitButton.Click
         private void exitButton_Click(object sender, EventArgs e)
         {
             Console.WriteLine("Exit button was clicked");
             this.Close();
         }
+
+        //Should have 1 reference: toolStripButtonNewTask.Click
         private void toolStripButtonNewTask_Click(object sender, EventArgs e)
         {
+            editTaskTitleTextBox.Text = "Task";
             editTaskPanel.Visible = true;
             taskSender = toolStripButtonNewTask;
         }
+        //Should have 2 references at the top and inside month_year_Changed
         private void calendarChange(int year, int month)
         {
             if (year >= 1990 && year <= 3000 && month >= 1 && month <= 12)
@@ -358,6 +335,7 @@ namespace testing
             currentYear = year;
             currentMonth = month;
         }
+        //Should have 2 references: toolStripComboBoxYear.SelectedIndexChanged and toolStripComboBoxMonth.SelectedIndexChanged
         private void month_year_Changed(object sender, EventArgs e)
         {
             //Checks whether input is from user
@@ -377,39 +355,59 @@ namespace testing
             }
         }
 
+        //Should have 1 reference inside saveButton_Click
         private void addTask(int year, int month, int day, string time1, string time2, Color color)
         {
             int temp = day + startingDay;
             //MessageBox.Show("startingDay" + startingDay + "day:" + day + "temp:" + temp);
             string panelNameChange = "panelCalendarDay" + (temp);
-            Point point = new Point(10, 10);
-            Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point);
+            //Should change according to panel size eventually
+            Point point = new Point(5, 30);
+            Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point, flowLayoutPanelCalendar.Controls[panelNameChange].Font);
             taskHold = button;
             this.flowLayoutPanelCalendar.Controls[panelNameChange].Controls.Add(button);
         }
-        private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color color, Size size, Point point)
+        //Should have 1 reference inside addTask (directly above this)
+        private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color color, Size size, Point point, Font font)
         {
             Button button = new Button();
             button.BackColor = color;
-            //Instead of worring about size too much, use margins - top,left,right
-            button.Size = new System.Drawing.Size((size.Width - 2), (size.Height - 10));
-            //button.Size = new System.Drawing.Size(30, 20);
+            //button.Margin = new Padding(5, 20, 5, 0);
+            button.Size = new System.Drawing.Size(((size.Width/2) + (size.Width/3)), (size.Height / 3));
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.Location = point;
             button.TextAlign = ContentAlignment.TopLeft;
-            button.Font = new Font(button1.Font, FontStyle.Bold);
+            button.Font = new Font(font, FontStyle.Bold);
             button.ForeColor = Color.White;
             button.Click += new System.EventHandler(task_Click);
             return button;
         }
+
+        //Should have 1 reference inside buttonToAdd (directly above this)
         private void task_Click(object sender, EventArgs e)
         {
             taskHold = (Button)sender;
             editTaskPanel.Visible = true;
         }
 
+        //Should have 1 reference: editTaskPanel.VisibleChanged
+        private void editTaskPanel_VisibleChanged(object sender, EventArgs e)
+        {
+            if (Visible)
+            {
+                foreach (Control control in Controls)
+                {
+                    if(control != editTaskPanel)
+                    {
+                        control.Enabled = false;
+                    }  
+                }
+            }
+        }
+
         //make timetable textboxes editable
+        //Should have 1 reference: buttonEditTimetable.Click
         private void buttonEditTimetable_Click(object sender, EventArgs e)
         {
             TextBox[] textBoxes = new TextBox[]
@@ -430,6 +428,9 @@ namespace testing
             buttonTimetableEditDone.Visible = true;
         }
 
+        
+
+        //Should have 1 reference: buttonTimetableClear.Click
         private void buttonTimetableClear_Click(object sender, EventArgs e)
         {
             TextBox[] textBoxes = new TextBox[]
@@ -446,6 +447,7 @@ namespace testing
                 textBox.Clear();
             }
         }
+        //Should have 1 reference: buttonTimetableEditDone.Click
 
         private void buttonTimetableEditDone_Click(object sender, EventArgs e)
         {
@@ -477,7 +479,7 @@ namespace testing
         }
 
 
-
+        //Should have 2 references inside Form1_Load1 and buttonTimetableEditDone_Click
         private void updateLabelHomePageSub1To6(int day)
         {
             switch (day)
