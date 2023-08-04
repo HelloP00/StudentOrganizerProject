@@ -329,8 +329,8 @@ namespace testing
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.Controls.Add(tabControl1);
-            splitContainer1.Size = new Size(1845, 1191);
-            splitContainer1.SplitterDistance = 407;
+            splitContainer1.Size = new Size(1974, 1645);
+            splitContainer1.SplitterDistance = 435;
             splitContainer1.SplitterWidth = 30;
             splitContainer1.TabIndex = 0;
             // 
@@ -2780,7 +2780,7 @@ namespace testing
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1845, 1191);
+            ClientSize = new Size(1974, 1645);
             Controls.Add(splitContainer1);
             Controls.Add(loginPanel);
             Margin = new Padding(2);
