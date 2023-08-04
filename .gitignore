@@ -1,0 +1,7 @@
+testing.*
+*.exe
+*cache
+*.json
+*.nuget*
+*vsidx
+*editorconfig
