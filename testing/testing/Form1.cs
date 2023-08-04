@@ -20,10 +20,10 @@ namespace testing
         public Form1()
         {
             InitializeComponent();
-            button1.Click += button1_Click;
-            button2.Click += button2_Click;
-            button3.Click += button3_Click;
-            button4.Click += button4_Click;
+            buttonHome.Click += buttonHome_Click;
+            buttonTimetable.Click += buttonTimetable_Click;
+            buttonCalendar.Click += buttonCalendar_Click;
+            buttonSettings.Click += buttonSettings_Click;
 
             //Adds years to ComboBox and selects current year
             for (int i = 1990; i <= 3000; i++)
@@ -46,25 +46,25 @@ namespace testing
 
 
         //home button
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonHome_Click(object sender, EventArgs e)
         {
             //home button
             tabControl1.SelectedTab = tabPage1;
         }
 
         //timetable button
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonTimetable_Click(object sender, EventArgs e)
         {
             //make this go to timetable tab
             tabControl1.SelectedTab = tabPage2;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void buttonCalendar_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage3;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonSettings_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage4;
         }
