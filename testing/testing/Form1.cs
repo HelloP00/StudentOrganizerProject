@@ -358,17 +358,6 @@ namespace testing
             currentYear = year;
             currentMonth = month;
         }
-        private void editTaskPanel_VisibleChanged(object sender, EventArgs e)
-        {
-            if (editTaskPanel.Visible)
-            {
-                foreach (Panel panel in flowLayoutPanelCalendar.Controls.OfType<Panel>())
-                {
-                    panel.Enabled = false;
-                }
-                toolStripButtonNewTask.Enabled = false;
-            }
-        }
         private void month_year_Changed(object sender, EventArgs e)
         {
             //Checks whether input is from user
@@ -400,12 +389,11 @@ namespace testing
         }
         private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color color, Size size, Point point)
         {
-            MessageBox.Show("buttonAdding");
             Button button = new Button();
             button.BackColor = color;
             //Instead of worring about size too much, use margins - top,left,right
-            //button.Size = new System.Drawing.Size((size.Width - 2), (size.Height - 10));
-            button.Size = new System.Drawing.Size(20, 10);
+            button.Size = new System.Drawing.Size((size.Width - 2), (size.Height - 10));
+            //button.Size = new System.Drawing.Size(30, 20);
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.Location = point;
