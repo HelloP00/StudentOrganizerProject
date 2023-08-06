@@ -50,29 +50,12 @@ void HashPassword(string userName, string inputPassword) {
 				aes.Key = key;
 			}
 		}
-		
-		//ripped from GenKeys to confirm if it gets the info right
-		using (FileStream stream = File.Create($"{userDir}\\randIV.dat")) {
-			using (BinaryWriter writer = new BinaryWriter(stream)) {
-				writer.Write(aes.IV);
-			}
-		}
-		
 		using (FileStream stream = File.Open($"{userDir}\\IV.dat", FileMode.Open)) {
 			using (BinaryReader reader = new BinaryReader(stream)) {
 				reader.Read(iv, 0, IVSize);
 				aes.IV = iv;
 			}
 		}
-		
-		
-		//ripped from GenKeys to confirm if it gets the info right
-		using (FileStream stream = File.Create($"{userDir}\\loadIV.dat")) {
-			using (BinaryWriter writer = new BinaryWriter(stream)) {
-				writer.Write(aes.IV);
-			}
-		}
-		
 	}
 }
 
