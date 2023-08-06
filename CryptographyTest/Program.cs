@@ -16,18 +16,26 @@ void GenKeys(string userName) {
 		key = aes.Key;
 		iv = aes.IV;
 	}
-	//stores the keys
-	using (FileStream stream = File.Create($"{saveDir}\\key.dat")) {
-		using (BinaryWriter writer = new BinaryWriter(stream)) {
-			writer.Write(key);
+	//stores the keys (if a file is not already present)
+	if (!File.Exists($"{saveDir}\\key.dat")) {
+		using (FileStream stream = File.Create($"{saveDir}\\key.dat")) {
+			using (BinaryWriter writer = new BinaryWriter(stream)) {
+				writer.Write(key);
+			}
 		}
 	}
-	using (FileStream stream = File.Create($"{saveDir}\\IV.dat")) {
-		using (BinaryWriter writer = new BinaryWriter(stream)) {
-			writer.Write(iv);
+	if (!File.Exists($"{saveDir}\\IV.dat")) {
+		using (FileStream stream = File.Create($"{saveDir}\\IV.dat")) {
+			using (BinaryWriter writer = new BinaryWriter(stream)) {
+				writer.Write(iv);
+			}
 		}
 	}
 }
 
+//hashes the string to the keys stored under the username
+void HashPassword(string userName) {
+	
+}
 
-//GenKeys("testUser");
+GenKeys("testUser");
