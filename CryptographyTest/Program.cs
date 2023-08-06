@@ -121,6 +121,7 @@ bool CompareToStoredPassword(string userName, string inputPassword) {
 	return false;
 }
 
+//Test function calls
 GenKeys("testUser");
 HashPassword("testUser", "password");
 HashPassword("testUser", "password");
