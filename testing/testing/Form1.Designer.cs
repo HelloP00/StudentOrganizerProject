@@ -328,8 +328,8 @@ namespace testing
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
-            this.splitContainer1.Size = new System.Drawing.Size(900, 591);
-            this.splitContainer1.SplitterDistance = 197;
+            this.splitContainer1.Size = new System.Drawing.Size(954, 638);
+            this.splitContainer1.SplitterDistance = 208;
             this.splitContainer1.SplitterWidth = 16;
             this.splitContainer1.TabIndex = 0;
             // 
@@ -457,7 +457,7 @@ namespace testing
             this.tabControl1.Margin = new System.Windows.Forms.Padding(1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(678, 580);
+            this.tabControl1.Size = new System.Drawing.Size(729, 634);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -1337,7 +1337,7 @@ namespace testing
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(1);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(670, 552);
+            this.tabPage3.Size = new System.Drawing.Size(721, 606);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Calendar";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -1389,7 +1389,7 @@ namespace testing
             this.flowLayoutPanelCalendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelCalendar.Location = new System.Drawing.Point(0, 50);
             this.flowLayoutPanelCalendar.Name = "flowLayoutPanelCalendar";
-            this.flowLayoutPanelCalendar.Size = new System.Drawing.Size(670, 502);
+            this.flowLayoutPanelCalendar.Size = new System.Drawing.Size(721, 556);
             this.flowLayoutPanelCalendar.TabIndex = 4;
             // 
             // panelCalendarDay1
@@ -1398,7 +1398,7 @@ namespace testing
             this.panelCalendarDay1.Location = new System.Drawing.Point(2, 2);
             this.panelCalendarDay1.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay1.Name = "panelCalendarDay1";
-            this.panelCalendarDay1.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay1.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay1.TabIndex = 0;
             // 
             // labelCalendarDay1
@@ -1414,10 +1414,10 @@ namespace testing
             // panelCalendarDay2
             // 
             this.panelCalendarDay2.Controls.Add(this.labelCalendarDay2);
-            this.panelCalendarDay2.Location = new System.Drawing.Point(97, 2);
+            this.panelCalendarDay2.Location = new System.Drawing.Point(105, 2);
             this.panelCalendarDay2.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay2.Name = "panelCalendarDay2";
-            this.panelCalendarDay2.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay2.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay2.TabIndex = 1;
             // 
             // labelCalendarDay2
@@ -1433,10 +1433,10 @@ namespace testing
             // panelCalendarDay3
             // 
             this.panelCalendarDay3.Controls.Add(this.labelCalendarDay3);
-            this.panelCalendarDay3.Location = new System.Drawing.Point(192, 2);
+            this.panelCalendarDay3.Location = new System.Drawing.Point(208, 2);
             this.panelCalendarDay3.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay3.Name = "panelCalendarDay3";
-            this.panelCalendarDay3.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay3.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay3.TabIndex = 2;
             // 
             // labelCalendarDay3
@@ -1452,10 +1452,10 @@ namespace testing
             // panelCalendarDay4
             // 
             this.panelCalendarDay4.Controls.Add(this.labelCalendarDay4);
-            this.panelCalendarDay4.Location = new System.Drawing.Point(287, 2);
+            this.panelCalendarDay4.Location = new System.Drawing.Point(311, 2);
             this.panelCalendarDay4.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay4.Name = "panelCalendarDay4";
-            this.panelCalendarDay4.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay4.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay4.TabIndex = 3;
             // 
             // labelCalendarDay4
@@ -1471,10 +1471,10 @@ namespace testing
             // panelCalendarDay5
             // 
             this.panelCalendarDay5.Controls.Add(this.labelCalendarDay5);
-            this.panelCalendarDay5.Location = new System.Drawing.Point(382, 2);
+            this.panelCalendarDay5.Location = new System.Drawing.Point(414, 2);
             this.panelCalendarDay5.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay5.Name = "panelCalendarDay5";
-            this.panelCalendarDay5.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay5.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay5.TabIndex = 4;
             // 
             // labelCalendarDay5
@@ -1490,10 +1490,10 @@ namespace testing
             // panelCalendarDay6
             // 
             this.panelCalendarDay6.Controls.Add(this.labelCalendarDay6);
-            this.panelCalendarDay6.Location = new System.Drawing.Point(477, 2);
+            this.panelCalendarDay6.Location = new System.Drawing.Point(517, 2);
             this.panelCalendarDay6.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay6.Name = "panelCalendarDay6";
-            this.panelCalendarDay6.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay6.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay6.TabIndex = 5;
             // 
             // labelCalendarDay6
@@ -1509,10 +1509,10 @@ namespace testing
             // panelCalendarDay7
             // 
             this.panelCalendarDay7.Controls.Add(this.labelCalendarDay7);
-            this.panelCalendarDay7.Location = new System.Drawing.Point(572, 2);
+            this.panelCalendarDay7.Location = new System.Drawing.Point(620, 2);
             this.panelCalendarDay7.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay7.Name = "panelCalendarDay7";
-            this.panelCalendarDay7.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay7.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay7.TabIndex = 6;
             // 
             // labelCalendarDay7
@@ -1528,10 +1528,10 @@ namespace testing
             // panelCalendarDay8
             // 
             this.panelCalendarDay8.Controls.Add(this.labelCalendarDay8);
-            this.panelCalendarDay8.Location = new System.Drawing.Point(2, 85);
+            this.panelCalendarDay8.Location = new System.Drawing.Point(2, 94);
             this.panelCalendarDay8.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay8.Name = "panelCalendarDay8";
-            this.panelCalendarDay8.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay8.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay8.TabIndex = 6;
             // 
             // labelCalendarDay8
@@ -1547,10 +1547,10 @@ namespace testing
             // panelCalendarDay9
             // 
             this.panelCalendarDay9.Controls.Add(this.labelCalendarDay9);
-            this.panelCalendarDay9.Location = new System.Drawing.Point(97, 85);
+            this.panelCalendarDay9.Location = new System.Drawing.Point(105, 94);
             this.panelCalendarDay9.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay9.Name = "panelCalendarDay9";
-            this.panelCalendarDay9.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay9.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay9.TabIndex = 6;
             // 
             // labelCalendarDay9
@@ -1566,10 +1566,10 @@ namespace testing
             // panelCalendarDay10
             // 
             this.panelCalendarDay10.Controls.Add(this.labelCalendarDay10);
-            this.panelCalendarDay10.Location = new System.Drawing.Point(192, 85);
+            this.panelCalendarDay10.Location = new System.Drawing.Point(208, 94);
             this.panelCalendarDay10.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay10.Name = "panelCalendarDay10";
-            this.panelCalendarDay10.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay10.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay10.TabIndex = 6;
             // 
             // labelCalendarDay10
@@ -1585,10 +1585,10 @@ namespace testing
             // panelCalendarDay11
             // 
             this.panelCalendarDay11.Controls.Add(this.labelCalendarDay11);
-            this.panelCalendarDay11.Location = new System.Drawing.Point(287, 85);
+            this.panelCalendarDay11.Location = new System.Drawing.Point(311, 94);
             this.panelCalendarDay11.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay11.Name = "panelCalendarDay11";
-            this.panelCalendarDay11.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay11.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay11.TabIndex = 6;
             // 
             // labelCalendarDay11
@@ -1604,10 +1604,10 @@ namespace testing
             // panelCalendarDay12
             // 
             this.panelCalendarDay12.Controls.Add(this.labelCalendarDay12);
-            this.panelCalendarDay12.Location = new System.Drawing.Point(382, 85);
+            this.panelCalendarDay12.Location = new System.Drawing.Point(414, 94);
             this.panelCalendarDay12.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay12.Name = "panelCalendarDay12";
-            this.panelCalendarDay12.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay12.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay12.TabIndex = 6;
             // 
             // labelCalendarDay12
@@ -1623,10 +1623,10 @@ namespace testing
             // panelCalendarDay13
             // 
             this.panelCalendarDay13.Controls.Add(this.labelCalendarDay13);
-            this.panelCalendarDay13.Location = new System.Drawing.Point(477, 85);
+            this.panelCalendarDay13.Location = new System.Drawing.Point(517, 94);
             this.panelCalendarDay13.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay13.Name = "panelCalendarDay13";
-            this.panelCalendarDay13.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay13.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay13.TabIndex = 6;
             // 
             // labelCalendarDay13
@@ -1642,10 +1642,10 @@ namespace testing
             // panelCalendarDay14
             // 
             this.panelCalendarDay14.Controls.Add(this.labelCalendarDay14);
-            this.panelCalendarDay14.Location = new System.Drawing.Point(572, 85);
+            this.panelCalendarDay14.Location = new System.Drawing.Point(620, 94);
             this.panelCalendarDay14.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay14.Name = "panelCalendarDay14";
-            this.panelCalendarDay14.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay14.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay14.TabIndex = 6;
             // 
             // labelCalendarDay14
@@ -1661,10 +1661,10 @@ namespace testing
             // panelCalendarDay15
             // 
             this.panelCalendarDay15.Controls.Add(this.labelCalendarDay15);
-            this.panelCalendarDay15.Location = new System.Drawing.Point(2, 168);
+            this.panelCalendarDay15.Location = new System.Drawing.Point(2, 186);
             this.panelCalendarDay15.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay15.Name = "panelCalendarDay15";
-            this.panelCalendarDay15.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay15.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay15.TabIndex = 6;
             // 
             // labelCalendarDay15
@@ -1680,10 +1680,10 @@ namespace testing
             // panelCalendarDay16
             // 
             this.panelCalendarDay16.Controls.Add(this.labelCalendarDay16);
-            this.panelCalendarDay16.Location = new System.Drawing.Point(97, 168);
+            this.panelCalendarDay16.Location = new System.Drawing.Point(105, 186);
             this.panelCalendarDay16.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay16.Name = "panelCalendarDay16";
-            this.panelCalendarDay16.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay16.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay16.TabIndex = 6;
             // 
             // labelCalendarDay16
@@ -1699,10 +1699,10 @@ namespace testing
             // panelCalendarDay17
             // 
             this.panelCalendarDay17.Controls.Add(this.labelCalendarDay17);
-            this.panelCalendarDay17.Location = new System.Drawing.Point(192, 168);
+            this.panelCalendarDay17.Location = new System.Drawing.Point(208, 186);
             this.panelCalendarDay17.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay17.Name = "panelCalendarDay17";
-            this.panelCalendarDay17.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay17.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay17.TabIndex = 6;
             // 
             // labelCalendarDay17
@@ -1718,10 +1718,10 @@ namespace testing
             // panelCalendarDay18
             // 
             this.panelCalendarDay18.Controls.Add(this.labelCalendarDay18);
-            this.panelCalendarDay18.Location = new System.Drawing.Point(287, 168);
+            this.panelCalendarDay18.Location = new System.Drawing.Point(311, 186);
             this.panelCalendarDay18.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay18.Name = "panelCalendarDay18";
-            this.panelCalendarDay18.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay18.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay18.TabIndex = 6;
             // 
             // labelCalendarDay18
@@ -1737,10 +1737,10 @@ namespace testing
             // panelCalendarDay19
             // 
             this.panelCalendarDay19.Controls.Add(this.labelCalendarDay19);
-            this.panelCalendarDay19.Location = new System.Drawing.Point(382, 168);
+            this.panelCalendarDay19.Location = new System.Drawing.Point(414, 186);
             this.panelCalendarDay19.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay19.Name = "panelCalendarDay19";
-            this.panelCalendarDay19.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay19.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay19.TabIndex = 6;
             // 
             // labelCalendarDay19
@@ -1756,10 +1756,10 @@ namespace testing
             // panelCalendarDay20
             // 
             this.panelCalendarDay20.Controls.Add(this.labelCalendarDay20);
-            this.panelCalendarDay20.Location = new System.Drawing.Point(477, 168);
+            this.panelCalendarDay20.Location = new System.Drawing.Point(517, 186);
             this.panelCalendarDay20.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay20.Name = "panelCalendarDay20";
-            this.panelCalendarDay20.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay20.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay20.TabIndex = 6;
             // 
             // labelCalendarDay20
@@ -1775,10 +1775,10 @@ namespace testing
             // panelCalendarDay21
             // 
             this.panelCalendarDay21.Controls.Add(this.labelCalendarDay21);
-            this.panelCalendarDay21.Location = new System.Drawing.Point(572, 168);
+            this.panelCalendarDay21.Location = new System.Drawing.Point(620, 186);
             this.panelCalendarDay21.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay21.Name = "panelCalendarDay21";
-            this.panelCalendarDay21.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay21.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay21.TabIndex = 6;
             // 
             // labelCalendarDay21
@@ -1794,10 +1794,10 @@ namespace testing
             // panelCalendarDay22
             // 
             this.panelCalendarDay22.Controls.Add(this.labelCalendarDay22);
-            this.panelCalendarDay22.Location = new System.Drawing.Point(2, 251);
+            this.panelCalendarDay22.Location = new System.Drawing.Point(2, 278);
             this.panelCalendarDay22.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay22.Name = "panelCalendarDay22";
-            this.panelCalendarDay22.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay22.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay22.TabIndex = 6;
             // 
             // labelCalendarDay22
@@ -1813,10 +1813,10 @@ namespace testing
             // panelCalendarDay23
             // 
             this.panelCalendarDay23.Controls.Add(this.labelCalendarDay23);
-            this.panelCalendarDay23.Location = new System.Drawing.Point(97, 251);
+            this.panelCalendarDay23.Location = new System.Drawing.Point(105, 278);
             this.panelCalendarDay23.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay23.Name = "panelCalendarDay23";
-            this.panelCalendarDay23.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay23.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay23.TabIndex = 6;
             // 
             // labelCalendarDay23
@@ -1832,10 +1832,10 @@ namespace testing
             // panelCalendarDay24
             // 
             this.panelCalendarDay24.Controls.Add(this.labelCalendarDay24);
-            this.panelCalendarDay24.Location = new System.Drawing.Point(192, 251);
+            this.panelCalendarDay24.Location = new System.Drawing.Point(208, 278);
             this.panelCalendarDay24.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay24.Name = "panelCalendarDay24";
-            this.panelCalendarDay24.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay24.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay24.TabIndex = 6;
             // 
             // labelCalendarDay24
@@ -1851,10 +1851,10 @@ namespace testing
             // panelCalendarDay25
             // 
             this.panelCalendarDay25.Controls.Add(this.labelCalendarDay25);
-            this.panelCalendarDay25.Location = new System.Drawing.Point(287, 251);
+            this.panelCalendarDay25.Location = new System.Drawing.Point(311, 278);
             this.panelCalendarDay25.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay25.Name = "panelCalendarDay25";
-            this.panelCalendarDay25.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay25.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay25.TabIndex = 6;
             // 
             // labelCalendarDay25
@@ -1870,10 +1870,10 @@ namespace testing
             // panelCalendarDay26
             // 
             this.panelCalendarDay26.Controls.Add(this.labelCalendarDay26);
-            this.panelCalendarDay26.Location = new System.Drawing.Point(382, 251);
+            this.panelCalendarDay26.Location = new System.Drawing.Point(414, 278);
             this.panelCalendarDay26.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay26.Name = "panelCalendarDay26";
-            this.panelCalendarDay26.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay26.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay26.TabIndex = 6;
             // 
             // labelCalendarDay26
@@ -1889,10 +1889,10 @@ namespace testing
             // panelCalendarDay27
             // 
             this.panelCalendarDay27.Controls.Add(this.labelCalendarDay27);
-            this.panelCalendarDay27.Location = new System.Drawing.Point(477, 251);
+            this.panelCalendarDay27.Location = new System.Drawing.Point(517, 278);
             this.panelCalendarDay27.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay27.Name = "panelCalendarDay27";
-            this.panelCalendarDay27.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay27.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay27.TabIndex = 6;
             // 
             // labelCalendarDay27
@@ -1908,10 +1908,10 @@ namespace testing
             // panelCalendarDay28
             // 
             this.panelCalendarDay28.Controls.Add(this.labelCalendarDay28);
-            this.panelCalendarDay28.Location = new System.Drawing.Point(572, 251);
+            this.panelCalendarDay28.Location = new System.Drawing.Point(620, 278);
             this.panelCalendarDay28.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay28.Name = "panelCalendarDay28";
-            this.panelCalendarDay28.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay28.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay28.TabIndex = 6;
             // 
             // labelCalendarDay28
@@ -1927,10 +1927,10 @@ namespace testing
             // panelCalendarDay29
             // 
             this.panelCalendarDay29.Controls.Add(this.labelCalendarDay29);
-            this.panelCalendarDay29.Location = new System.Drawing.Point(2, 334);
+            this.panelCalendarDay29.Location = new System.Drawing.Point(2, 370);
             this.panelCalendarDay29.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay29.Name = "panelCalendarDay29";
-            this.panelCalendarDay29.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay29.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay29.TabIndex = 6;
             // 
             // labelCalendarDay29
@@ -1946,10 +1946,10 @@ namespace testing
             // panelCalendarDay30
             // 
             this.panelCalendarDay30.Controls.Add(this.labelCalendarDay30);
-            this.panelCalendarDay30.Location = new System.Drawing.Point(97, 334);
+            this.panelCalendarDay30.Location = new System.Drawing.Point(105, 370);
             this.panelCalendarDay30.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay30.Name = "panelCalendarDay30";
-            this.panelCalendarDay30.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay30.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay30.TabIndex = 7;
             // 
             // labelCalendarDay30
@@ -1965,10 +1965,10 @@ namespace testing
             // panelCalendarDay31
             // 
             this.panelCalendarDay31.Controls.Add(this.labelCalendarDay31);
-            this.panelCalendarDay31.Location = new System.Drawing.Point(192, 334);
+            this.panelCalendarDay31.Location = new System.Drawing.Point(208, 370);
             this.panelCalendarDay31.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay31.Name = "panelCalendarDay31";
-            this.panelCalendarDay31.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay31.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay31.TabIndex = 8;
             // 
             // labelCalendarDay31
@@ -1984,10 +1984,10 @@ namespace testing
             // panelCalendarDay32
             // 
             this.panelCalendarDay32.Controls.Add(this.labelCalendarDay32);
-            this.panelCalendarDay32.Location = new System.Drawing.Point(287, 334);
+            this.panelCalendarDay32.Location = new System.Drawing.Point(311, 370);
             this.panelCalendarDay32.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay32.Name = "panelCalendarDay32";
-            this.panelCalendarDay32.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay32.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay32.TabIndex = 8;
             // 
             // labelCalendarDay32
@@ -2003,10 +2003,10 @@ namespace testing
             // panelCalendarDay33
             // 
             this.panelCalendarDay33.Controls.Add(this.labelCalendarDay33);
-            this.panelCalendarDay33.Location = new System.Drawing.Point(382, 334);
+            this.panelCalendarDay33.Location = new System.Drawing.Point(414, 370);
             this.panelCalendarDay33.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay33.Name = "panelCalendarDay33";
-            this.panelCalendarDay33.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay33.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay33.TabIndex = 8;
             // 
             // labelCalendarDay33
@@ -2022,10 +2022,10 @@ namespace testing
             // panelCalendarDay34
             // 
             this.panelCalendarDay34.Controls.Add(this.labelCalendarDay34);
-            this.panelCalendarDay34.Location = new System.Drawing.Point(477, 334);
+            this.panelCalendarDay34.Location = new System.Drawing.Point(517, 370);
             this.panelCalendarDay34.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay34.Name = "panelCalendarDay34";
-            this.panelCalendarDay34.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay34.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay34.TabIndex = 8;
             // 
             // labelCalendarDay34
@@ -2041,10 +2041,10 @@ namespace testing
             // panelCalendarDay35
             // 
             this.panelCalendarDay35.Controls.Add(this.labelCalendarDay35);
-            this.panelCalendarDay35.Location = new System.Drawing.Point(572, 334);
+            this.panelCalendarDay35.Location = new System.Drawing.Point(620, 370);
             this.panelCalendarDay35.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay35.Name = "panelCalendarDay35";
-            this.panelCalendarDay35.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay35.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay35.TabIndex = 8;
             // 
             // labelCalendarDay35
@@ -2060,10 +2060,10 @@ namespace testing
             // panelCalendarDay36
             // 
             this.panelCalendarDay36.Controls.Add(this.labelCalendarDay36);
-            this.panelCalendarDay36.Location = new System.Drawing.Point(2, 417);
+            this.panelCalendarDay36.Location = new System.Drawing.Point(2, 462);
             this.panelCalendarDay36.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay36.Name = "panelCalendarDay36";
-            this.panelCalendarDay36.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay36.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay36.TabIndex = 29;
             // 
             // labelCalendarDay36
@@ -2079,10 +2079,10 @@ namespace testing
             // panelCalendarDay37
             // 
             this.panelCalendarDay37.Controls.Add(this.labelCalendarDay37);
-            this.panelCalendarDay37.Location = new System.Drawing.Point(97, 417);
+            this.panelCalendarDay37.Location = new System.Drawing.Point(105, 462);
             this.panelCalendarDay37.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay37.Name = "panelCalendarDay37";
-            this.panelCalendarDay37.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay37.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay37.TabIndex = 30;
             // 
             // labelCalendarDay37
@@ -2098,10 +2098,10 @@ namespace testing
             // panelCalendarDay38
             // 
             this.panelCalendarDay38.Controls.Add(this.labelCalendarDay38);
-            this.panelCalendarDay38.Location = new System.Drawing.Point(192, 417);
+            this.panelCalendarDay38.Location = new System.Drawing.Point(208, 462);
             this.panelCalendarDay38.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay38.Name = "panelCalendarDay38";
-            this.panelCalendarDay38.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay38.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay38.TabIndex = 30;
             // 
             // labelCalendarDay38
@@ -2117,10 +2117,10 @@ namespace testing
             // panelCalendarDay39
             // 
             this.panelCalendarDay39.Controls.Add(this.labelCalendarDay39);
-            this.panelCalendarDay39.Location = new System.Drawing.Point(287, 417);
+            this.panelCalendarDay39.Location = new System.Drawing.Point(311, 462);
             this.panelCalendarDay39.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay39.Name = "panelCalendarDay39";
-            this.panelCalendarDay39.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay39.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay39.TabIndex = 30;
             // 
             // labelCalendarDay39
@@ -2136,10 +2136,10 @@ namespace testing
             // panelCalendarDay40
             // 
             this.panelCalendarDay40.Controls.Add(this.labelCalendarDay40);
-            this.panelCalendarDay40.Location = new System.Drawing.Point(382, 417);
+            this.panelCalendarDay40.Location = new System.Drawing.Point(414, 462);
             this.panelCalendarDay40.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay40.Name = "panelCalendarDay40";
-            this.panelCalendarDay40.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay40.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay40.TabIndex = 30;
             // 
             // labelCalendarDay40
@@ -2155,10 +2155,10 @@ namespace testing
             // panelCalendarDay41
             // 
             this.panelCalendarDay41.Controls.Add(this.labelCalendarDay41);
-            this.panelCalendarDay41.Location = new System.Drawing.Point(477, 417);
+            this.panelCalendarDay41.Location = new System.Drawing.Point(517, 462);
             this.panelCalendarDay41.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay41.Name = "panelCalendarDay41";
-            this.panelCalendarDay41.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay41.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay41.TabIndex = 30;
             // 
             // labelCalendarDay41
@@ -2174,10 +2174,10 @@ namespace testing
             // panelCalendarDay42
             // 
             this.panelCalendarDay42.Controls.Add(this.labelCalendarDay42);
-            this.panelCalendarDay42.Location = new System.Drawing.Point(572, 417);
+            this.panelCalendarDay42.Location = new System.Drawing.Point(620, 462);
             this.panelCalendarDay42.Margin = new System.Windows.Forms.Padding(2);
             this.panelCalendarDay42.Name = "panelCalendarDay42";
-            this.panelCalendarDay42.Size = new System.Drawing.Size(91, 79);
+            this.panelCalendarDay42.Size = new System.Drawing.Size(99, 88);
             this.panelCalendarDay42.TabIndex = 30;
             // 
             // labelCalendarDay42
@@ -2202,13 +2202,13 @@ namespace testing
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(670, 25);
+            this.panel1.Size = new System.Drawing.Size(721, 25);
             this.panel1.TabIndex = 5;
             // 
             // labelDaySaturday
             // 
             this.labelDaySaturday.AutoSize = true;
-            this.labelDaySaturday.Location = new System.Drawing.Point(592, 6);
+            this.labelDaySaturday.Location = new System.Drawing.Point(643, 6);
             this.labelDaySaturday.Name = "labelDaySaturday";
             this.labelDaySaturday.Size = new System.Drawing.Size(53, 15);
             this.labelDaySaturday.TabIndex = 6;
@@ -2217,7 +2217,7 @@ namespace testing
             // labelDayFriday
             // 
             this.labelDayFriday.AutoSize = true;
-            this.labelDayFriday.Location = new System.Drawing.Point(504, 6);
+            this.labelDayFriday.Location = new System.Drawing.Point(545, 6);
             this.labelDayFriday.Name = "labelDayFriday";
             this.labelDayFriday.Size = new System.Drawing.Size(39, 15);
             this.labelDayFriday.TabIndex = 5;
@@ -2226,7 +2226,7 @@ namespace testing
             // labelDayThursday
             // 
             this.labelDayThursday.AutoSize = true;
-            this.labelDayThursday.Location = new System.Drawing.Point(400, 6);
+            this.labelDayThursday.Location = new System.Drawing.Point(436, 6);
             this.labelDayThursday.Name = "labelDayThursday";
             this.labelDayThursday.Size = new System.Drawing.Size(55, 15);
             this.labelDayThursday.TabIndex = 4;
@@ -2235,7 +2235,7 @@ namespace testing
             // labelDayTuesday
             // 
             this.labelDayTuesday.AutoSize = true;
-            this.labelDayTuesday.Location = new System.Drawing.Point(212, 6);
+            this.labelDayTuesday.Location = new System.Drawing.Point(231, 6);
             this.labelDayTuesday.Name = "labelDayTuesday";
             this.labelDayTuesday.Size = new System.Drawing.Size(50, 15);
             this.labelDayTuesday.TabIndex = 3;
@@ -2244,7 +2244,7 @@ namespace testing
             // labelDayMonday
             // 
             this.labelDayMonday.AutoSize = true;
-            this.labelDayMonday.Location = new System.Drawing.Point(118, 6);
+            this.labelDayMonday.Location = new System.Drawing.Point(129, 6);
             this.labelDayMonday.Name = "labelDayMonday";
             this.labelDayMonday.Size = new System.Drawing.Size(51, 15);
             this.labelDayMonday.TabIndex = 2;
@@ -2253,7 +2253,7 @@ namespace testing
             // labelDayWednesday
             // 
             this.labelDayWednesday.AutoSize = true;
-            this.labelDayWednesday.Location = new System.Drawing.Point(298, 6);
+            this.labelDayWednesday.Location = new System.Drawing.Point(327, 6);
             this.labelDayWednesday.Name = "labelDayWednesday";
             this.labelDayWednesday.Size = new System.Drawing.Size(68, 15);
             this.labelDayWednesday.TabIndex = 1;
@@ -2262,7 +2262,7 @@ namespace testing
             // labelDaySunday
             // 
             this.labelDaySunday.AutoSize = true;
-            this.labelDaySunday.Location = new System.Drawing.Point(25, 6);
+            this.labelDaySunday.Location = new System.Drawing.Point(28, 6);
             this.labelDaySunday.Name = "labelDaySunday";
             this.labelDaySunday.Size = new System.Drawing.Size(46, 15);
             this.labelDaySunday.TabIndex = 0;
@@ -2282,7 +2282,7 @@ namespace testing
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(670, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(721, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -2504,14 +2504,14 @@ namespace testing
             this.editTaskPanel.Controls.Add(this.editTaskTitleTextBox);
             this.editTaskPanel.Location = new System.Drawing.Point(192, 85);
             this.editTaskPanel.Name = "editTaskPanel";
-            this.editTaskPanel.Size = new System.Drawing.Size(229, 254);
+            this.editTaskPanel.Size = new System.Drawing.Size(229, 268);
             this.editTaskPanel.TabIndex = 1;
             this.editTaskPanel.Visible = false;
             this.editTaskPanel.VisibleChanged += new System.EventHandler(this.editTaskPanel_VisibleChanged);
             // 
             // editTaskTime2Label
             // 
-            this.editTaskTime2Label.Location = new System.Drawing.Point(18, 121);
+            this.editTaskTime2Label.Location = new System.Drawing.Point(16, 121);
             this.editTaskTime2Label.Name = "editTaskTime2Label";
             this.editTaskTime2Label.Size = new System.Drawing.Size(42, 23);
             this.editTaskTime2Label.TabIndex = 0;
@@ -2529,7 +2529,7 @@ namespace testing
             // 
             // editTaskTimePicker2
             // 
-            this.editTaskTimePicker2.CustomFormat = "HH:MM tt";
+            this.editTaskTimePicker2.CustomFormat = "hh:mm tt";
             this.editTaskTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.editTaskTimePicker2.Location = new System.Drawing.Point(58, 121);
             this.editTaskTimePicker2.MaxDate = new System.DateTime(3000, 1, 1, 0, 0, 0, 0);
@@ -2584,7 +2584,7 @@ namespace testing
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(21, 212);
+            this.deleteButton.Location = new System.Drawing.Point(21, 226);
             this.deleteButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(66, 31);
@@ -2617,7 +2617,7 @@ namespace testing
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(137, 212);
+            this.saveButton.Location = new System.Drawing.Point(137, 226);
             this.saveButton.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(66, 31);
@@ -2651,15 +2651,16 @@ namespace testing
             this.editTaskNoteTextbox.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.editTaskNoteTextbox.Name = "editTaskNoteTextbox";
             this.editTaskNoteTextbox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
-            this.editTaskNoteTextbox.Size = new System.Drawing.Size(182, 28);
+            this.editTaskNoteTextbox.Size = new System.Drawing.Size(182, 40);
             this.editTaskNoteTextbox.TabIndex = 9;
             this.editTaskNoteTextbox.Text = "";
+            this.editTaskNoteTextbox.TextChanged += new System.EventHandler(this.editTaskNoteTextbox_TextChanged);
             // 
             // editTaskTitleLabel
             // 
             this.editTaskTitleLabel.AutoSize = true;
             this.editTaskTitleLabel.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.editTaskTitleLabel.Location = new System.Drawing.Point(22, 9);
+            this.editTaskTitleLabel.Location = new System.Drawing.Point(22, 10);
             this.editTaskTitleLabel.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
             this.editTaskTitleLabel.Name = "editTaskTitleLabel";
             this.editTaskTitleLabel.Size = new System.Drawing.Size(38, 19);
@@ -2681,6 +2682,8 @@ namespace testing
             this.editTaskTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.editTaskTimePicker1.Location = new System.Drawing.Point(58, 93);
             this.editTaskTimePicker1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
+            this.editTaskTimePicker1.MaxDate = new System.DateTime(3000, 1, 1, 0, 0, 0, 0);
+            this.editTaskTimePicker1.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
             this.editTaskTimePicker1.Name = "editTaskTimePicker1";
             this.editTaskTimePicker1.ShowUpDown = true;
             this.editTaskTimePicker1.Size = new System.Drawing.Size(77, 23);
@@ -2782,7 +2785,7 @@ namespace testing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 591);
+            this.ClientSize = new System.Drawing.Size(954, 638);
             this.Controls.Add(this.editTaskPanel);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.loginPanel);

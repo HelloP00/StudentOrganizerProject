@@ -4,7 +4,7 @@ namespace testing
     {
         private int maxTitleLength = 25;
         private string titleHold = "error with titleHold";
-        private string textHold = "error with textHold";
+        private string longNoteHold = "error with textHold";
         private int currentYear = DateTime.Now.Year;
         private int currentMonth = DateTime.Now.Month;
         private int yearHold = 2000;
@@ -17,6 +17,10 @@ namespace testing
         private Color colourHold = Color.Orange;
         private CheckBox tempColourCheckBox;
         private int startingDay, startingDayCountdown, daysInMonth, dayCount;
+
+        //Temporary:
+        private string usernameHold = "userTest";
+
         public Form1()
         {
             InitializeComponent();
@@ -30,10 +34,11 @@ namespace testing
             {
                 toolStripComboBoxYear.Items.Add(i.ToString());
             }
-            toolStripComboBoxYear.SelectedItem = (DateTime.Now.Year.ToString());
-            toolStripComboBoxMonth.SelectedIndex = (DateTime.Now.Month) - 1;
+            toolStripComboBoxYear.SelectedItem = (currentYear.ToString());
+            toolStripComboBoxMonth.SelectedIndex = (currentMonth) - 1;
 
-            calendarChange(DateTime.Now.Year, DateTime.Now.Month);
+            calendarChange(currentYear, currentMonth);
+            pullFromFiles(currentYear, currentMonth);
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
@@ -102,13 +107,7 @@ namespace testing
             {
                 editTaskPanel.Visible = false;
 
-                foreach (Control control in Controls)
-                {
-                    if (control != editTaskPanel)
-                    {
-                        control.Enabled = true;
-                    }
-                }
+                
 
                 //Save changes to data base (Colour, Date, Time, Title etc) here
 
@@ -122,19 +121,32 @@ namespace testing
                 yearHold = editTaskDatePicker.Value.Year;
                 monthHold = editTaskDatePicker.Value.Month;
                 dayHold = editTaskDatePicker.Value.Day;
-                timeHold1 = editTaskTimePicker1.Value.ToString();
-                timeHold2 = editTaskTimePicker2.Value.ToString();
-                textHold = editTaskNoteTextbox.Text;
+                timeHold1 = editTaskTimePicker1.Value.ToString("h:mm tt");
+                timeHold2 = editTaskTimePicker2.Value.ToString("h:mm tt");
+                longNoteHold = editTaskNoteTextbox.Text;
                 titleHold = editTaskTitleLabel.Text;
 
-                if (currentYear == yearHold && currentMonth == monthHold)
+                if (taskSender == toolStripButtonNewTask)
                 {
-                    if (taskSender == toolStripButtonNewTask)
+                    if (currentYear == yearHold && currentMonth == monthHold)
                     {
-                        addTask(yearHold, monthHold, dayHold, timeHold1, timeHold2, colourHold);
+                        addTask(titleHold, yearHold, monthHold, dayHold, timeHold1, timeHold2, colourHold);
                         taskSender = saveButton;
                     }
-                    taskHold.Text = titleHold;
+                    createFile(usernameHold, titleHold, longNoteHold, yearHold, monthHold, dayHold, timeHold1, timeHold2, colourHold);
+                }
+                else
+                {
+                    if (currentYear == yearHold && currentMonth == monthHold)
+                    {
+                        taskHold.Text = titleHold + "\n" + timeHold1 + ", " + timeHold2;
+                    }
+                    //change file
+                }
+
+                foreach (Control control in Controls)
+                {
+                    control.Enabled = true;
                 }
             }
             else
@@ -159,7 +171,7 @@ namespace testing
             editTaskTitleLabel.Text = editTaskTitleTextBox.Text;
         }
 
-        //Should have 0 references
+        //Should have 0 references, not in use currently
         private void changePopupTaskTheme(Color color)
         {
             //Should change Popup Task Theme when hovering a button/task and READ the color of the button/task
@@ -267,7 +279,14 @@ namespace testing
         //Should have 1 reference: toolStripButtonNewTask.Click
         private void toolStripButtonNewTask_Click(object sender, EventArgs e)
         {
-            editTaskTitleTextBox.Text = "Task";
+            colourOrangeCheckBox.Checked = true;
+            editTaskTitleTextBox.Text = "";
+            editTaskTitleLabel.Text = "Task";
+            editTaskDatePicker.Value = DateTime.Now;
+            editTaskTimePicker1.Value = DateTime.Now;
+            editTaskTimePicker2.Value = DateTime.Now;
+            editTaskNoteTextbox.Text = "";
+
             editTaskPanel.Visible = true;
             taskSender = toolStripButtonNewTask;
         }
@@ -295,12 +314,13 @@ namespace testing
                 {
                     if (dayCount <= daysInMonth)
                     {
-                        panels.BackColor = Color.LightBlue;
+                        panels.BackColor = Color.LightSteelBlue;
 
                         //There is only one in each, so maybe change this
                         foreach (Label label in panels.Controls.OfType<Label>())
                         {
                             label.Text = "" + dayCount;
+                            label.Font = new Font("Segoe UI", 13, FontStyle.Bold);
                         }
                         dayCount++;
                     }
@@ -320,21 +340,38 @@ namespace testing
                     {
                         label.Text = "";
                     }
-                    //Also make it unable to be pressed
                     //Could make it include the last months dates but I think it'd be kinda confusing to code
                     startingDayCountdown--;
                 }
             }
             foreach (Panel panels in this.flowLayoutPanelCalendar.Controls.OfType<Panel>())
             {
-                foreach (Button button in panels.Controls.OfType<Button>())
+                var buttons = panels.Controls.OfType<Button>().ToArray();
+                foreach (Button button in buttons)
                 {
                     panels.Controls.Remove(button);
+                    button.Dispose();
                 }
             }
             currentYear = year;
             currentMonth = month;
         }
+
+        //Should have 1 reference: editTaskPanel.VisibleChanged
+        private void editTaskPanel_VisibleChanged(object sender, EventArgs e)
+        {
+            if (editTaskPanel.Visible)
+            {
+                foreach (Control control in Controls)
+                {
+                    if (control != editTaskPanel)
+                    {
+                        control.Enabled = false;
+                    }
+                }
+            }
+        }
+
         //Should have 2 references: toolStripComboBoxYear.SelectedIndexChanged and toolStripComboBoxMonth.SelectedIndexChanged
         private void month_year_Changed(object sender, EventArgs e)
         {
@@ -347,6 +384,7 @@ namespace testing
                 if (okay)
                 {
                     calendarChange(year, month);
+                    pullFromFiles(year, month);
                 }
                 else
                 {
@@ -355,32 +393,55 @@ namespace testing
             }
         }
 
-        //Should have 1 reference inside saveButton_Click
-        private void addTask(int year, int month, int day, string time1, string time2, Color color)
+        //Should have 2 references inside saveButton_Click and pullFromFiles
+        private void addTask(string title, int year, int month, int day, string time1, string time2, Color color)
         {
+            //need to add input for long note string
+            int count = 0;
             int temp = day + startingDay;
             //MessageBox.Show("startingDay" + startingDay + "day:" + day + "temp:" + temp);
             string panelNameChange = "panelCalendarDay" + (temp);
-            //Should change according to panel size eventually
-            Point point = new Point(5, 30);
-            Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point, flowLayoutPanelCalendar.Controls[panelNameChange].Font);
-            taskHold = button;
-            this.flowLayoutPanelCalendar.Controls[panelNameChange].Controls.Add(button);
+            foreach (Button b in flowLayoutPanelCalendar.Controls[panelNameChange].Controls.OfType<Button>())
+            {
+                count++;
+            }
+            if (count >= 2)
+            {
+                //try get [label], if it exists do nothing, else make a label that reads "..."
+                MessageBox.Show("Cannot currently enter more than 2 tasks into a panel");
+            }
+            else
+            {
+                Point point;
+                if (count == 1)
+                {
+                    point = new Point(5, 26 + (26 * count));
+                }
+                else
+                {
+                    point = new Point(5, 26);
+                }
+                Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point);
+                button.Text = title + "\n" + time1 + " to " + time2;
+                taskHold = button;
+                this.flowLayoutPanelCalendar.Controls[panelNameChange].Controls.Add(button);
+            }
         }
         //Should have 1 reference inside addTask (directly above this)
-        private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color color, Size size, Point point, Font font)
+        private Button buttonToAdd(int year, int month, int day, string time1, string time2, Color colour, Size size, Point point)
         {
             Button button = new Button();
-            button.BackColor = color;
-            //button.Margin = new Padding(5, 20, 5, 0);
-            button.Size = new System.Drawing.Size(((size.Width/2) + (size.Width/3)), (size.Height / 3));
+            button.BackColor = colour;
+            button.Size = new System.Drawing.Size((size.Width - 10), (size.Height - 30));
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.Location = point;
             button.TextAlign = ContentAlignment.TopLeft;
-            button.Font = new Font(font, FontStyle.Bold);
+            button.Font = new Font("Segoe UI", 7, FontStyle.Bold);
             button.ForeColor = Color.White;
             button.Click += new System.EventHandler(task_Click);
+            //Temporary until editfile code
+            button.Enabled = false;
             return button;
         }
 
@@ -391,20 +452,128 @@ namespace testing
             editTaskPanel.Visible = true;
         }
 
-        //Should have 1 reference: editTaskPanel.VisibleChanged
-        private void editTaskPanel_VisibleChanged(object sender, EventArgs e)
+        //Should have 1 reference: editTaskNoteTextbox.TextChanged
+        private void editTaskNoteTextbox_TextChanged(object sender, EventArgs e)
         {
-            if (Visible)
+            longNoteHold = editTaskNoteTextbox.Text;
+            if (editTaskNoteTextbox.Text.Length > 40)
             {
-                foreach (Control control in Controls)
+                MessageBox.Show("Word limit has been reached");
+                editTaskNoteTextbox.Text = longNoteHold;
+            }
+        }
+
+        //Should have 1 reference inside saveButton_Click
+        public static async Task createFile(string username, string title, string longNote, int year, int month, int day, string time1, string time2, Color colour)
+        {
+            if (username != null && title != null && year >= 1990 && month >= 1 && day >= 1 && time1 != null && time2 != null)
+            {
+                //MessageBox.Show("creating file..");
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\" + username;
+
+                string stringColour = colour.ToString();
+                int length = stringColour.IndexOf("]") - stringColour.IndexOf("[") - 1;
+                stringColour = stringColour.Substring(stringColour.IndexOf("[") + 1, length);
+
+                string inputToFile = day + "-" + time1 + "-" + time2 + "-" + stringColour + "-" + longNote;
+
+                path = Path.Combine(path, year.ToString());
+                if (!File.Exists(path))
                 {
-                    if(control != editTaskPanel)
+                    Directory.CreateDirectory(path);
+                }
+                path = Path.Combine(path, month.ToString());
+                if (!File.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+                path = Path.Combine(path, title);
+                if (!File.Exists(path))
+                {
+                    using StreamWriter file = new(path);
+                    await file.WriteLineAsync(inputToFile);
+                    //await file.WriteLineAsync(EncryptDecrypt.Encrypt(textInFile, Key));
+                    //Will need to be encrypted/decrypted later!
+                }
+                else
+                {
+                    string tempPath = path;
+                    for (int i = 1; File.Exists(tempPath); i++)
                     {
-                        control.Enabled = false;
-                    }  
+                        tempPath = path + i;
+                    }
+                    using StreamWriter file = new(tempPath);
+                    await file.WriteLineAsync(inputToFile);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Cannot input incorrect values into createFile");
+            }
+        }
+
+        //Should have 2 references inside month_year_changed and inside Form1
+        public void pullFromFiles(int chosenYear, int chosenMonth)
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\" + usernameHold;
+            if (!Directory.Exists(path))
+            {
+                //MessageBox.Show(path);
+                //Should be created when making a new account
+                Directory.CreateDirectory(path);
+            }
+            path = Path.Combine(path, chosenYear.ToString());
+            if (Directory.Exists(path))
+            {
+                path = Path.Combine(path, chosenMonth.ToString());
+                if (Directory.Exists(path))
+                {
+                    try
+                    {
+                        string[] files = Directory.GetFiles(path);
+
+                        foreach (string file in files)
+                        {
+                            string line = File.ReadAllText(file);
+
+                            string[] info = line.Split('-');
+
+                            int year = chosenYear;
+                            int month = chosenMonth;
+                            int day = int.Parse(info[0]);
+
+                            string time1 = info[1];
+                            string time2 = info[2];
+
+                            string title = Path.GetFileName(file);
+
+                            string longNote;
+
+                            if (info.Length < 4)
+                            {
+                                longNote = "";
+                            }
+                            else
+                            {
+                                longNote = info[4];
+                                //Used if the user put a '-' in their longNote
+                                if (info.Length > 4)
+                                {
+                                    for (int i = 5; i < info.Length; i++)
+                                    {
+                                        longNote += "-" + info[i];
+                                    }
+                                }
+                            }
+
+                            addTask(title, year, month, day, time1, time2, Color.FromName(info[3]));
+                        }
+                    }
+                    catch (DirectoryNotFoundException) { }
                 }
             }
         }
+
 
         //make timetable textboxes editable
         //Should have 1 reference: buttonEditTimetable.Click
@@ -427,8 +596,6 @@ namespace testing
             buttonTimetableClear.Visible = true;
             buttonTimetableEditDone.Visible = true;
         }
-
-        
 
         //Should have 1 reference: buttonTimetableClear.Click
         private void buttonTimetableClear_Click(object sender, EventArgs e)
