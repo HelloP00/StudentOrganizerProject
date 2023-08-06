@@ -36,7 +36,8 @@ void GenKeys(string userName) {
 
 
 //hashes the string to the keys stored under the username
-string HashPassword(string userName, string inputPassword) {
+//returns the hashed input in the form of a byte array. 
+byte[] HashPassword(string userName, string inputPassword) {
 	string userDir = $".\\{userName}";
 	int keySize = 32, IVSize = 16;
 	
@@ -65,9 +66,16 @@ string HashPassword(string userName, string inputPassword) {
 			hashedArray = encryptor.TransformFinalBlock(inputArray, 0, inputArray.Length);
 		}
 		
-		return UTF8Encoding.UTF8.GetString(hashedArray);
+		return hashedArray;
 		
 	}
+}
+
+//hashes the input password, and then saves the hashed password. 
+void SavePassword(string userName, string inputPassword) {
+	byte[] hashedPassword;
+	
+	hashedPassword = HashPassword(userName, inputPassword);
 }
 
 GenKeys("testUser");
