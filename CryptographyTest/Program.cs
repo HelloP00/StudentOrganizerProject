@@ -80,7 +80,7 @@ void SavePassword(string userName, string inputPassword) {
 	hashedPassword = HashPassword(userName, inputPassword);
 	
 	//saves the password. 
-	using (FileStream stream = File.Open($"{userDir}\\pass.dat", FileMode.Create)) {
+	using (FileStream stream = File.Create($"{userDir}\\pass.dat")) {
 		using (BinaryWriter writer = new BinaryWriter(stream)) {
 			writer.Write(hashedPassword);
 		}
@@ -92,7 +92,38 @@ void SavePassword(string userName, string inputPassword) {
 		
 }
 
+bool CompareToStoredPassword(string userName, string inputPassword) {
+	string userDir = $"{baseDir}\\{userName}";
+	byte[] inputHash, storedHash; 
+	
+	
+	if (!File.Exists($"{userDir}\\pass.dat")) {
+		Console.WriteLine($"There is no password stored for {userName}, (CompareToStoredPassword has been called to compare to a stored password)");
+		return false;
+	}
+	
+	//loads the stored password
+	using (FileStream stream = File.Open($"{userDir}\\pass.dat", FileMode.Open)) {
+		using (BinaryReader reader = new BinaryReader(stream)) {
+			storedHash = new byte[stream.Length];
+			reader.Read(storedHash, 0, Convert.ToInt32(stream.Length));
+		}
+	}
+	
+	//hashes the input string
+	inputHash = HashPassword(userName, inputPassword);
+	
+	//compares the inputs
+	if (inputHash.SequenceEqual(storedHash)) {
+		return true;
+	}
+	
+	return false;
+}
+
 GenKeys("testUser");
 HashPassword("testUser", "password");
 HashPassword("testUser", "password");
 SavePassword("testUser", "password");
+Console.WriteLine(CompareToStoredPassword("testUser", "password"));
+Console.WriteLine(CompareToStoredPassword("testUser", "passwod"));
