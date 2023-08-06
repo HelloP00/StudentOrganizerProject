@@ -16,20 +16,18 @@ void GenKeys(string userName) {
 		key = aes.Key;
 		iv = aes.IV;
 	}
-	Console.WriteLine("Keys generated, attempting to store...");
-	
 	//stores the keys
-	//using (FileStream stream = File.OpenOrCreate($"{saveDir}")) {
-		using (StreamWriter writer = new StreamWriter($"{saveDir}\\key.txt")) {
+	using (FileStream stream = File.Create($"{saveDir}\\key.dat")) {
+		using (BinaryWriter writer = new BinaryWriter(stream)) {
 			writer.Write(key);
 		}
-	//}
-	//using (FileStream stream = File.OpenOrCreate($"{saveDir}")) {
-		using (StreamWriter writer = new StreamWriter($"{saveDir}\\IV.txt")) {
+	}
+	using (FileStream stream = File.Create($"{saveDir}\\IV.dat")) {
+		using (BinaryWriter writer = new BinaryWriter(stream)) {
 			writer.Write(iv);
 		}
-	//}
+	}
 }
 
 
-GenKeys("testUser");
+//GenKeys("testUser");
