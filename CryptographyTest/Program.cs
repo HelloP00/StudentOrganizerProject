@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Security.Cryptography;
+using System.Text;
 
 //requires a usernername input to run. 
 
@@ -39,7 +40,10 @@ void HashPassword(string userName, string inputPassword) {
 	string userDir = $".\\{userName}";
 	int keySize = 32, IVSize = 16;
 	
-	byte[] key = new byte[keySize], iv = new byte[IVSize];
+	byte[] key = new byte[keySize], iv = new byte[IVSize], inputArray, hashedArray;
+	
+	//makes the inputPassword a byte array. 
+	inputArray = UTF8Encoding.UTF8.GetBytes(inputPassword);
 	
 	using (Aes aes = Aes.Create()) {
 		
@@ -56,6 +60,13 @@ void HashPassword(string userName, string inputPassword) {
 				aes.IV = iv;
 			}
 		}
+		
+		using (ICryptoTransform encryptor = aes.CreateEncryptor()) {
+			hashedArray = encryptor.TransformFinalBlock(inputArray, 0, inputArray.Length);
+		}
+		
+		Console.WriteLine($"Hashed password: {UTF8Encoding.UTF8.GetString(hashedArray)}");
+		
 	}
 }
 
