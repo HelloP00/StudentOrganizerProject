@@ -65,7 +65,7 @@ string HashPassword(string userName, string inputPassword) {
 			hashedArray = encryptor.TransformFinalBlock(inputArray, 0, inputArray.Length);
 		}
 		
-		return;
+		return UTF8Encoding.UTF8.GetString(hashedArray);
 		
 	}
 }
