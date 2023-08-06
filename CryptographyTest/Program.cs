@@ -3,12 +3,13 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
-//requires a usernername input to run. 
+//the directory that will contain the directories containing the user data
+string baseDir = ".\\";
 
 
 
 void GenKeys(string userName) {
-	string userDir = $".\\{userName}";
+	string userDir = $"{baseDir}\\{userName}";
 	
 	byte[] key, iv;
 	
@@ -38,7 +39,7 @@ void GenKeys(string userName) {
 //hashes the string to the keys stored under the username
 //returns the hashed input in the form of a byte array. 
 byte[] HashPassword(string userName, string inputPassword) {
-	string userDir = $".\\{userName}";
+	string userDir = $"{baseDir}\\{userName}";
 	int keySize = 32, IVSize = 16;
 	
 	byte[] key = new byte[keySize], iv = new byte[IVSize], inputArray, hashedArray;
@@ -73,10 +74,25 @@ byte[] HashPassword(string userName, string inputPassword) {
 
 //hashes the input password, and then saves the hashed password. 
 void SavePassword(string userName, string inputPassword) {
+	string userDir = $"{baseDir}\\{userName}";
 	byte[] hashedPassword;
 	
 	hashedPassword = HashPassword(userName, inputPassword);
+	
+	//saves the password. 
+	using (FileStream stream = File.Open($"{userDir}\\pass.dat", FileMode.Create)) {
+		using (BinaryWriter writer = new BinaryWriter(stream)) {
+			writer.Write(hashedPassword);
+		}
+	}
+	
+	//Console.WriteLine($"Hash Result: {UTF8Encoding.UTF8.GetString(hashedPassword)}");
+	
+	return;
+		
 }
 
 GenKeys("testUser");
 HashPassword("testUser", "password");
+HashPassword("testUser", "password");
+SavePassword("testUser", "password");
