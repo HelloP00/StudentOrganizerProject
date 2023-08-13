@@ -41,13 +41,7 @@ namespace testing
             pullFromFiles(currentYear, currentMonth);
         }
 
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            //update home page subject
-            int dateCurrent = (int)DateTime.Now.DayOfWeek;
 
-            updateLabelHomePageSub1To6(dateCurrent);
-        }
 
 
         //home button
@@ -107,7 +101,7 @@ namespace testing
             {
                 editTaskPanel.Visible = false;
 
-                
+
 
                 //Save changes to data base (Colour, Date, Time, Title etc) here
 
@@ -415,11 +409,11 @@ namespace testing
                 Point point;
                 if (count == 1)
                 {
-                    point = new Point(5, 26 + (26 * count));
+                    point = new Point(5, 40 + (40 * count));
                 }
                 else
                 {
-                    point = new Point(5, 26);
+                    point = new Point(5, 40);
                 }
                 Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point);
                 button.Text = title + "\n" + time1 + " to " + time2;
@@ -432,7 +426,7 @@ namespace testing
         {
             Button button = new Button();
             button.BackColor = colour;
-            button.Size = new System.Drawing.Size((size.Width - 10), (size.Height - 30));
+            button.Size = new System.Drawing.Size((size.Width - 10), (size.Height - 80));
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.Location = point;
