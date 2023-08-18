@@ -17,9 +17,8 @@ namespace testing
         private Color colourHold = Color.Orange;
         private CheckBox tempColourCheckBox;
         private int startingDay, startingDayCountdown, daysInMonth, dayCount;
-
-        //Temporary:
-        private string usernameHold = "userTest";
+        private string usernameHold = "userTest3";
+        private string oldFileName = "error with oldFileName";
 
         public Form1()
         {
@@ -101,8 +100,6 @@ namespace testing
             {
                 editTaskPanel.Visible = false;
 
-
-
                 //Save changes to data base (Colour, Date, Time, Title etc) here
 
                 //Color may need to be a string - check if database takes colors
@@ -110,7 +107,6 @@ namespace testing
                 //To be used specifically when taking colours from the database and applying them to tasks (buttons) in the calendar
                 //eg: under the column "colour", in the row "English Essay", the string reads orange- this data is then taken and input here along with a button,
                 //this is repeated to create a calendar
-                //taskHold.BackColor = colourHold;
 
                 yearHold = editTaskDatePicker.Value.Year;
                 monthHold = editTaskDatePicker.Value.Month;
@@ -119,6 +115,8 @@ namespace testing
                 timeHold2 = editTaskTimePicker2.Value.ToString("h:mm tt");
                 longNoteHold = editTaskNoteTextbox.Text;
                 titleHold = editTaskTitleLabel.Text;
+
+                //Probably a better way to do this
 
                 if (taskSender == toolStripButtonNewTask)
                 {
@@ -133,14 +131,10 @@ namespace testing
                 {
                     if (currentYear == yearHold && currentMonth == monthHold)
                     {
-                        taskHold.Text = titleHold + "\n" + timeHold1 + ", " + timeHold2;
+                        taskHold.Text = titleHold + "\n" + timeHold1 + " to " + timeHold2;
+                        //Edit Task
                     }
-                    //change file
-                }
-
-                foreach (Control control in Controls)
-                {
-                    control.Enabled = true;
+                    editFile(usernameHold, titleHold, oldFileName, longNoteHold, yearHold, currentYear, monthHold, currentMonth, dayHold, timeHold1, timeHold2, colourHold);
                 }
             }
             else
@@ -276,12 +270,17 @@ namespace testing
             colourOrangeCheckBox.Checked = true;
             editTaskTitleTextBox.Text = "";
             editTaskTitleLabel.Text = "Task";
+
+            //Change to year & month currently selected
             editTaskDatePicker.Value = DateTime.Now;
             editTaskTimePicker1.Value = DateTime.Now;
             editTaskTimePicker2.Value = DateTime.Now;
             editTaskNoteTextbox.Text = "";
 
+            //Move to designer
+            //editTaskPanel.Location = new Point(452, 280);
             editTaskPanel.Visible = true;
+
             taskSender = toolStripButtonNewTask;
         }
         //Should have 2 references at the top and inside month_year_Changed
@@ -364,6 +363,13 @@ namespace testing
                     }
                 }
             }
+            else
+            {
+                foreach (Control control in Controls)
+                {
+                    control.Enabled = true;
+                }
+            }
         }
 
         //Should have 2 references: toolStripComboBoxYear.SelectedIndexChanged and toolStripComboBoxMonth.SelectedIndexChanged
@@ -377,8 +383,11 @@ namespace testing
                 month = toolStripComboBoxMonth.SelectedIndex + 1;
                 if (okay)
                 {
-                    calendarChange(year, month);
-                    pullFromFiles(year, month);
+                    if (currentYear != year || currentMonth != month)
+                    {
+                        calendarChange(year, month);
+                        pullFromFiles(year, month);
+                    }
                 }
                 else
                 {
@@ -399,7 +408,7 @@ namespace testing
             {
                 count++;
             }
-            if (count >= 2)
+            if (count > 2)
             {
                 //try get [label], if it exists do nothing, else make a label that reads "..."
                 MessageBox.Show("Cannot currently enter more than 2 tasks into a panel");
@@ -409,11 +418,11 @@ namespace testing
                 Point point;
                 if (count == 1)
                 {
-                    point = new Point(5, 40 + (40 * count));
+                    point = new Point(30, 10 + (10 * count));
                 }
                 else
                 {
-                    point = new Point(5, 40);
+                    point = new Point(30, 10);
                 }
                 Button button = buttonToAdd(year, month, day, time1, time2, color, flowLayoutPanelCalendar.Controls[panelNameChange].Size, point);
                 button.Text = title + "\n" + time1 + " to " + time2;
@@ -426,26 +435,150 @@ namespace testing
         {
             Button button = new Button();
             button.BackColor = colour;
-            button.Size = new System.Drawing.Size((size.Width - 10), (size.Height - 80));
+            button.Size = new System.Drawing.Size((size.Width - 10), (size.Height - 40));
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.Location = point;
             button.TextAlign = ContentAlignment.TopLeft;
-            button.Font = new Font("Segoe UI", 7, FontStyle.Bold);
+            button.Font = new Font("Segoe UI", 10, FontStyle.Bold);
             button.ForeColor = Color.White;
             button.Click += new System.EventHandler(task_Click);
-            //Temporary until editfile code
-            button.Enabled = false;
+            button.Anchor = AnchorStyles.Top;
             return button;
+        }
+        //Should have 1 reference: deleteButton.Click
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            if (taskSender != toolStripButtonNewTask)
+            {
+                Controls.Remove(taskHold);
+                taskHold.Dispose();
+
+                deleteFile(usernameHold, titleHold, currentYear, currentMonth);
+
+                editTaskPanel.Visible = false;
+            }
+        }
+
+        //Should have 2 references: deleteButton_Click and editFile
+        public static async Task deleteFile(string username, string title, int year, int month)
+        {
+            if (username != null && title != null && year >= 1990 && month >= 1)
+            {
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\" + username;
+
+                path = Path.Combine(path, year.ToString());
+                if (Directory.Exists(path))
+                {
+                    path = Path.Combine(path, month.ToString());
+                    if (Directory.Exists(path))
+                    {
+                        path = Path.Combine(path, title);
+                        if (File.Exists(path))
+                        {
+                            File.Delete(path);
+                            //Maybe I should delete the folders too?
+                        }
+                        else
+                        {
+                            MessageBox.Show("Path doesn't exist + " + path);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Month path doesn't exist: " + month);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Year path doesn't exist: " + path);
+                }
+            }
+            else
+            {
+                MessageBox.Show("deleteFile did not recieve correct values");
+            }
         }
 
         //Should have 1 reference inside buttonToAdd (directly above this)
         private void task_Click(object sender, EventArgs e)
         {
             taskHold = (Button)sender;
+            taskSender = taskHold;
             editTaskPanel.Visible = true;
-        }
+            string[] titleSplit = taskHold.Text.Split('\n');
+            string[] timeSplit = titleSplit[1].Split(" to ");
+            editTaskTitleTextBox.Text = titleSplit[0];
+            editTaskTimePicker1.Text = timeSplit[0];
+            editTaskTimePicker2.Text = timeSplit[1];
+            string stringColour = taskHold.BackColor.ToString();
+            int length = stringColour.IndexOf("]") - stringColour.IndexOf("[") - 1;
+            stringColour = stringColour.Substring(stringColour.IndexOf("[") + 1, length);
+            string colourPicker = "colour" + stringColour + "CheckBox";
+            CheckBox tempCheckBox = (CheckBox)this.editTaskPanel.Controls[colourPicker];
+            tempCheckBox.Checked = true;
+            titleHold = editTaskTitleTextBox.Text;
+            oldFileName = editTaskTitleLabel.Text;
 
+            pullFromFile(currentYear, currentMonth);
+        }
+        public static async Task editFile(string username, string title, string oldTitle, string longNote, int year, int oldYear, int month, int oldMonth, int day, string time1, string time2, Color colour)
+        {
+            //May be a way to find out what changed exactly but it would be hard to input into an old file
+            //Instead maybe that could be used for the button label changing
+
+            if (username != null && title != null && year >= 1990 && month >= 1 && day >= 1 && time1 != null && time2 != null)
+            {
+                deleteFile(username, oldTitle, oldYear, oldMonth);
+
+                createFile(username, title, longNote, year, month, day, time1, time2, colour);
+            }
+            else
+            {
+                MessageBox.Show("editFile did not recieve correct values");
+            }
+        }
+        //Should have 1 reference: task_Click
+        public void pullFromFile(int chosenYear, int chosenMonth)
+        {
+            string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\" + usernameHold;
+
+            path = Path.Combine(path, chosenYear.ToString());
+            if (Directory.Exists(path))
+            {
+                path = Path.Combine(path, chosenMonth.ToString());
+                if (Directory.Exists(path))
+                {
+                    try
+                    {
+                        path = Path.Combine(path, oldFileName);
+                        string line = File.ReadAllText(path);
+
+                        string[] info = line.Split('-');
+
+                        editTaskDatePicker.Value = new DateTime(chosenYear, chosenMonth, int.Parse(info[1]));
+
+                        if (info.Length < 5)
+                        {
+                            editTaskNoteTextbox.Text = "";
+                        }
+                        else
+                        {
+                            editTaskNoteTextbox.Text = info[5];
+                            //Used if the user put a '-' in their longNote
+                            if (info.Length > 5)
+                            {
+                                for (int i = 6; i < info.Length; i++)
+                                {
+                                    editTaskNoteTextbox.Text += "-" + info[i];
+                                }
+                            }
+                        }
+                    }
+                    catch (DirectoryNotFoundException) { }
+                }
+            }
+        }
         //Should have 1 reference: editTaskNoteTextbox.TextChanged
         private void editTaskNoteTextbox_TextChanged(object sender, EventArgs e)
         {
@@ -462,22 +595,21 @@ namespace testing
         {
             if (username != null && title != null && year >= 1990 && month >= 1 && day >= 1 && time1 != null && time2 != null)
             {
-                //MessageBox.Show("creating file..");
                 string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\" + username;
 
                 string stringColour = colour.ToString();
                 int length = stringColour.IndexOf("]") - stringColour.IndexOf("[") - 1;
                 stringColour = stringColour.Substring(stringColour.IndexOf("[") + 1, length);
 
-                string inputToFile = day + "-" + time1 + "-" + time2 + "-" + stringColour + "-" + longNote;
+                string inputToFile = title + "-" + day + "-" + time1 + "-" + time2 + "-" + stringColour + "-" + longNote;
 
                 path = Path.Combine(path, year.ToString());
-                if (!File.Exists(path))
+                if (!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(path);
                 }
                 path = Path.Combine(path, month.ToString());
-                if (!File.Exists(path))
+                if (!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(path);
                 }
@@ -486,7 +618,7 @@ namespace testing
                 {
                     using StreamWriter file = new(path);
                     await file.WriteLineAsync(inputToFile);
-                    //await file.WriteLineAsync(EncryptDecrypt.Encrypt(textInFile, Key));
+                    //await file.WriteLineAsync(EncryptDecrypt.Encrypt(inputToFile, Key));
                     //Will need to be encrypted/decrypted later!
                 }
                 else
@@ -510,12 +642,7 @@ namespace testing
         public void pullFromFiles(int chosenYear, int chosenMonth)
         {
             string path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\" + usernameHold;
-            if (!Directory.Exists(path))
-            {
-                //MessageBox.Show(path);
-                //Should be created when making a new account
-                Directory.CreateDirectory(path);
-            }
+
             path = Path.Combine(path, chosenYear.ToString());
             if (Directory.Exists(path))
             {
@@ -528,39 +655,52 @@ namespace testing
 
                         foreach (string file in files)
                         {
+                            //file is the address of the file!!
                             string line = File.ReadAllText(file);
 
                             string[] info = line.Split('-');
+                            //string[] date = info[1].Split('/');
 
+                            //MessageBox.Show(date[0] + date[1] + date[2]);
+
+                            //int spaceLocation1 = date[2].IndexOf(' ');
                             int year = chosenYear;
                             int month = chosenMonth;
-                            int day = int.Parse(info[0]);
+                            int day = int.Parse(info[1]);
+                            //string time1 = date[2].Substring(spaceLocation1);
+                            //int spaceLocation2 = info[1].IndexOf(' ');
 
-                            string time1 = info[1];
-                            string time2 = info[2];
+                            string time1 = info[2];
+                            string time2 = info[3];
+                            //string time2 = info[2].Substring(spaceLocation2);
 
-                            string title = Path.GetFileName(file);
+                            //string title = Path.GetFileName(file);
+                            string title = info[0];
+
+                            //MessageBox.Show("title" + title + " year:" + year + " month:" + month + " day:" + day + " time1:" + time1 + " time2" + time2);
+
+                            //Note: info[5] is the long note
 
                             string longNote;
 
-                            if (info.Length < 4)
+                            if (info.Length < 5)
                             {
                                 longNote = "";
                             }
                             else
                             {
-                                longNote = info[4];
+                                longNote = info[5];
                                 //Used if the user put a '-' in their longNote
-                                if (info.Length > 4)
+                                if (info.Length > 5)
                                 {
-                                    for (int i = 5; i < info.Length; i++)
+                                    for (int i = 6; i < info.Length; i++)
                                     {
                                         longNote += "-" + info[i];
                                     }
                                 }
                             }
 
-                            addTask(title, year, month, day, time1, time2, Color.FromName(info[3]));
+                            addTask(title, year, month, day, time1, time2, Color.FromName(info[4]));
                         }
                     }
                     catch (DirectoryNotFoundException) { }
