@@ -1,3 +1,6 @@
+using System.IO;
+using System.Text;
+
 namespace testing
 {
     public partial class Form1 : Form
@@ -769,15 +772,80 @@ namespace testing
             buttonTimetableClear.Visible = false;
             buttonTimetableEditDone.Visible = false;
 
+            //save timetable to a file
+            saveTimetableToFile(textBoxes);
+
+
 
             //update home page subjects
-
             int dateCurrent = (int)DateTime.Now.DayOfWeek;
-
             updateLabelHomePageSub1To6(dateCurrent);
 
 
         }
+
+        //SAVING TIMETABLE TO A FILE
+        private void saveTimetableToFile(TextBox[] textBoxes)
+        {
+            string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+            int periodsPerDay = 6;
+
+            string directoryPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"repo\StudentOrganizerProject");
+
+            //check if file exist
+            if (!Directory.Exists(directoryPath))
+            {
+                Directory.CreateDirectory(directoryPath);
+            }
+
+            for (int dayIndex = 0; dayIndex < days.Length; dayIndex++)
+            {
+                string dayDirectory = Path.Combine(directoryPath, days[dayIndex]);
+
+                //if day dont exist, create file for it
+                if (!Directory.Exists(dayDirectory))
+                {
+                    Directory.CreateDirectory(dayDirectory);
+                }
+
+                //Writing periods for each day 
+                for (int periodIndex = 0; periodIndex < periodsPerDay; periodIndex++)
+                {
+                    int textBoxIndex = dayIndex * periodsPerDay + periodIndex;
+                    string periodFile = Path.Combine(dayDirectory, $"Period_{periodIndex + 1}.txt");
+                    File.WriteAllText(periodFile, textBoxes[textBoxIndex].Text);
+                }
+            }
+        }
+
+        //LOAD TIMETABLE FROM FILE
+        private void loadTimetableFromFile(TextBox[] textBoxes)
+        {
+            string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+            int periodsPerDay = 6;
+
+            string directoryPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), @"repo\StudentOrganizerProject");
+
+            for (int dayIndex = 0; dayIndex < days.Length; dayIndex++)
+            {
+                string dayDirectory = Path.Combine(directoryPath, days[dayIndex]);
+
+                if (Directory.Exists(dayDirectory))
+                {
+                    for (int periodIndex = 0; periodIndex < periodsPerDay; periodIndex++)
+                    {
+                        int textBoxIndex = dayIndex * periodsPerDay + periodIndex;
+                        string periodFile = Path.Combine(dayDirectory, $"Period_{periodIndex + 1}.txt");
+
+                        if (File.Exists(periodFile))
+                        {
+                            textBoxes[textBoxIndex].Text = File.ReadAllText(periodFile);
+                        }
+                    }
+                }
+            }
+        }
+
 
 
         //Should have 2 references inside Form1_Load1 and buttonTimetableEditDone_Click
@@ -841,5 +909,24 @@ namespace testing
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            TextBox[] textBoxes = {textBoxTTMnP1Sub, textBoxTTMnP2Sub, textBoxTTMnP3Sub, textBoxTTMnP4Sub, textBoxTTMnP5Sub, textBoxTTMnP6Sub,
+                textBoxTTTuP1Sub, textBoxTTTuP2Sub, textBoxTTTuP3Sub, textBoxTTTuP4Sub, textBoxTTTuP5Sub, textBoxTTTuP6Sub,
+                textBoxTTWedP1Sub, textBoxTTWedP2Sub, textBoxTTWedP3Sub, textBoxTTWedP4Sub, textBoxTTWedP5Sub, textBoxTTWedP6Sub,
+                textBoxTTThuP1Sub, textBoxTTThuP2Sub, textBoxTTThuP3Sub, textBoxTTThuP4Sub, textBoxTTThuP5Sub, textBoxTTThuP6Sub,
+                textBoxTTFriP1Sub, textBoxTTFriP2Sub, textBoxTTFriP3Sub, textBoxTTFriP4Sub, textBoxTTFriP5Sub, textBoxTTFriP6Sub};
+
+            loadTimetableFromFile(textBoxes);
+
+
+            //current day of the week
+            int currentDay = (int)DateTime.Now.DayOfWeek;
+            updateLabelHomePageSub1To6(currentDay);
+
+            DateTime currentDate = DateTime.Now;
+            string dateString = currentDate.ToString("dddd, MMMM dd, yyyy");
+            labelDateHere.Text = dateString;
+        }
     }
 }
